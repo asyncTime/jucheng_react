@@ -1,0 +1,21 @@
+项目文件：
+    views
+            Detail page.js:详情页面
+            Longin.js:登录页面
+            Order form.js:我的订单
+            Search.js:搜索页面
+            Show.js：类别页面
+            Vip.js:开通会员页面
+            main.js:导航页面
+    /*****************************/
+    main
+        Me.js     : 导航 我的
+        Page.js   : 导航 首页
+        Theater.js: 导航 影院
+        Wallet.js : 导航 票夹
+    /****************************/
+    router 路由
+        routerApp       App路由的路径
+        routerMe        导航路由的路径
+        routerNavLink   导航路由的跳转路径
+     /**************************/
