@@ -19,3 +19,8 @@
         routerMe        导航路由的路径
         routerNavLink   导航路由的跳转路径
      /**************************/
+    store 仓库
+        state               数据初始值
+        reducer->index.js   仓库合并文件
+        actionType->index.js 事件类型
+        actionCreact          payload

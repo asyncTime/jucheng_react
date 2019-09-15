@@ -1,0 +1,20 @@
+
+ 首页
+
+     类别：
+         接口：https://api.juooo.com/home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.5&referer=1
+         请求方式：get
+         请求内容：classify_list，operation_list，bottom_list，top_icon，slide_list
+         classify_list  ：类别-图片-路径
+            id:1演唱会
+               2音乐剧
+               3舞台剧
+               4儿童剧
+               5音乐会
+         operation_list ：操作区-图片-路径
+         bottom_list    ：导航-图片-路径
+         top_icon       ：图片 分享赚佣金
+         slide_list     ：轮播图数组-图片-路径
+     热门轮回巡演
+        接口：https://api.juooo.com/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=1
+        请求方式 get
