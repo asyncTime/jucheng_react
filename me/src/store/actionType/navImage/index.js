@@ -1,0 +1,1 @@
+export const get_navList="get_navList";

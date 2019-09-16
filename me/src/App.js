@@ -2,9 +2,9 @@ import React from 'react';
 import router from "./router/routerApp"
 import {
   BrowserRouter as Router,
-    Route,
     NavLink,
-    Switch
+    Route,
+     Switch
 }from "react-router-dom"
 class App extends React.Component{
   render() {
@@ -17,11 +17,10 @@ class App extends React.Component{
                   )
               })
             }
+
             <NavLink exact to={"/"}></NavLink>
           </Router>
-
       )
   }
 }
-
 export default App;

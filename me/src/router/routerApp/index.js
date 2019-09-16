@@ -1,16 +1,18 @@
 import Longin from "../../views/Longin"
 import DetailPage from "../../views/Detail page"
 import Search from "../../views/Search"
-import main from "../../views/main"
+import Main from "../../views/main"
 import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Show from "../../views/Show"
+import Wallet from "../../views/main/Wallet";
 export default [
     {
         path:'/',
-        component:main,
+        component:Main,
         title:''
-    }, {
+    },
+    {
         path:'/Longin',
         component:Longin,
         title:''
@@ -31,5 +33,9 @@ export default [
     },{
         path:'/Show',
         component:Show
-    }
+    },{
+        path:'/Wallet',
+        component:Wallet,
+        title:'票夹'
+    },
 ]
