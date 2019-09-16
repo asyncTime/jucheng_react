@@ -9,12 +9,9 @@ import {connect} from "react-redux"
 import axios from "axios"
 import router from "../router/routerMe";
 import {get_nav} from "../store/actionCreact/navImage";
-import Page from "../views/main/Page"
-import Me from "../views/main/Me"
-import Theater from "../views/main/Theater"
  class Main extends React.Component{
     render() {
-        const navImage=this.props.navImageList;
+        const navImage=this.props.navImageList.bottom_list?this.props.navImageList.bottom_list:[];
         return(
             <div>
                 <Router>
@@ -28,17 +25,15 @@ import Theater from "../views/main/Theater"
                     }
                     </Switch>
                     <div id={'m-navImage'}>
-                       <NavLink activeStyle={{color:'red'}} exact to={'/'} id={"a1"}>
+                       <NavLink activeStyle={{color:'red'}} exact to={{pathName:'/',state:{list:this.props.navImageList}}} id={"a1"}>
                           <p style={{backgroundImage:"url("+ (navImage[0]?navImage[0].pic:"")+")"}}></p>
                        </NavLink>
                        <NavLink activeStyle={{color:'red'}} exact to={'/main/theater'}>
                             <div>
-                               <p className={'m-navImage1'} style={{backgroundImage:"url("+ (navImage[1]?navImage[1].pic:"")+")"}}>
-                               </p>
+                               <p className={'m-navImage1'} style={{backgroundImage:"url("+ (navImage[1]?navImage[1].pic:"")+")"}}></p>
                                <span>剧院</span>
                             </div>
                        </NavLink>
-
                             <a href={"/wallet"}>
                                 <div>
                                     <p style={{backgroundImage:"url("+ (navImage[2]?navImage[2].pic:"")+")"}}>
@@ -70,7 +65,7 @@ function mapDispatchToProps(dispatch) {
     return{
         async get_navImageList(){
            const {data}=await axios.get("/ju//home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.5&referer=1");
-         dispatch(dispatch(get_nav(data.data.bottom_list)))
+         dispatch(dispatch(get_nav(data.data)))
         }
     }
 }

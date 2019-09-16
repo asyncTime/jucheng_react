@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
     NavLink,
     Route,
-     Switch
+   //  Switch
 }from "react-router-dom"
 class App extends React.Component{
   render() {
