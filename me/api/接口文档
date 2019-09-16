@@ -18,3 +18,21 @@
      热门轮回巡演
         接口：https://api.juooo.com/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=1
         请求方式 get
+     轮回演出
+        https://api.juooo.com/home/index/getTourRecommendList?city_id=0&version=6.0.5&referer=2
+        请求方式get
+     演唱会
+         https://api.juooo.com/home/index/getFloorShow?city_id=0&version=6.0.5&referer=2
+        请求方式get
+     音乐剧
+        https://api.juooo.com/home/index/getRecommendShow?cityAdd=&page=1&version=6.0.5&referer=2
+        请求方式get
+      舞台剧
+            https://api.juooo.com/vip/index/getVipHomeSchedular?version=6.0.5&referer=2
+            请求方式get
+      热门场馆
+            https://api.juooo.com/home/index/getHotTheatre?version=6.0.5&referer=2
+            请求方式get
+      为你推荐
+            https://api.juooo.com/home/index/getRecommendShow?cityAdd=&page=2&version=6.0.5&referer=2
+            请求方式get

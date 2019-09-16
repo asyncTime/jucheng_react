@@ -8,9 +8,9 @@ import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
 export default [
     {
-        path:'/',
-        component:Main,
-        title:''
+        path: '/',
+        component: Main,
+        title: '',
     },
     {
         path:'/Longin',

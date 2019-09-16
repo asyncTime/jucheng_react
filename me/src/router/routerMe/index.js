@@ -7,11 +7,11 @@ export default [
         component:Page,
         title:'首页'
     },{
-        path:'/main/Theater',
+        path:'/Theater',
         component:Theater,
         title:'影院'
     },{
-        path:'/main/Me',
+        path:'/Me',
         component:Me,
         title:'我的'
     },

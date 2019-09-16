@@ -1,15 +1,13 @@
 import React from "react"
 import Swiper from "swiper"
 import 'swiper/dist/css/swiper.min.css'
-import {
-    Link
-}from "react-router-dom"
+
 class TepySlideshow extends React.Component {
-    constructor(props){
-        super(props)
-    }
+    // constructor(props){
+    //     super(props)
+    // }
     render() {
-        const bannerImg =this.props.slide_list;
+        const bannerImg =this.props.image.slide_list?this.props.image.slide_list:[];
         return (
             <div className="App">
                 <div className="swiper-container">

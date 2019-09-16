@@ -17,7 +17,6 @@ class App extends React.Component{
                   )
               })
             }
-
             <NavLink exact to={"/"}></NavLink>
           </Router>
       )
