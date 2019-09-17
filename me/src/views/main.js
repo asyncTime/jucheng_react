@@ -5,10 +5,12 @@ import {
     NavLink,
     Switch
 }from "react-router-dom"
+import {
+    bindActionCreators
+} from 'redux';
 import {connect} from "react-redux"
-import axios from "axios"
 import router from "../router/routerMe";
-import {get_nav} from "../store/actionCreact/navImage";
+import All_List from "../store/actionCreact/navImage";
  class Main extends React.Component{
     render() {
         const navImage=this.props.navImageList.bottom_list?this.props.navImageList.bottom_list:[];
@@ -25,10 +27,7 @@ import {get_nav} from "../store/actionCreact/navImage";
                                         }
                     </Switch>
                     <div id={'m-navImage'} onClick={this.changeClor.bind(this)}>
-                                   <NavLink
-                                       exact to={{pathname:'/',state:{list:this.props.navImageList}}}
-                                       id={"a1"}
-                                   >
+                                   <NavLink exact to={{pathname:'/'}} id={"a1"}>
                                         <p style={{backgroundImage:"url("+ (navImage[0]?navImage[0].pic:"")+")"}} ></p>
                                    </NavLink>
                                    <NavLink  exact to={'/theater'}>
@@ -76,15 +75,6 @@ function mapStateToProps(state,props) {
     }
 }
 function mapDispatchToProps(dispatch) {
-    return{
-        async get_navImageList(){
-            if(localStorage.list){
-               dispatch(dispatch(get_nav(JSON.parse(localStorage.list))))
-            }else{
-                const {data}=await axios.get("/ju//home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.5&referer=1");
-                dispatch(dispatch(get_nav(data.data)))
-            }
-        }
-    }
+    return bindActionCreators(All_List,dispatch)
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Main)

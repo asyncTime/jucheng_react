@@ -124,7 +124,8 @@ p,h3{
     float: left;
     width: 1.35rem;
     height: 1.8rem;
-    border-radius: .05333rem
+    border-radius: .05333rem;
+    background-size: 100%;
 }
 #m-category2-2-2{
     width: 4.5rem;

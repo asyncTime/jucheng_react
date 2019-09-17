@@ -1,21 +1,23 @@
 import React from "react"
 import {connect} from "react-redux"
+import {
+    bindActionCreators
+} from 'redux';
 import TepySlideshow from "../../component/tepySlideshow"
+import All_List from "../../store/actionCreact/navImage"
  class Page extends React.Component{
-    constructor(props){
-        super(props);
-    }
     render() {
-        const classify_list=this.props.history.location.state?this.props.history.location.state.list.classify_list:[];
 
+        const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
+        const PriorityInList=this.props.PriorityIn?this.props.PriorityIn.priorList[0]:[];
         return(
             <div>
-                <TepySlideshow image={(this.props.history.location.state?this.props.history.location.state.list:[])}></TepySlideshow>
+                <TepySlideshow></TepySlideshow>
                 <div id={'m-category'}>
                     <div id={'m-category1'}>
                         {
                             classify_list.map((v,i)=>(
-                                <div key={i}className={'m-category1'+i}>
+                                <div key={i} className={'m-category1'+i}>
                                     <a href={v.url}>
                                         <img src={v.pic} />
                                         <span>{v.name}</span>
@@ -36,35 +38,37 @@ import TepySlideshow from "../../component/tepySlideshow"
                                 </div>
                             </div>
                         <div id={'m-category2-2'}>
-                            <div id={'m-category2-2-1'}></div>
+                            <div id={'m-category2-2-1'}
+                                 style={{backgroundImage:`url(${PriorityInList.pic})`}}></div>
                             <div id={'m-category2-2-2'}>
-                                    <h3>ui撒谎大撒按市场卡阿克萨科性能的</h3>
-                                    <p id={'m-category2-2-2-p'}>你哦都看你从事的可怜虫</p>
-                                    <p id={'m-categoryTime'}>
-                                        <span>09/23</span>
-                                        <span>开始</span>
-                                    </p>
-                                    <a className={"m-category-bottom"}>开售提醒</a>
+                                <h3>{PriorityInList.schedular_name}</h3>
+                                <p id={'m-category2-2-2-p'}>{PriorityInList.city_name}|{PriorityInList.venue_name}</p>
+                                <p id={'m-categoryTime'}>
+                                    <span>{PriorityInList.pre_time}</span>
+                                    <span>开始</span>
+                                </p>
+                                <a className={"m-category-bottom"}>开售提醒</a>
                             </div>
+                        </div>
+
                             <div></div>
                         </div>
-                    </div>
+                </div>
                     <div></div>
                 </div>
-            </div>
         )
     }
     componentDidMount() {
-
+        this.props.get_PriorityIn()
     }
  }
 function mapStateToProps(state,props) {
     return{
-        navImageList:state.navImageList.navList
+        navImageList:state.navImageList.navList,
+        PriorityIn:state.PriorityIn.PriorityList
     }
 }
 function mapDispatchToProps(dispatch) {
-
+    return bindActionCreators(All_List,dispatch)
 }
-export default connect(mapStateToProps,mapDispatchToProps)(age)
-// export default Page
+export default connect(mapStateToProps,mapDispatchToProps)(Page)

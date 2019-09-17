@@ -1,7 +1,8 @@
 import {
     combineReducers
 }from "redux"
-import navImageList from "./navImage"
+import {navImageList,PriorityIn} from "./navImage"
 export default combineReducers({
-    navImageList
+    navImageList,
+    PriorityIn
 })
