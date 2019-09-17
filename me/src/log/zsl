@@ -1,0 +1,9 @@
+09/17
+日志-功能：
+实现积分的页面渲染 -- integral
+    数据接口：https://m.juooo.com/Myjuooo/ajaxintegral?p=1
+    请求方式：get
+
+
+日志-详细：
+我在store里面新建了积分的项目文件
