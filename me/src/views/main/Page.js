@@ -28,7 +28,7 @@ import All_List from "../../store/actionCreact/navImage"
 
                     </div>
                     <div id={'m-category2'}>
-                            <div id={'m-category2-1'}>
+                        <div id={'m-category2-1'}>
                                 <div id={'m-category2-1-Left'}>
                                     <span>优先购票</span>
                                     <span>VIP+会员尊享权益</span>
@@ -50,12 +50,26 @@ import All_List from "../../store/actionCreact/navImage"
                                 <a className={"m-category-bottom"}>开售提醒</a>
                             </div>
                         </div>
-
-                            <div></div>
-                        </div>
+                    </div>
+                    <div>
+                        <ul id={"VipUi1"}>
+                            <li>
+                                <a>
+                                    <h3>那都是的刷新</h3>
+                                    <p>危机的口味OK Dowd请问反对</p>
+                                    <div></div>
+                                </a>
+                            </li>
+                            <li></li>
+                        </ul>
+                        <ul id={"VipUi2"}>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
-                    <div></div>
-                </div>
+            </div>
         )
     }
     componentDidMount() {
