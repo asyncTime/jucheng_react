@@ -13,8 +13,9 @@ export const changeAllScoresList = function (payload) {
 }
 export default {
     getScoresCityList(){
+        console.log("111")
        return async (dispatch) => {
-           const {data} = await axios.post("/ju/Scores/getScoresCityList")
+           const {data} = await axios.post("/ju/Myjuooo/ajaxintegral?p=1")
            console.log(data)
            dispatch(changeScoresCityList(data))
        }
