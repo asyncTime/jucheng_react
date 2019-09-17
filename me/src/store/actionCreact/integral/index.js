@@ -8,7 +8,7 @@ export const changeIntegralList = function(payload){
 export default {
     getIntegralList(p=1){
         return async (dispatch) => {
-            const {data} = await axios.get("/ju/ajaxintegral",{
+            const {data} = await axios.get("/jo/Myjuooo/ajaxintegral",{
                 params:{
                     p
                 }
