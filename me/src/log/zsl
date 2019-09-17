@@ -1,5 +1,5 @@
 09/17
-一、
+一、积分
 日志-实现功能：
 实现积分的页面渲染 -- integral  ！！！此接口不可用
     数据接口：https://m.juooo.com/Myjuooo/ajaxintegral?p=1
@@ -11,4 +11,16 @@
 1、新建组件
 2、新建路由path
 
-二、
+二、积分商城
+日志-实现功能：
+    渲染城市、积分、门票列表
+    点击城市、积分区间实现搜索门票的功能
+
+日志-操作记录:
+    接口：
+    获取城市 - getScoresCityList
+        https://m.juooo.com/Scores/getScoresCityList -- POST
+    获取详细的城市信息 - getAllScoresList
+        https://m.juooo.com/Scores/getAllScoresList -- POST
+
+
