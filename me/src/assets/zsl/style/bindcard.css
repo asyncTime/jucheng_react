@@ -1,0 +1,53 @@
+html {
+    font-size:26.7vw;
+}
+header {
+    width:100%;
+    height:.67rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 .1rem;
+    box-sizing: border-box;
+}
+header .txt{
+    font-size:.2rem;
+}
+header .icon-RectangleCopy2{
+    font-size:.4rem;
+}
+/*section*/
+.num,.pwd{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 .16rem;
+    box-sizing: border-box;
+    height:.54rem;
+    font-size:.15rem;
+    border-bottom: 2px solid #ccc;
+}
+section input{
+    width:1.61rem;
+    height:.17rem;
+    border:none;
+}
+/*footer*/
+footer{
+    width:100%;
+    height:.46rem;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+footer .bind-card{
+    width:3rem;
+    height:.34rem;
+    background: orange;
+    text-align: center;
+    line-height:.34rem;
+    font-size:.18rem;
+    color:#fff;
+    margin-left:.35rem;
+    border-radius: .2rem;
+}

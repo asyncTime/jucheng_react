@@ -6,6 +6,7 @@ import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
+import Integral from "../../component/Integral";
 export default [
     {
         path: '/',
@@ -37,5 +38,9 @@ export default [
         path:'/Wallet',
         component:Wallet,
         title:'票夹'
-    },
+    },{
+        path:"/integral",
+        component:Integral,
+        title:"积分"
+    }
 ]

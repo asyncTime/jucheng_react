@@ -1,0 +1,9 @@
+html{
+    font-size:26.7vw;
+}
+.one{
+    background:red;
+    height:1rem;
+    width:2rem;
+}
+.two{font-size:0.65rem}
