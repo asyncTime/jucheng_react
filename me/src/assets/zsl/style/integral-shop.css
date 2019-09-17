@@ -1,0 +1,86 @@
+html{
+    font-size:26.7vw;
+}
+header{
+    display:flex;
+    width:100%;
+    height:.38rem;
+    border-bottom:1px solid #ccc;
+    align-items: center;
+    padding:0 .15rem;
+    box-sizing:border-box;
+    font-size:.16rem;
+    background:#e7e7e7;
+}
+header .center{
+    flex:1;
+    margin:1.23rem;
+}
+/*nav*/
+nav {
+    width:100%;
+    height:.94rem;
+    border-bottom: .1rem #ccc solid;
+    box-sizing:border-box;
+}
+nav .inter-top .icon-jifen{
+    font-size:.17rem;
+    color:orange;
+}
+nav .inter-top{
+    display:flex;
+    font-size:.17rem;
+    align-items: center;
+    justify-content: center;
+    height:.56rem;
+    position:relative;
+    border-bottom: 1px solid #ccc;
+}
+
+nav .iten-detail{
+    font-size:.14rem;
+    color:#b2b2b2;
+    position:absolute;
+    right:.1rem;
+    top:.2rem;
+}
+nav .tab{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing:border-box;
+}
+nav .tab div{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+padding-top:.05rem;}
+/*section*/
+section .information{
+    display:flex;
+    align-items: center;
+    font-size:.1rem;
+    padding:0 .08rem;
+    box-sizing:border-box;;
+}
+section .img{
+    width:.73rem;
+    height:.84rem;
+    background:url("../img/rAoKmV0_5YOAS232AACvfaS_Ar8438.jpg") center center no-repeat;
+}
+section .info{
+    width:1.98rem;
+    height:1.08rem;
+    flex:1;
+    padding-top:.09rem;
+    box-sizing:border-box;
+    padding-left:.08rem;
+}
+section .info-title{
+    height:.27rem;
+    font-size:.15rem;
+}
+section .info-detail{
+    padding-top:.1rem;
+}

@@ -1,0 +1,36 @@
+html{
+    font-size:26.7vw;
+}
+header{
+    width:100%;
+    height:.35rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 .1rem;
+    box-sizing:border-box;
+    font-size:.2rem;
+    border-bottom:1px solid #ccc;
+}
+/*nav*/
+nav {
+    width:100%;
+    height:3.54rem;
+}
+nav .container{
+    background: url("../img/vip_plus_desc_bg.de74236.png") center center no-repeat;
+    padding: 0 .12rem 0 .12rem;
+}
+nav .con-txt{
+    height:.6rem;
+    line-height:.6rem;
+    text-align: center;
+    color:gold;
+    font-size:.35rem;
+}
+nav .word-store{
+    width:2.8rem;
+    height:3.32rem;
+    background:#f4dcc4;
+}

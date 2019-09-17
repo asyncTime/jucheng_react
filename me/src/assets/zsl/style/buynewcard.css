@@ -1,0 +1,132 @@
+html{
+    font-size:26.7vw;
+}
+header{
+    width:100%;
+    height:.35rem;
+    background: #ebebeb;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:.2rem;
+    padding: 0 .1rem;
+    box-sizing:border-box;
+}
+/*nav*/
+nav{
+    width:100%;
+    height:1.9rem;
+    background: gold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav img{
+    width:2.8rem;
+    height:1.5rem;
+}
+/*section*/
+section{
+    width:100%;
+    padding-top:.15rem;
+    box-sizing:border-box;
+}
+.vip-top{
+    height:.36rem;
+    line-height:.36rem;
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    font-size:.2rem;
+}
+.vip-bottom{
+    hieght:.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: .1rem solid #ccc;
+}
+.word{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:.15rem;
+}
+.word .icon-goupiao{
+    font-size:.2rem;
+}
+/*article*/
+article{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.art-detail-spicle{
+    height:1.66rem;
+    box-sizing:border-box;
+    border-bottom: .1rem solid #ccc;
+}
+.art-detail{
+    height:1.66rem;
+    box-sizing:border-box;
+    padding-top:.23rem;
+    border-bottom: .02rem solid #ccc;
+}
+.art-top{
+    display: flex;
+    height: .6rem;
+    line-height:.6rem;
+    font-size:.2rem;
+    justify-content: space-between;
+    padding:0 .9rem 0 .15rem;
+}
+.art-txt-spicle{
+    font-size: .2rem;
+    font-weight: bold;
+    box-sizing:border-box;
+    padding-left:.04rem;
+}
+.art-txt{
+    font-size: .2rem;
+    font-weight: bold;
+    box-sizing:border-box;
+    padding-top:.18rem;
+    padding-left:.04rem;
+}
+.art-txtmin{
+    font-size: .15rem;
+    color:#ccc;
+}
+.art-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 .4rem 0 .11rem;
+}
+.art-img img{
+    width:1.3rem;
+    height: .82rem;
+}
+.art-info{
+    flex:1;
+    margin-left:.15rem;
+}
+.art-info-t{
+    font-size:.15rem;
+    font-weight: bold;
+}
+.art-info-m{
+    color:#ccc;
+}
+.art-info-b-one{
+    font-size:.2rem;
+    color:orange;
+    font-weight: bold;
+}
+.art-info-b-two{
+    display: inline-block;
+    background: #d5a370;
+    margin-left:.1rem;
+}

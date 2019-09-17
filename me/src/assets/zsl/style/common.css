@@ -1,0 +1,15 @@
+ul,li,ol,dl,dt,dd,body,p,input,h1,h2,h3,h4,h5,h6{
+    margin:0;padding:0;
+}
+html,body{height:100%;
+    font-family: "微软雅黑";
+    font-size:12px;
+}
+img,iframe{border:none;}
+a{text-decoration: none;color:#333;}
+ul,li,ol{list-style:none;}
+
+.red{color:#f96268;}
+.green{color:#36bc99}
+.blue{color:#2eb3e8}
+.yellow{color:#ffb359}
