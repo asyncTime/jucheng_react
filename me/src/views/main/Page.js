@@ -74,9 +74,11 @@ import All_List from "../../store/actionCreact/navImage"
     }
     componentDidMount() {
         this.props.get_PriorityIn()
+        console.log(this.props,"page")
     }
  }
 function mapStateToProps(state,props) {
+    console.log(state,"page1")
     return{
         navImageList:state.navImageList.navList,
         PriorityIn:state.PriorityIn.PriorityList
