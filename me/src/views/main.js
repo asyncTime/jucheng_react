@@ -45,7 +45,7 @@ import All_List from "../store/actionCreact/navImage";
                                         </a>
                                    <NavLink  exact to={'/me'} id={'a3'}>
                                        <div>
-                                          <p  style={{background:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}></p>
+                                          <p  style={{background:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
                                           <span>我的</span>
                                        </div>
                                    </NavLink>
@@ -58,7 +58,7 @@ import All_List from "../store/actionCreact/navImage";
         this.props.get_navImageList();
         this.changeClor()
     }
-     changeClor(){
+    changeClor(){
        let num=document.querySelector("#m-navImage").getElementsByTagName('p');
            for(let i=0;i<num.length;i++){
                num[i].onclick=function (e) {

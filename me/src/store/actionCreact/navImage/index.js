@@ -32,7 +32,7 @@ export default {
                  } else {
                      console.log("7777");
                      const {data} = await axios.get("/ju/vip/index/getVipHomeSchedular?version=6.0.5&referer=2");
-                    console.log(data)
+                    console.log(data);
                      dispatch(dispatch(get_PriorityInBuy(data.data)))
                  }
              }
