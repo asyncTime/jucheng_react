@@ -19,7 +19,7 @@ class Integral extends React.Component{
             <div>
                 <header>
                     <div className="left">
-                        <span></span>
+                        <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">我的积分</div>
                     <div className="iconfont icon-sandian"></div>

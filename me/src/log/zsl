@@ -27,6 +27,7 @@
         https://m.juooo.com/Scores/getAllScoresList -- POST
 1、先把设置好的类型引入进来
 2、再把reducer中的数据改一改
-2、先能够获取到数据
+3、先能够获取到数据
+
 
 

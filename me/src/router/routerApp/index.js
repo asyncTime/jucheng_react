@@ -6,8 +6,8 @@ import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
-import Integral from "../../component/Integral";
-import IntegralShop from "../../component/IntegralShop";
+import Integral from "../../views/Integral";
+import IntegralShop from "../../views/IntegralShop";
 import Page from "../../views/main/Page";
 import Theater from "../../views/main/Theater";
 import Me from "../../views/main/Me";
