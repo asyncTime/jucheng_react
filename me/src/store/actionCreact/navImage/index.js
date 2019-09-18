@@ -1,5 +1,8 @@
-import {get_navList} from "../../actionType/navImage";
-import {get_PriorityIn} from "../../actionType/navImage"
+import {
+    get_navList,
+    get_PriorityIn,
+    get_HotShowImage
+} from "../../actionType/navImage";
 import axios from "axios"
 export function get_nav(payload) {
     return{
@@ -10,6 +13,13 @@ export function get_nav(payload) {
 export function get_PriorityInBuy(payload) {
     return{
         type:get_PriorityIn,
+        payload
+    }
+}
+export function get_HotShow(payload) {
+    console.log(payload)
+    return{
+        type:get_HotShowImage,
         payload
     }
 }
@@ -25,16 +35,27 @@ export default {
          }
      },
     get_PriorityIn(){
-         console.log("222")
              return async(dispatch)=>{
                  if (localStorage.PriorityInList) {
                      dispatch(dispatch(get_PriorityInBuy(JSON.parse(localStorage.PriorityInList))))
                  } else {
-                     console.log("7777");
                      const {data} = await axios.get("/ju/vip/index/getVipHomeSchedular?version=6.0.5&referer=2");
-                    console.log(data)
+
+                    console.log(data);
                      dispatch(dispatch(get_PriorityInBuy(data.data)))
                  }
              }
+         },
+    get_HotShowImageList(){
+         return async(dispatch)=>{
+             if(localStorage.HotShowList){
+                 console.log("11");
+                 dispatch(dispatch(get_HotShow(JSON.parse(localStorage.HotShowList))))
+             }else{
+                 const {data}=await axios.get("/ju/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=1")
+                console.log(data.data.hots_show_list)
+                 dispatch(dispatch(get_HotShow(data.data.hots_show_list)))
+             }
          }
+    }
 }

@@ -64,7 +64,7 @@ class Drawers extends React.Component {
             >
                 <div>
                     <Button  style={{ padding:"0 0 0", backgroundColor:"#fff",border:"none",color:"#232323",    boxShadow: "0 0 0 0"}}type="primary" onClick={this.showDrawer} >
-                        <span style={{color:"#efefef"}}>|</span>&ensp;<span style={{color:"#232323"}} id="city">全国</span><i className="iconfont icon-weizhi1"></i>
+                        <span style={{color:"#efefef"}}>|</span>&ensp;<span style={{color:"#232323"}} id="city">全国</span><i className="iconfont icon-weizhi"></i>
                     </Button>
                 </div>
                 <Drawer

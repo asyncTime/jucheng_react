@@ -1,11 +1,12 @@
-import Me from "../../views/main/Me"
-import Page from "../../views/main/Page"
-import Theater from "../../views/main/Theater"
+import Page from "../../views/main/Page";
+import Theater from "../../views/main/Theater";
+import Me from "../../views/main/Me";
 export default [
     {
         path:'/',
         component:Page,
-        title:'首页'
+        title:'首页',
+        exact:true
     },{
         path:'/Theater',
         component:Theater,
@@ -14,5 +15,7 @@ export default [
         path:'/Me',
         component:Me,
         title:'我的'
-    },
+    }
 ]
+
+

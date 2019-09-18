@@ -1,9 +1,12 @@
 09/17
+
+--*这是我的跟项目没关系*--
 一、积分
 日志-实现功能：
-实现积分的页面渲染 -- integral  ！！！此接口不可用
+实现积分的页面渲染 -- integral
     数据接口：https://m.juooo.com/Myjuooo/ajaxintegral?p=1
     请求方式：get
+使用假数据
 
 日志-操作记录：
 在store里面新建了积分的项目文件
@@ -22,5 +25,9 @@
         https://m.juooo.com/Scores/getScoresCityList -- POST
     获取详细的城市信息 - getAllScoresList
         https://m.juooo.com/Scores/getAllScoresList -- POST
+1、先把设置好的类型引入进来
+2、再把reducer中的数据改一改
+3、先能够获取到数据
+
 
 

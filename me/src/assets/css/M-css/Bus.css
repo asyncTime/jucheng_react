@@ -13,6 +13,7 @@ li{
     bottom:0;
     font-size:0.222rem;
     z-index: 5;
+    background: #f6f6f6;
 }
 #m-navImage a {
     display: flex;
@@ -56,13 +57,16 @@ li{
    width: 100%;
     height: 4.1rem;
 }
+#swiper-slide{
+    height: 2.8rem;
+}
 .swiper-slide img{
     width: 100%;
     height: 100%;
 }
 /*************类别***************/
 #m-category{
-    height:11rem;
+    height:12rem;
     width: 100%;
     box-sizing: border-box;
     padding: 0.53333rem 0.4rem 0;
@@ -175,17 +179,52 @@ li{
     line-height:  0.5rem;
     color:#ff6743;
 }
+#m-category3{
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 0 0.1rem;
+}
 #VipUi1{
     height: 1.8rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background:rgba(0,9,9,0);
 }
 #VipUi1 li{
-    width: 3.6rem;
+    width: 2.71rem;
     height:1.8rem;
-    border: 1px solid;
+    padding: 0 0.3rem;
+    background: #fefefe;
+    position: relative;
+    border-radius: 0.1rem;
+}
+#VipUi1 li h3{
+    height: 0.6rem;
+    line-height: .6rem;
+    font-size: 0.3rem;
+    color: #232323;
+    text-align: center
+}
+#VipUi1 li p{
+    width: 1.8rem;
+    font-size: 0.2rem;
+}
+#VipUi1_Font{
+    width: 1.8rem;
+    margin-top: 0.3rem;
+}
+#VipUi1Image{
+    width:0.98rem ;
+    height: 0.98rem;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.2rem;
+    background-size:0.98rem ;
+}
+#VipUi1 li span{
+    color: #ff6743;
 }
 #VipUi2{
     height: 2.2rem;
@@ -193,8 +232,75 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: 0 0;
+    margin-top: 0.1rem;
 }
 #VipUi2 li{
     width: 2.2rem;
     height: 2.2rem;
+    background: #fefefe;
+    border-radius: 0.1rem;
+    text-align: center;
+}
+#VipUi2 li h3{
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.3rem;
+    color: #232323
+}
+#VipUi2Image{
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: 0.1rem auto;
+    background-size:0.9rem;
+}
+#lunhui{
+    height: 2rem;
+    width: 100%;
+}
+/********热门演出*******/
+#HotShow{
+    height: 6rem;
+    width: 100%;
+    padding:0.4rem 0 0.7rem 0.32rem;
+    box-sizing: border-box;
+}
+#HotShow1{
+
+}
+#HotShow-Tilte{
+    width: 100%;
+    height:0.45rem;
+    background:pink;
+}
+#HotShow-Tilte  h3{
+    float: left;
+    font-size: 0.45rem;
+    color:#232323;
+    line-height: 0.45rem;
+}
+#HotShow-Tilte a{
+    float: right;
+    font-size: 0.4rem;
+    line-height: 0.45rem;
+    display: inline-block;
+}
+#HotShow-Image{
+    margin-top: 0.35rem;
+    background: #f6f6f6;
+}
+#HotShow-Image-small{
+    width: 2.1rem;
+    height: 3.5rem;
+
+}
+#HotShow-Image-small img{
+    width: 2.1rem;
+    height: 2.8rem;
+    border-radius: 0.1rem;
+}
+#HotShow-Image-small h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
