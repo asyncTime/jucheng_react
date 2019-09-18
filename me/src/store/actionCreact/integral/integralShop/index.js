@@ -4,13 +4,13 @@ export const changeScoresCityList = function (payload) {
         type:"changeScoresCityList",
         payload
     }
-}
+};
 export const changeAllScoresList = function (payload) {
     return {
         type:"changeAllScoresList",
         payload
     }
-}
+};
 export default {
     getScoresCityList(){
        return async (dispatch) => {

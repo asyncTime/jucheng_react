@@ -7,9 +7,4 @@ export default class Me extends React.Component{
             </div>
         )
     }
-    componentWillMount() {
-        if(!localStorage.Longin){
-            this.props.history.push('/Longin')
-        }
-    }
 }

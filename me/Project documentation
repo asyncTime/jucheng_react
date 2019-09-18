@@ -16,8 +16,7 @@
     /****************************/
     router 路由
         routerApp       App路由的路径
-        routerMe        导航路由的路径
-        routerNavLink   导航路由的跳转路径
+
      /**************************/
     store 仓库
         state               数据初始值
