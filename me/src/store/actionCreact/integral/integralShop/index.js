@@ -14,14 +14,14 @@ export const changeAllScoresList = function (payload) {
 export default {
     getScoresCityList(){
        return async (dispatch) => {
-           const {data} = await axios.post("/ju/Scores/getScoresCityList")
+           const {data} = await axios.post("/jo/Scores/getScoresCityList")
            console.log(data)
            dispatch(changeScoresCityList(data))
        }
     },
     getAllScoresList() {
         return async (dispatch) => {
-            const {data} = await axios.post("/ju/Scores/getAllScoresList");
+            const {data} = await axios.post("/jo/Scores/getAllScoresList");
             console.log(data)
             dispatch(changeAllScoresList(data))
         }

@@ -4,6 +4,7 @@
 实现积分的页面渲染 -- integral  ！！！此接口不可用
     数据接口：https://m.juooo.com/Myjuooo/ajaxintegral?p=1
     请求方式：get
+使用假数据
 
 日志-操作记录：
 在store里面新建了积分的项目文件
