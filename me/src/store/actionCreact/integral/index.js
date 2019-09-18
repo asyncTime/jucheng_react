@@ -1,21 +1,17 @@
 import axios from "axios";
+import{get_integral_list} from "../../actionType/integral"
 export const changeIntegralList = function(payload){
     return {
-        type:"CHANGE_INTEGRAL_LIST",
+        type:get_integral_list,
         payload
     }
 };
 export default {
-    getIntegralList(p=1){
+    getIntegralList(){
         return async (dispatch) => {
             // https://m.juooo.com/Myjuooo/ajaxintegral?p=1
-            const {data} = await axios.get("/jo/Myjuooo/ajaxintegral",{
-                params:{
-                    p
-                }
-            })
+            const {data} = await axios.get("/jo/integral");
             dispatch(changeIntegralList(data));
-            console.log(data)
         }
     }
 }
