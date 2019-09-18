@@ -5,13 +5,13 @@ export const changeScoresCityList = function (payload) {
         type:CHANGE_SCORE_LIST,
         payload
     }
-}
+};
 export const changeAllScoresList = function (payload) {
     return {
         type:CHANGE_ALL_SCORE_LIST,
         payload
     }
-}
+};
 export default {
     getScoresCityList(){
        return async (dispatch) => {

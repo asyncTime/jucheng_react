@@ -1,15 +1,12 @@
 import React from "react"
-export default class Me extends React.Component{
+import Title from  "../../component/my/Title"
+export default class Me extends React.Component {
     render() {
-        return(
+        return (
             <div>
-                我的
+                <Title></Title>
             </div>
         )
     }
-    componentWillMount() {
-        if(!localStorage.Longin){
-            this.props.history.push('/Longin')
-        }
-    }
 }
+
