@@ -262,7 +262,7 @@ li{
 #HotShow{
     height: 6rem;
     width: 100%;
-    padding:0.4rem 0 0.76rem 0.32rem;
+    padding:0.4rem 0 0.7rem 0.32rem;
     box-sizing: border-box;
 }
 #HotShow1{
@@ -271,5 +271,36 @@ li{
 #HotShow-Tilte{
     width: 100%;
     height:0.45rem;
-    background: #232323;
+    background:pink;
+}
+#HotShow-Tilte  h3{
+    float: left;
+    font-size: 0.45rem;
+    color:#232323;
+    line-height: 0.45rem;
+}
+#HotShow-Tilte a{
+    float: right;
+    font-size: 0.4rem;
+    line-height: 0.45rem;
+    display: inline-block;
+}
+#HotShow-Image{
+    margin-top: 0.35rem;
+    background: #f6f6f6;
+}
+#HotShow-Image-small{
+    width: 2.1rem;
+    height: 3.5rem;
+
+}
+#HotShow-Image-small img{
+    width: 2.1rem;
+    height: 2.8rem;
+    border-radius: 0.1rem;
+}
+#HotShow-Image-small h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

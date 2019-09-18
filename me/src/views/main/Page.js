@@ -3,9 +3,10 @@ import {connect} from "react-redux"
 import {
     bindActionCreators
 } from 'redux';
-import TepySlideshow from "../../component/tepySlideshow"
 import All_List from "../../store/actionCreact/navImage"
-import TepySlideshow1 from "../../component/tepySlideshow1";
+import TepySlideshow from "../../component/Page/tepySlideshow"
+import TepySlideshow1 from "../../component/Page/tepySlideshow1";
+import TepySlideshow2 from "../../component/Page/tepySlideshow2";
  class Page extends React.Component{
     render() {
         const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
@@ -14,7 +15,7 @@ import TepySlideshow1 from "../../component/tepySlideshow1";
         let list=operation_list.splice(0,2)
         return(
             <div>
-                <TepySlideshow></TepySlideshow>
+                <TepySlideshow {...this.props.navImageList.slide_list}></TepySlideshow>
                 <div id={'m-category'}>
                     <div id={'m-category1'}>
                         {
@@ -80,10 +81,7 @@ import TepySlideshow1 from "../../component/tepySlideshow1";
                         <a>></a>
                     </div>
                     <div id={'HotShow-Image'}>
-                        <div id={"HotShow-Image-small"}>
-                            <img/>
-                            <h3>的速度人推荐你拉我dry图v一般hi我就客人TV u有</h3>
-                        </div>
+                        <TepySlideshow2></TepySlideshow2>
                     </div>
                     </div>
                 </div>
@@ -93,13 +91,14 @@ import TepySlideshow1 from "../../component/tepySlideshow1";
     }
     componentDidMount() {
         this.props.get_PriorityIn();
-        this.props.get_navImageList()
+        this.props.get_navImageList();
+        this.props.get_HotShowImageList()
     }
  }
 function mapStateToProps(state,props) {
     return{
         navImageList:state.navImageList.navList,
-        PriorityIn:state.PriorityIn.PriorityList
+        PriorityIn:state.PriorityIn.PriorityList,
     }
 }
 function mapDispatchToProps(dispatch) {
