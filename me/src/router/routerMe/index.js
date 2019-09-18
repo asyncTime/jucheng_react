@@ -14,5 +14,5 @@ export default [
         path:'/Me',
         component:Me,
         title:'我的'
-    },
+    }
 ]

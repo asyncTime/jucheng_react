@@ -9,7 +9,7 @@
             main.js:导航页面
     /*****************************/
     main
-        Me.js     : 导航 我的
+        My.js     : 导航 我的
         Page.js   : 导航 首页
         Theater.js: 导航 影院
         Wallet.js : 导航 票夹

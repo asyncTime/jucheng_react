@@ -26,6 +26,7 @@ import All_List from "../store/actionCreact/navImage";
                                             })
                                         }
                     </Switch>
+                    <div id={'m-navImage'}></div>
                     <div id={'m-navImage'} onClick={this.changeClor.bind(this)}>
                                    <NavLink exact to={{pathname:'/'}} id={"a1"}>
                                         <p style={{backgroundImage:"url("+ (navImage[0]?navImage[0].pic:"")+")"}} ></p>
