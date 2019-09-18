@@ -23,7 +23,7 @@ export function getShowCityList(payload) {
 export default {
     getShowCategoryList() {
         return async(dispatch)=>{
-                const {data} = await axios.get("/jo/Search/getShowCategory?version=6.0.5&referer=2");
+                const {data} = await axios.get("/meng/Search/getShowCategory?version=6.0.5&referer=2");
                 const showCategoryList=data.data
             dispatch(getShowCategoryList(showCategoryList))
         }
@@ -37,7 +37,7 @@ export default {
     },
     getShowCityList(){
         return async (dispatch)=>{
-            const {data} = await axios.get("/jo/Search/getCity?version=6.0.5&referer=2");
+            const {data} = await axios.get("/meng/Search/getCity?version=6.0.5&referer=2");
             const showCityList=data.data;
             dispatch(getShowCityList(showCityList))
         }
