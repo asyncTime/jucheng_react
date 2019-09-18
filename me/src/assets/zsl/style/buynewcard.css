@@ -11,6 +11,7 @@ header{
     font-size:.2rem;
     padding: 0 .1rem;
     box-sizing:border-box;
+    position:fixed;
 }
 /*nav*/
 nav{

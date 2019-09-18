@@ -10,7 +10,7 @@ header{
     padding:0 .15rem;
     box-sizing:border-box;
 }
-header .left a{
+header .left {
     height:0.37rem;
     line-height:.37rem;
     font-size:0.18rem;

@@ -9,7 +9,6 @@ import {
 } from 'redux';
 import All_List from "../store/actionCreact/navImage";
 class TepySlideshow extends React.Component {
-
     render() {
         const bannerImg =this.props.ImagesList.slide_list?this.props.ImagesList.slide_list:[];
         return (
@@ -31,7 +30,6 @@ class TepySlideshow extends React.Component {
     }
     componentDidMount() {
         this.props.get_navImageList();
-        console.log(this.props.ImagesList)
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay: true,
                 loop: true,

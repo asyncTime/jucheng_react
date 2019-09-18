@@ -8,4 +8,11 @@ module.exports = function (app) {
             "^/ju": ""
         }
     }));
+    app.use("/jo",proxy({
+        target:"http://127.0.0.1",
+        changeOrigin: true,
+        pathRewrite: {
+            "^/jo": ""
+        }
+    }))
 };

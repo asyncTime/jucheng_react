@@ -7,6 +7,7 @@ import OrderFrom from "../../views/Order form"
 import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
 import Integral from "../../component/Integral";
+import IntegralShop from "../../component/IntegralShop";
 export default [
     {
         path: '/',
@@ -42,5 +43,9 @@ export default [
         path:"/integral",
         component:Integral,
         title:"积分"
+    },{
+        path:"/integralShop",
+        component:IntegralShop,
+        title:"积分商城"
     }
 ]

@@ -21,6 +21,9 @@ header .center{
     box-sizing:border-box;
     padding-left:1.35rem;
 }
+header .icon-dayuhao{
+    font-size: .2rem;
+}
 /*nav*/
 nav {
     width:100%;
