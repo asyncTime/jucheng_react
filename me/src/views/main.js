@@ -10,15 +10,14 @@ import {
 } from 'redux';
 import {connect} from "react-redux"
 import All_List from "../store/actionCreact/navImage";
-import router from "../router/routerApp";
+import router from "../router/routerMe";
  class Main extends React.Component{
     render() {
         const navImage=this.props.navImageList.bottom_list?this.props.navImageList.bottom_list:[];
-        let rout=router[0].Children;
         return(
             <div>
                 {
-                    rout.map((v,i)=>{
+                    router.map((v,i)=>{
                           return(
                              <Route {...v} key={i} ></Route>
                           )

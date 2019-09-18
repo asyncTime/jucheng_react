@@ -3,7 +3,8 @@ import router from "./router/routerApp"
 import {
   BrowserRouter as Router,
     Route,
-    Switch
+    Switch,
+    NavLink
 }from "react-router-dom"
 class App extends React.Component{
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component{
                   })
                 }
               </Switch>
+              <NavLink to={"/"}></NavLink>
           </Router>
       )
   }
