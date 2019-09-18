@@ -9,7 +9,7 @@ module.exports = function (app) {
         }
     }));
     app.use("/jo",proxy({
-        target:"https://m.juooo.com",
+        target:"http://127.0.0.1",
         changeOrigin: true,
         pathRewrite: {
             "^/jo": ""

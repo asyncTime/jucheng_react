@@ -8,6 +8,7 @@ import {
 import integralCreator from "../store/actionCreact/integral"
 class Integral extends React.Component{
     render(){
+        console.log(this.props.integralList)
         return (
             <div>
                 <header>
@@ -35,31 +36,15 @@ class Integral extends React.Component{
                     <div className="little">积分明细</div>
                 </section>
                 <article>
-                    <div className="item-integral">
-                        <div className="name">每日登录</div>
-                        <div className="time">2019.09.15 13:20:01</div>
-                        <span className="addNum">+2</span>
-                    </div><div className="item-integral">
-                        <div className="name">每日登录</div>
-                        <div className="time">2019.09.15 13:20:01</div>
-                        <span className="addNum">+2</span>
-                    </div><div className="item-integral">
-                        <div className="name">每日登录</div>
-                        <div className="time">2019.09.15 13:20:01</div>
-                        <span className="addNum">+2</span>
-                    </div><div className="item-integral">
-                        <div className="name">每日登录</div>
-                        <div className="time">2019.09.15 13:20:01</div>
-                        <span className="addNum">+2</span>
-                    </div><div className="item-integral">
-                        <div className="name">每日登录</div>
-                        <div className="time">2019.09.15 13:20:01</div>
-                        <span className="addNum">+2</span>
-                    </div><div className="item-integral">
-                        <div className="name">每日登录</div>
-                        <div className="time">2019.09.15 13:20:01</div>
-                        <span className="addNum">+2</span>
-                    </div>
+                    {
+                        this.props.integralList.map((v,i) => (
+                            <div className="item-integral" key={i}>
+                                <div className="name">{v.reason}</div>
+                                <div className="time">{v.createtime}</div>
+                                <span className="addNum">{`+${v.scores}`}</span>
+                            </div>
+                        ))
+                    }
                 </article>
             </div>
         )
