@@ -3,13 +3,19 @@ import "../../assets/lfx/css/coupon.css"
 import {
     withRouter
 }from "react-router-dom"
+import Explain from "./Explain"
 class Coupon extends React.Component{
     constructor(props){
         super(props);
     }
+
+    Click(){
+        this.props.history.push({pathname:"/Me"})
+    }
     render() {
         return(
             <div>
+
                 <div className="coupon">
                     <div className="x-title ">
                         <div className="x-title-one">
@@ -30,12 +36,13 @@ class Coupon extends React.Component{
                     </div>
                     <div className="x-content">
                         <div className="x-content-num-warp">
-                            <div className="x-content-num">
+                            <div className="x-content-num" >
                                 <div>
                                     <p><span>0</span>张未使用</p>
                                 </div>
                                 <div>
-                                    <p>优惠券规则说明</p>
+                                    <Explain>
+                                    </Explain>
                                 </div>
                             </div>
                         </div>
@@ -52,9 +59,6 @@ class Coupon extends React.Component{
                 </div>
             </div>
         )
-    }
-    Click(){
-        this.props.history.push({pathname:"/Me"})
     }
 }
 export default withRouter(Coupon);

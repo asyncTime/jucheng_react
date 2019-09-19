@@ -45,7 +45,7 @@
 }
 .x-left{
     padding-left: 0.24rem;
-    height: 50%;
+    height: 100%;
     text-align: center;
     vertical-align: middle;
 }
@@ -103,9 +103,13 @@
     text-align: center;
     border-radius: 0.10667rem;
     background: #cccccc;
+
 }
 
 /*内容部*/
+.am-modal-button{
+    color: #fd5a00;
+}
 .x-content-num-warp{
     display: inline-block;
     width: 100%;
