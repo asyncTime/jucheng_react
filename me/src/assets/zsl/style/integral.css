@@ -26,6 +26,12 @@ html,body{
     line-height:.74rem;
     height:.74rem;
 }
+#header .am-navbar{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    color: #000;
+}
 /*nav*/
 #nav{
     width:100%;

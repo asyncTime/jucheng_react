@@ -30,11 +30,8 @@ class Bubble extends React.Component {
                              overlayStyle={{ color: 'currentColor' }}
                              visible={this.state.visible}
                              overlay={[
-                                 (<Item key="4" value="scan" icon={myImg('tOtXhkIWzwotgGSeptou')} data-seed="logId">Scan</Item>),
-                                 (<Item key="5" value="special" icon={myImg('PKAgAqZWJVNwKsAJSmXd')} style={{ whiteSpace: 'nowrap' }}>My Qrcode</Item>),
-                                 (<Item key="6" value="button ct" icon={myImg('uQIYTFeRrjPELImDRrPt')}>
-                                     <span style={{ marginRight: 5 }}>Help</span>
-                                 </Item>),
+                                 (<Item key="4" value="scan" icon={myImg('tOtXhkIWzwotgGSeptou')} data-seed="logId">首页</Item>),
+                                 (<Item key="5" value="special" icon={myImg('PKAgAqZWJVNwKsAJSmXd')} style={{ whiteSpace: 'nowrap' }}>我的聚橙</Item>),
                              ]}
                              align={{
                                  overflow: { adjustY: 0, adjustX: 0 },
@@ -56,7 +53,6 @@ class Bubble extends React.Component {
                     </Popover>
                 }
             >
-                NavBar
             </NavBar>
         </div>);
     }
