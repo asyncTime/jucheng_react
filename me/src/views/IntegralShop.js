@@ -1,5 +1,6 @@
 import React from "react";
 import Pull from "../component/zsl/Pull";
+import Bubble from "../component/zsl/Bubble"
 import {
     connect
 } from "react-redux";
@@ -7,7 +8,7 @@ import {
     bindActionCreators
 } from "redux";
 import integralShopCreator from "../store/actionCreact/integral/integralShop"
-import {getAllScoresList, getScoresCityList} from "../store/reducer/integral/integralShop";
+// import {getAllScoresList, getScoresCityList} from "../store/reducer/integral/integralShop";
 class IntegralShop extends React.Component{
     constructor(props){
         super(props);
@@ -17,7 +18,8 @@ class IntegralShop extends React.Component{
     }
     render (){
         const {scoresCityList,AllScoresList} = this.props;
-        console.log(scoresCityList,AllScoresList)
+        console.log(this.props,"ddddddddd")
+        console.log(scoresCityList,AllScoresList,"vvvvv")
         return (
             <div>
                 <div id="zsl-header">
@@ -25,9 +27,7 @@ class IntegralShop extends React.Component{
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">积分商城</div>
-                    <div className="right">
-                        <span className="iconfont icon-sandian"></span>
-                    </div>
+                    <Bubble {...this.props}></Bubble>
                 </div>
                 <div id="zsl-nav">
                     <div className="inter-top">
@@ -46,9 +46,9 @@ class IntegralShop extends React.Component{
                     </div>
                 </div>
                 <div className="zsl-pull">
-                    {console.log(this.props)}
-                    {/*<Pull {...this.props.scoresCityList} {...{city:"城市"}}></Pull>*/}
-                    <Pull></Pull>
+                    {/*{console.log(this.props)}*/}
+                    <Pull {...[this.props.scoresCityList]} {...{city:"城市"}}></Pull>
+                    <Pull {...[this.props.AllScoresList]} {...{city:"积分"}}></Pull>
                 </div>
                 <div id="zsl-section">
                     {
@@ -77,10 +77,12 @@ class IntegralShop extends React.Component{
     componentDidMount(){
         this.props.getScoresCityList();
         this.props.getAllScoresList();
-        console.log()
+        // console.log(this.props.scoresCityList,0)
     }
 }
 function mapStateToProps(state) {
+    // console.log(state,333333333)
+    // console.log(state.getAllScoresList.AllScoresList,"ooooo")
     return {
         scoresCityList:state.getScoresCityList.scoresCityList,
         AllScoresList:state.getAllScoresList.AllScoresList

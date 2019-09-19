@@ -14,10 +14,18 @@ html{
 }
 #zsl-header .center{
     flex:1;
-    margin:2.4rem;
+    margin-left: 2.6rem;
 }
-#zsl-header .icon-dayuhao{
-    font-size:.4rem;
+#zsl-header .am-navbar{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: #108ee9;
+    color: #e7e7e7;
+}
+#zsl-header .am-navbar-light {
+    background-color: #e7e7e7;
+    color: #000;
 }
 /*nav*/
 #zsl-nav {
