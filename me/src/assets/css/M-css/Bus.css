@@ -8,12 +8,12 @@ li{
 #m-navImage{
     width:100%;
     height: 1.3rem;
-    border: 1px solid;
+    /*border: 1px solid;*/
     position: fixed;
     bottom:0;
     font-size:0.222rem;
     z-index: 5;
-    background: #f6f6f6;
+    background: #fefefe;
 }
 #m-navImage a {
     display: flex;
@@ -255,7 +255,7 @@ li{
     background-size:0.9rem;
 }
 #lunhui{
-    height: 2rem;
+    height: 12rem;
     width: 100%;
 }
 /********热门演出*******/
@@ -292,15 +292,92 @@ li{
 #HotShow-Image-small{
     width: 2.1rem;
     height: 3.5rem;
-
 }
-#HotShow-Image-small img{
+#HotShow-Image img{
     width: 2.1rem;
     height: 2.8rem;
     border-radius: 0.1rem;
 }
-#HotShow-Image-small h3{
+#HotShow-Image h3{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.namespace{
+    width: 2.1rem !important;
+    margin-left: 0.1rem;
+}
+#CycleOfsinging{
+    width: 100%;
+    height: 5rem;
+    padding: 0.4rem 0;
+    background: #f5f5f5;
+}
+#CycleOfsinging-1{
+    padding:0 0.2rem;
+    height: 0.5rem;
+}
+#CycleOfsinging-1 h3{
+    float: left;
+    line-height:0.5rem;
+    font-size: 0.4rem;
+    color: #232323;
+}
+#CycleOfsinging-1 a{
+    float: right;
+    line-height:0.5rem;
+    font-size: 0.4rem;
+}
+#CycleOfsinging-2{
+    height: 4.2rem;
+    margin-top:0.4rem;
+    overflow: hidden;
+}
+#CycleOfsinging-2-1{
+    height: 4rem;
+    width: 5rem;
+    margin-right: 0.1rem;
+    background: #6b4218;
+}
+#CycleOfsinging-2-1 img{
+    width: 5rem;
+    height: 3rem;
+ }
+#CycleOfsinging-2-2{
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+#CycleOfsinging-2-3{
+    text-align: center;
+}
+#Page-Vip{
+    height: 0.8rem;
+    background: #232323;
+    padding:0 0.4rem ;
+    color: #f0d1b0;
+}
+#Page-Vip-1{
+    width: 3.2rem;
+    line-height: 0.8rem;
+    font-size:0.3rem;
+    float: left;
+    font-weight: 700
+
+}
+#Page-Vip-2{
+    float:right;
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+
+}
+#Discount{
+    height: 4.47rem;
+    padding: 0 0.32rem 0.32rem 0.32rem;
+}
+#Discount1{
+    height: 3.5rem;
+    width: 4.6rem;
 }

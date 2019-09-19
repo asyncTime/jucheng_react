@@ -6,12 +6,12 @@ import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
+
+import Coupon from "../../views/Coupon";
+import Expired from "../../views/Expired"
 import Integral from "../../views/Integral";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
-import Page from "../../views/main/Page";
-import Theater from "../../views/main/Theater";
-import Me from "../../views/main/Me";
 export default [
     {
         path:'/Longin',
@@ -47,6 +47,15 @@ export default [
         component: IntegralShop,
         title: "积分商城"
     },{
+        path: "/Coupon",
+        component: Coupon,
+        title: "优惠券"
+    },
+    {
+      path:"/Expired",
+      component:Expired
+    },
+    {
         path: "/cardBag",
         component: CardBag,
         title: "我的卡包"
