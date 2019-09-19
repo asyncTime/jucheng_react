@@ -16,6 +16,8 @@ class IntegralShop extends React.Component{
         }
     }
     render (){
+        const {scoresCityList,AllScoresList} = this.props;
+        console.log(scoresCityList,AllScoresList)
         return (
             <div>
                 <div id="zsl-header">
@@ -42,16 +44,11 @@ class IntegralShop extends React.Component{
                             <span className="iconfont icon-xiaoyuhao-down-copy"></span>
                         </div>
                     </div>
-                    <div className="tab">
-                        <div className="city">
-                            城市
-                            <span></span>
-                        </div>
-                        <div className="integral">
-                            积分
-                            <span></span>
-                        </div>
-                    </div>
+                </div>
+                <div className="zsl-pull">
+                    {console.log(this.props)}
+                    {/*<Pull {...this.props.scoresCityList} {...{city:"城市"}}></Pull>*/}
+                    <Pull></Pull>
                 </div>
                 <div id="zsl-section">
                     {
@@ -80,6 +77,7 @@ class IntegralShop extends React.Component{
     componentDidMount(){
         this.props.getScoresCityList();
         this.props.getAllScoresList();
+        console.log()
     }
 }
 function mapStateToProps(state) {
