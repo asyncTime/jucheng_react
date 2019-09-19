@@ -57,6 +57,21 @@ class IntegralShop extends React.Component{
                             </div>
                         </div>
                     </div>
+                    <div className="price">
+                        <div className="information">
+                            <div className="img"></div>
+                            <div className="info">
+                                <div className="info-title">
+                                    【小橙堡】经典幻想童话剧《爱丽丝梦游泡泡仙境》-贺州站
+                                </div>
+                                <div className="info-detail">
+                                    <p>时间：2019.10.27 15:00</p>
+                                    <p>城市：贺州</p>
+                                    <p>场馆：广西贺州市文化艺术中心</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         )
