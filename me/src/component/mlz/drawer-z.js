@@ -13,7 +13,6 @@ class Drawers extends React.Component {
             visible: true,
         });
     };
-
     onClose = () => {
         this.setState({
             visible: false,
