@@ -30,8 +30,12 @@ class Bubble extends React.Component {
                              overlayStyle={{ color: 'currentColor' }}
                              visible={this.state.visible}
                              overlay={[
-                                 (<Item key="4" value="scan" icon={myImg('tOtXhkIWzwotgGSeptou')} data-seed="logId">首页</Item>),
-                                 (<Item key="5" value="special" icon={myImg('PKAgAqZWJVNwKsAJSmXd')} style={{ whiteSpace: 'nowrap' }}>我的聚橙</Item>),
+                                 (<Item key="4" value="scan" icon={myImg('tOtXhkIWzwotgGSeptou')} data-seed="logId"><span onClick={()=>{
+                                     this.props.history.push({pathname:"/"})
+                                 }}>首页</span></Item>),
+                                 (<Item key="5" value="special" icon={myImg('PKAgAqZWJVNwKsAJSmXd')} style={{ whiteSpace: 'nowrap' }}><span onClick={()=>{
+                                     this.props.history.push({pathname:"/Me"})
+                                 }}>我的聚橙</span></Item>),
                              ]}
                              align={{
                                  overflow: { adjustY: 0, adjustX: 0 },
