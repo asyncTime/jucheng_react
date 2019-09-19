@@ -11,6 +11,7 @@ import {
 import getIntegralList from "./integral"
 import {getScoresCityList,getAllScoresList} from "./integral/integralShop"
 import {showCategoryList,showList,showCityList} from "./z-show"
+import theaterList from "./theater"
 export default combineReducers({
     showCityList,
     showList,
@@ -22,6 +23,7 @@ export default combineReducers({
     getIntegralList,
     getScoresCityList,
     getAllScoresList,
+	theaterList
 
 })
 
