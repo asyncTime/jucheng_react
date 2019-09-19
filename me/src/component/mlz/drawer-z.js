@@ -39,7 +39,7 @@ class Drawers extends React.Component {
     }
     reset(){
         // this.liOnclick();
-       const reset= document.querySelector("#reset")
+        const reset= document.querySelector("#reset")
         let children=reset.parentNode.children;
         for(let i=0;i<children.length;i++){
             children[i].style.color="";
@@ -56,15 +56,15 @@ class Drawers extends React.Component {
         const cityId=this.state.cityId.cityId?this.state.cityId.cityId:"0";
         const cityName=showCityList.find((v)=>v.city_id==cityId);
         const cityResultName=cityName?cityName:"全国"
-       document.querySelector("#city").innerHTML=cityResultName.name;
+        document.querySelector("#city").innerHTML=cityResultName.name;
     }
-   componentWillMount(){
-       pubsub.subscribe("cityId",(a,cityId)=>{
-           //console.log(cityId,1111)
-           this.setState({
-               cityId
-           })
-       })
+    componentWillMount(){
+        pubsub.subscribe("cityId",(a,cityId)=>{
+            //console.log(cityId,1111)
+            this.setState({
+                cityId
+            })
+        })
     }
     render() {
         const showCityList=this.state.showCityList.showCityList?this.state.showCityList.showCityList:[];
@@ -87,7 +87,7 @@ class Drawers extends React.Component {
                     getContainer={false}
                     style={{ position: 'absolute'}}
                 >
-                 <h3>城市</h3>
+                    <h3>城市</h3>
                     <ul>
                         <i></i>
                         <li  id="reset"onClick={this.liOnclick.bind(this,0)} style={{color:"#ff6743",background:"#fff1e9"}}>全国</li>

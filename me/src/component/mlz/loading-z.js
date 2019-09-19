@@ -14,7 +14,7 @@ class Loading extends React.Component{
     };
     render(){
         return(
-                <Icon type="loading" style={{ fontSize: 24 }} spin />
+            <Icon type="loading" style={{ fontSize: 24 }} spin />
         )
     }
 }
