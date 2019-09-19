@@ -7,13 +7,19 @@ import {
 } from "react-redux";
 import integralCreator from "../store/actionCreact/integral"
 class Integral extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            sum:0
+        }
+    }
     render(){
         console.log(this.props.integralList)
         return (
             <div>
                 <header>
                     <div className="left">
-                        <span></span>
+                        <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">我的积分</div>
                     <div className="iconfont icon-sandian"></div>
@@ -38,10 +44,10 @@ class Integral extends React.Component{
                 <article>
                     {
                         this.props.integralList.map((v,i) => (
-                            <div className="item-integral" key={i}>
+                            <div className="item-integral" key={i} >
                                 <div className="name">{v.reason}</div>
                                 <div className="time">{v.createtime}</div>
-                                <span className="addNum">{`+${v.scores}`}</span>
+                                <span className="addNum" >{`+${v.scores}`}</span>
                             </div>
                         ))
                     }

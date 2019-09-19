@@ -117,6 +117,8 @@ import TepySlideshow3 from "../../component/Page/tepySlideshow3"
         )
     }
     componentDidMount() {
+        this.props.get_PriorityIn()
+        console.log(this.props,"page")
         this.props.get_PriorityIn();
         this.props.get_navImageList();
         this.props.get_HotShowImageList();
@@ -125,7 +127,6 @@ import TepySlideshow3 from "../../component/Page/tepySlideshow3"
 
  }
 function mapStateToProps(state,props) {
-     console.log(state)
     return{
         navImageList:state.navImageList.navList,
         PriorityIn:state.PriorityIn.PriorityList,

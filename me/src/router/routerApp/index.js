@@ -6,8 +6,9 @@ import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
-import Integral from "../../component/Integral";
-import IntegralShop from "../../component/IntegralShop";
+import Integral from "../../views/Integral";
+import IntegralShop from "../../views/IntegralShop";
+import CardBag from "../../views/CardBag";
 export default [
     {
         path:'/Longin',
@@ -42,6 +43,11 @@ export default [
         path: "/integralShop",
         component: IntegralShop,
         title: "积分商城"
+    },{
+
+        path: "/cardBag",
+        component: CardBag,
+        title: "我的卡包"
     },{
         path: '/',
         component: Main,

@@ -1,27 +1,28 @@
 import axios from "axios";
+import {CHANGE_SCORE_LIST,CHANGE_ALL_SCORE_LIST} from "../../../actionType/integral/integralShop";
 export const changeScoresCityList = function (payload) {
     return {
-        type:"changeScoresCityList",
+        type:CHANGE_SCORE_LIST,
         payload
     }
 };
 export const changeAllScoresList = function (payload) {
     return {
-        type:"changeAllScoresList",
+        type:CHANGE_ALL_SCORE_LIST,
         payload
     }
 };
 export default {
     getScoresCityList(){
        return async (dispatch) => {
-           const {data} = await axios.post("/jo/Scores/getScoresCityList")
+           const {data} = await axios.post("/jo/getScoresCityList")
            console.log(data)
            dispatch(changeScoresCityList(data))
        }
     },
     getAllScoresList() {
         return async (dispatch) => {
-            const {data} = await axios.post("/jo/Scores/getAllScoresList");
+            const {data} = await axios.post("/jo/getAllScoresList");
             console.log(data)
             dispatch(changeAllScoresList(data))
         }

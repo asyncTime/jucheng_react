@@ -64,14 +64,24 @@ import router from "../router/routerMe";
              })
          }
      }
+    // render() {
+    //     const navImage=this.props.navImageList.bottom_list?this.props.navImageList.bottom_list:[];
+    //     return(
+    //         <div>
+    //             {
+    //                 router.map((v,i)=>{
+    //                       return(
+    //                          <Route {...v} key={i} ></Route>
+    //                       )
+    //                 })
+    //             }
 
     componentDidMount() {
-        this.props.get_navImageList();
+        this.props.get_navImageList()
         this.changeClor()
     }
     changeClor(){
-       let num=document.querySelector("#m-navImage").getElementsByTagName('p');
-       console.log(num);
+       const num=document.querySelector("#m-navImage").getElementsByTagName('p');
            for(let i=0;i<num.length;i++){
                num[i].onclick=function (e) {
                  i===0?num[0].style.backgroundPositionY='0.84rem':num[0].style.backgroundPositionY='0rem';
