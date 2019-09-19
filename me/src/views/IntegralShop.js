@@ -9,6 +9,12 @@ import {
 import integralShopCreator from "../store/actionCreact/integral/integralShop"
 import {getAllScoresList, getScoresCityList} from "../store/reducer/integral/integralShop";
 class IntegralShop extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            score:0
+        }
+    }
     render (){
         return (
             <div>
@@ -24,8 +30,14 @@ class IntegralShop extends React.Component{
                 <div id="zsl-nav">
                     <div className="inter-top">
                         <span className="iconfont icon-jifen"></span>
-                        <span className="qwe">12</span>
-                        <div className="iten-detail">
+                        <span className="qwe">{this.props.location.state.scoreNew}</span>
+                        <div className="iten-detail" onClick={
+                            () => {
+                                this.props.history.push({
+                                    pathname:"/integral"
+                                })
+                            }
+                        }>
                             积分明细
                             <span className="iconfont icon-xiaoyuhao-down-copy"></span>
                         </div>
@@ -42,51 +54,25 @@ class IntegralShop extends React.Component{
                     </div>
                 </div>
                 <div id="zsl-section">
-                    <div className="price">
-                        <div className="information">
-                            <div className="img"></div>
-                            <div className="info">
-                                <div className="info-title">
-                                    【小橙堡】经典幻想童话剧《爱丽丝梦游泡泡仙境》-贺州站
-                                </div>
-                                <div className="info-detail">
-                                    <p>时间：2019.10.27 15:00</p>
-                                    <p>城市：贺州</p>
-                                    <p>场馆：广西贺州市文化艺术中心</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="price">
-                        <div className="information">
-                            <div className="img"></div>
-                            <div className="info">
-                                <div className="info-title">
-                                    【小橙堡】经典幻想童话剧《爱丽丝梦游泡泡仙境》-贺州站
-                                </div>
-                                <div className="info-detail">
-                                    <p>时间：2019.10.27 15:00</p>
-                                    <p>城市：贺州</p>
-                                    <p>场馆：广西贺州市文化艺术中心</p>
+                    {
+                        this.props.AllScoresList.map((v,i) => (
+                            <div className="price" key={i}>
+                                <div className="information">
+                                    <div className="img"></div>
+                                    <div className="info">
+                                        <div className="info-title">
+                                            {v.schedular_name}
+                                        </div>
+                                        <div className="info-detail">
+                                            <p>时间：{v.show_time}</p>
+                                            <p>城市：{v.city_name}</p>
+                                            <p>场馆：{v.venue_name}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="price">
-                        <div className="information">
-                            <div className="img"></div>
-                            <div className="info">
-                                <div className="info-title">
-                                    【小橙堡】经典幻想童话剧《爱丽丝梦游泡泡仙境》-贺州站
-                                </div>
-                                <div className="info-detail">
-                                    <p>时间：2019.10.27 15:00</p>
-                                    <p>城市：贺州</p>
-                                    <p>场馆：广西贺州市文化艺术中心</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        ))
+                    }
                 </div>
             </div>
         )

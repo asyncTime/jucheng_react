@@ -5,6 +5,7 @@ import {
 import {
     connect
 } from "react-redux";
+import Bubble from "../component/zsl/Bubble"
 import integralCreator from "../store/actionCreact/integral"
 class Integral extends React.Component{
     render(){
@@ -16,7 +17,9 @@ class Integral extends React.Component{
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">我的积分</div>
-                    <div className="iconfont icon-sandian"></div>
+                    <div className="iconfont icon-sandian">
+                        
+                    </div>
                 </div>
                 <div id="nav">
                     <div>
@@ -26,7 +29,14 @@ class Integral extends React.Component{
                         </div>
                         <div className="text">可用积分</div>
                         <div className="num">{this.props.totalRows * 2}</div>
-                        <div className="shop-integral">
+                        <div className="shop-integral" onClick={()=>{
+                            this.props.history.push({
+                                pathname:"/integralShop",
+                                state:{
+                                    scoreNew:this.props.totalRows * 2
+                                }
+                            })
+                        }}>
                             <span className="iconfont icon-yemian-copy-copy"></span>
                             积分商城
                         </div>
@@ -49,7 +59,6 @@ class Integral extends React.Component{
             </div>
         )
     }
-
     componentDidMount(){
         this.props.getIntegralList();
     }

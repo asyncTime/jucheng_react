@@ -9,15 +9,15 @@ html{
     align-items: center;
     padding:0 .3rem;
     box-sizing:border-box;
-    font-size:.16rem;
+    font-size:.32rem;
     background:#e7e7e7;
 }
 #zsl-header .center{
     flex:1;
-    margin:2.46rem;
+    margin:2.4rem;
 }
 #zsl-header .icon-dayuhao{
-    font-size:.2rem;
+    font-size:.4rem;
 }
 /*nav*/
 #zsl-nav {
@@ -27,12 +27,12 @@ html{
     box-sizing:border-box;
 }
 #zsl-nav .inter-top .icon-jifen{
-    font-size:.17rem;
+    font-size:.34rem;
     color:orange;
 }
 #zsl-nav .inter-top{
     display:flex;
-    font-size:.17rem;
+    font-size:.34rem;
     align-items: center;
     justify-content: center;
     height:1.16rem;
@@ -41,7 +41,7 @@ html{
 }
 
 #zsl-nav .iten-detail{
-    font-size:.14rem;
+    font-size:.28rem;
     color:#b2b2b2;
     position:absolute;
     right:.2rem;
@@ -63,7 +63,7 @@ padding-top:.1rem;}
 #zsl-section .information{
     display:flex;
     align-items: center;
-    font-size:.1rem;
+    font-size:.2rem;
     padding:0 .16rem;
     box-sizing:border-box;;
 }
@@ -82,8 +82,8 @@ padding-top:.1rem;}
 }
 #zsl-section .info-title{
     height:.54rem;
-    font-size:.15rem;
+    font-size:.3rem;
 }
 #zsl-section .info-detail{
-    padding-top:.1rem;
+    padding-top:.25rem;
 }
