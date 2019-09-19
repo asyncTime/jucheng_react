@@ -16,6 +16,9 @@ header .center{
     flex:1;
     margin:1.23rem;
 }
+header .icon-dayuhao{
+    font-size:.2rem;
+}
 /*nav*/
 nav {
     width:100%;
