@@ -4,11 +4,13 @@ import list from "../store/actionCreact/z-show"
 import {
     bindActionCreators
 } from 'redux';
-import Bables from "../component/bables"
-import Drawer from "../component/drawer-z"
+import Bables from "../component/mlz/bables"
+import Drawer from "../component/mlz/drawer-z"
+import Loading from "../component/mlz/loading-z"
 import {
     connect
 } from "react-redux"
+import pubsub from "pubsub-js";
 class Show extends Component {
     navClick(id,e){
         //这个的主要功能是传递nav的id获取相应的数据
@@ -46,6 +48,9 @@ class Show extends Component {
                             <Drawer showCityList={showCityList}></Drawer>
                         </span>
                 </div>
+                <div className="loading">
+                    <Loading></Loading>
+            </div>
                 <div className="lablesValue">
                         {
                             showList.map((v,i)=>(
@@ -70,8 +75,12 @@ class Show extends Component {
         );
     }
     componentDidMount(){
+        this.props.getShowList(0,0);
+        pubsub.subscribe("cityIds",(a,cityId)=>{
+            const city=cityId.cityId.cityId
+            this.props.getShowList(0,city);
+        })
         this.props.getShowCategoryList()
-        this.props.getShowList(0);
         this.props.getShowCityList();
     }
 }

@@ -1,4 +1,4 @@
-import { Popover, NavBar, Icon } from 'antd-mobile';
+import { Popover, NavBar } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
 import React from "react"
 const Item = Popover.Item;
