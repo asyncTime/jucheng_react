@@ -7,6 +7,8 @@
             Show.js：类别页面
             Vip.js:开通会员页面
             main.js:导航页面
+            Coupon.js:优惠券页面
+                Expired。js：已过期优惠券页面
     /*****************************/
     main
         My.js     : 导航 我的

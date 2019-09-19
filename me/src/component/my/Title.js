@@ -1,7 +1,12 @@
 import React from "react";
 import "../../assets/lfx/css/my.css";
-
+import {
+    withRouter
+}from "react-router-dom"
 class Title extends React.Component{
+    constructor(props){
+        super(props);
+    }
     render() {
         return(
             <div>
@@ -32,7 +37,7 @@ class Title extends React.Component{
                                             <p className="x-pic-main-label-item-name">积分</p>
                                             <div className="separator"> </div>
                                         </a>
-                                        <a href="" className="x-pic-main-label-item">
+                                        <a href=" " className="x-pic-main-label-item" onClick={this.Click.bind(this)}>
                                             <p className="x-pic-main-label-item-num">0</p>
                                             <p className="x-pic-main-label-item-name">优惠券</p>
                                             <div className="separator"> </div>
@@ -110,5 +115,8 @@ class Title extends React.Component{
             </div>
         )
     }
+    Click(){
+        this.props.history.push({pathname:"/Coupon"})
+    }
 }
-export default Title;
+export default withRouter(Title);

@@ -43,7 +43,7 @@ import router from "../router/routerMe";
                                         </a>
                                    <NavLink  to={'/Me'} id={'a3'}>
                                        <div>
-                                          <p  style={{background:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
+                                          <p  style={{backgroundImage:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
                                           <span>我的</span>
                                        </div>
                                    </NavLink>

@@ -1,26 +1,36 @@
 .coupon{
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 .x-title{
     backface-visibility: hidden;
     margin: 0;
-    border-bottom: 1px solid #e7e7e7;
     width: 100%;
-    height: .9666rem;
+    height: 2rem;
     font-size: 0.4rem;
     color: #212121;
-    position: absolute;
+    position: fixed;
     left: 0;top: 0;
+    z-index: 1;
 }
 .x-content{
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
     background: #f5f5f5;
     position: absolute;
-    top: 2.2rem;
-    bottom: 0.97rem;
+    top: 0;
+    bottom: 0;
+    padding-top: 2.08rem;
 }
-
+.x-footer{
+    background: #f5f5f5;
+    width: 100%;
+    height: .8rem;
+    display: flex;
+    position: fixed;
+    bottom: 0;left: 0;
+}
 /*头部*/
 .x-title-one{
     display: flex;
@@ -28,13 +38,12 @@
     left: 0;top: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 40%;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: #fdfdfd;
 }
 .x-left{
-    /*width: 1.3rem;*/
     padding-left: 0.24rem;
     height: 50%;
     text-align: center;
@@ -49,7 +58,6 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    /*margin: 0 auto;*/
     font-size: 0.34rem;
     text-align: center;
     text-overflow: ellipsis;
@@ -58,21 +66,20 @@
     align-items: center;
     width: 60%;
 }
-
+/*2*/
 .x-title-two{
     display: flex;
     position: absolute;
-    top:.9666rem;
+    top:.80rem;left: 0;
     z-index: 499;
     width: 100%;
-    height: 130%;
+    height: 60%;
     background: #f5f5f5;
 }
 .x-sub{
     padding-top: .3rem;
     display: inline-block;
     vertical-align: middle;
-    position: relative;
     width: 10.88rem;
     height: 80%;
     border-radius: 0.10667rem;
@@ -89,13 +96,12 @@
     display: inline-block;
     vertical-align: middle;
     width: 20%;
-    height:80%;
-    line-height:.80rem;
+    height:76%;
+    line-height:.65rem;
     font-size: 0.3rem;
     color: #ffffff;
     text-align: center;
     border-radius: 0.10667rem;
-    margin-left: -0.17rem;
     background: #cccccc;
 }
 
@@ -113,30 +119,26 @@
 }
 .x-content-num p{
     font-size: 0.28rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    padding-left: 0.34rem;
+    padding-right: 0.34rem;
 }
 .x-content-num span{
     color: #ee5300;
     margin-right: .1rem;
 }
 /*底部*/
-.x-footer{
-    background: #f5f5f5;
-}
+
 .x-footer-tips {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 0.4rem;
-    width: 100%;
-    font-size: 0.28rem;
-    color: #666;
-    text-align: center;
-    z-index: 3;
-}
-.x-footer-tips .iconfont{
+    display: flex;
     width: 100%;
     height: 100%;
-    font-size: 28px;
+    font-size: 0.28rem;
+    color: #666;
+    z-index: 3;
+    justify-content: center;
+    line-height: .8rem;
+}
+.x-footer-tips .x-foot-icon{
+    font-size:.3rem;
     color:#666;
 }
