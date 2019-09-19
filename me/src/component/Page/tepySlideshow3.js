@@ -6,7 +6,7 @@ class TepySlideshow3 extends React.Component {
         imgHeight: 176,
     };
     componentWillReceiveProps(nextProps, nextContext) {
-        console.log(nextProps)
+
         if(this.props!==nextProps){
             this.setState({
                 data:nextProps.list.slice(0,6)

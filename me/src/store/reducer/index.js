@@ -17,6 +17,7 @@ import {
     cardSliderList,
     cardVipRuleList
 } from "./z-show"
+import theaterList from "./theater"
 export default combineReducers({
     cardVipRuleList,
     cardSliderList,
@@ -30,6 +31,7 @@ export default combineReducers({
     getIntegralList,
     getScoresCityList,
     getAllScoresList,
+	theaterList
 
 })
 

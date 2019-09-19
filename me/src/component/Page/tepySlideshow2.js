@@ -16,23 +16,23 @@ class TepySlideshow2 extends Component {
         }
     }
     render() {
-        return (
+        return  (
             <div className="swiper-container there">
                 <div className="swiper-wrapper">
                             {
                                 this.state.dataList.map((v, i) =>(
                                     <div className="swiper-slide namespace" key={i}>
                                             <a href={v.schedular_url}>
-                                                <img src={v.pic}/>ii
+                                                <img src={v.pic} alt={'aaa'}/>
                                                 <h3>{v.show_name}</h3>
                                             </a>
                                     </div>
                                 ))
                             }
-
-                </div>
+                 </div>
              </div>
         );
+
     }
     componentDidMount(){
         new Swiper('.there', {

@@ -10,6 +10,7 @@ class Expired extends React.Component{
     render() {
         return(
             <div>
+
                 <div className="coupon">
                     <div className="x-title ">
                         <div className="x-title-one">
@@ -22,9 +23,11 @@ class Expired extends React.Component{
                             <div className="x-title-name">
                                 <span>已过期优惠券</span>
                             </div>
+
                         </div>
                     </div>
-                    <div className="x-content">
+                    <div className="x-content" style={{paddingTop:".78rem"}}>
+
                     </div>
                 </div>
             </div>
