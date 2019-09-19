@@ -52,6 +52,20 @@ class Show extends Component {
                     <Loading></Loading>
             </div>
                 <div className="lablesValue">
+                    <div className="lablesValues">
+
+                        <div className="lablesValues-left">
+                            <img src="../img/AccountBalance/host.png" alt={'类别'}/>
+                            <img src="https://image.juooo.com/group1/M00/03/A8/rAoKNV1fNqOAKR7YAAB_-x8YGi8581.jpg" alt={'类别'}/>
+                        </div>
+
+                        <div className="lablesValues-right">
+                            <p><strong>09/20 - 09/25</strong></p>
+                            <h3>音乐剧史诗巨作《贝隆夫人》 Evita-武汉站</h3>
+                            <h4>武汉 | 武汉剧院</h4>
+                            <h5><span>￥280  </span>起</h5>
+                        </div>
+                    </div>
                         {
                             showList.map((v,i)=>(
                                 <div className="lablesValues" key={v.schedular_id}>
