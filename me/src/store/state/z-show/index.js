@@ -1,5 +1,7 @@
 export default {
     showCategoryList:[],
     showList:[],
-    showCityList:[]
+    showCityList:[],
+    cardSliderList:[],
+    cardVipRuleList:[]
 }

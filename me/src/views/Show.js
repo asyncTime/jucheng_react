@@ -4,7 +4,7 @@ import list from "../store/actionCreact/z-show"
 import {
     bindActionCreators
 } from 'redux';
-import Bables from "../component/mlz/bables"
+import Bables from "../component/mlz/bables-z"
 import Drawer from "../component/mlz/drawer-z"
 import Loading from "../component/mlz/loading-z"
 import {

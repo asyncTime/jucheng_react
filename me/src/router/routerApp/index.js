@@ -12,6 +12,7 @@ import Expired from "../../views/Expired"
 import Integral from "../../views/Integral";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
+import CardProduct from "../../views/CardProduct"
 export default [
     {
         path:'/Longin',
@@ -54,6 +55,10 @@ export default [
     {
       path:"/Expired",
       component:Expired
+    },
+    {
+        path:"/CardProduct",
+        component:CardProduct
     },
     {
         path: "/cardBag",
