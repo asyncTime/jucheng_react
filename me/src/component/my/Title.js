@@ -3,7 +3,6 @@ import "../../assets/lfx/css/my.css";
 import {
     withRouter
 }from "react-router-dom";
-import Bables from "../bables"
 class Title extends React.Component{
     constructor(props){
         super(props);

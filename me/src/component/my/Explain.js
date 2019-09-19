@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, List, Button, WhiteSpace, WingBlank, Icon } from 'antd-mobile';
+import { Modal,WhiteSpace, WingBlank, } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
 function closest(el, selector) {
     const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
@@ -44,7 +44,7 @@ class Explain extends React.Component {
     render() {
         return (
             <WingBlank>
-                <text onClick={this.showModal('modal1')}>优惠券规则说明</text>
+                <p onClick={this.showModal('modal1')}>优惠券规则说明</p>
                 <WhiteSpace />
                 <Modal
                     visible={this.state.modal1}
