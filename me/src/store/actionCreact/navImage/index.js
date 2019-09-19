@@ -1,7 +1,8 @@
 import {
     get_navList,
     get_PriorityIn,
-    get_HotShowImage
+    get_HotShowImage,
+    get_CycleOfsinging
 } from "../../actionType/navImage";
 import axios from "axios"
 export function get_nav(payload) {
@@ -17,9 +18,14 @@ export function get_PriorityInBuy(payload) {
     }
 }
 export function get_HotShow(payload) {
-    console.log(payload)
     return{
         type:get_HotShowImage,
+        payload
+    }
+}
+export function grt_CycleOfsinging(payload) {
+    return{
+        type:get_CycleOfsinging,
         payload
     }
 }
@@ -57,5 +63,16 @@ export default {
                  dispatch(dispatch(get_HotShow(data.data.hots_show_list)))
              }
          }
+    },
+    grt_CycleOfsingingList(){
+        return async(dispatch)=>{
+            if(localStorage.CycleOfsingingList){
+                dispatch(dispatch(grt_CycleOfsinging(JSON.parse(localStorage.CycleOfsingingList))))
+            }else{
+                const {data}=await axios.get("/ju/home/index/getTourRecommendList?city_id=0&version=6.0.5&referer=2")
+                console.log(data.data)
+                dispatch(dispatch(grt_CycleOfsinging(data.data.tour_show_list)))
+            }
+        }
     }
 }

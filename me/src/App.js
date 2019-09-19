@@ -19,7 +19,8 @@ class App extends React.Component{
                   })
                 }
               </Switch>
-              <NavLink to={"/"}></NavLink>
+              < NavLink to={'/'}></NavLink>
+
           </Router>
       )
   }

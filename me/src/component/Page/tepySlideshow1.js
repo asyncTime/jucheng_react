@@ -1,12 +1,12 @@
-import React, {Component} from '_react@16.9.0@react';
-// import Swiper from "swiper"
-// import 'swiper/dist/css/swiper.min.css'
+import React, {Component} from 'react';
+import Swiper from "swiper"
+import 'swiper/dist/css/swiper.min.css'
 class TepySlideshow1 extends Component {
     render() {
         return (
             <div>
                 <div id={'m-category2-2'}>
-                    <div className="swiper-container">
+                    <div className="swiper-container two">
                         <div className="swiper-wrapper">
                             {
                               this.props.list.map((v,i)=>(
@@ -20,7 +20,7 @@ class TepySlideshow1 extends Component {
                                                 <span>{v.pre_time}</span>
                                                 <span>开始</span>
                                             </p>
-                                            <a className={"m-category-bottom"}>开售提醒</a>
+                                            <a className={"m-category-bottom"} href={"/Longin"}>开售提醒</a>
                                         </div>
                                     </div>
                                 ))
@@ -32,6 +32,17 @@ class TepySlideshow1 extends Component {
                 </div>
             </div>
         );
+    }
+    componentDidMount(){
+        new Swiper('.two', {
+            autoplay: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+        })
     }
 }
 

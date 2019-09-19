@@ -9,9 +9,6 @@ import Wallet from "../../views/main/Wallet";
 import Integral from "../../views/Integral";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
-import Page from "../../views/main/Page";
-import Theater from "../../views/main/Theater";
-import Me from "../../views/main/Me";
 export default [
     {
         path:'/Longin',
@@ -47,6 +44,7 @@ export default [
         component: IntegralShop,
         title: "积分商城"
     },{
+
         path: "/cardBag",
         component: CardBag,
         title: "我的卡包"
