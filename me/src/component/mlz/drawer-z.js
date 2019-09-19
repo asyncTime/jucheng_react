@@ -1,12 +1,8 @@
 import React from "react"
 import { Drawer, Button } from 'antd';
-import "../assets/mlz/css/lables.css"
+import pubsub from "pubsub-js";
+import "../../assets/mlz/css/lables.css"
 class Drawers extends React.Component {
-    constructor(props){
-        super(props);
-        console.log(this.state.cityId)
-
-    }
     state = {
         visible: false,
         showCityList:[],
@@ -17,14 +13,13 @@ class Drawers extends React.Component {
             visible: true,
         });
     };
-
     onClose = () => {
         this.setState({
             visible: false,
         });
     };
     componentWillReceiveProps(nextProps){
-        if(this.props!=nextProps){
+        if(this.props!==nextProps){
             this.setState({
                 showCityList:nextProps,
                 cityId:nextProps
@@ -40,20 +35,37 @@ class Drawers extends React.Component {
         }
         e.currentTarget.style.color="#ff6743"
         e.currentTarget.style.background="#fff1e9"
-        this.setState({
-            cityId:id
-        });
-
+        pubsub.publish("cityId",{cityId:id});
     }
     reset(){
-
+        // this.liOnclick();
+        const reset= document.querySelector("#reset")
+        let children=reset.parentNode.children;
+        for(let i=0;i<children.length;i++){
+            children[i].style.color="";
+            children[i].style.background=""
+        }
+        reset.style.color="#ff6743"
+        reset.style.background="#fff1e9"
+        document.querySelector("#city").innerHTML="全国";
     }
-
-   determine(){//确定
-
+    submit(){
+        pubsub.publish("cityIds",{cityId:this.state.cityId});
+        this.onClose()
+        const showCityList=this.state.showCityList.showCityList?this.state.showCityList.showCityList:[];
+        const cityId=this.state.cityId.cityId?this.state.cityId.cityId:"0";
+        const cityName=showCityList.find((v)=>v.city_id==cityId);
+        const cityResultName=cityName?cityName:"全国"
+        document.querySelector("#city").innerHTML=cityResultName.name;
     }
-
-
+    componentWillMount(){
+        pubsub.subscribe("cityId",(a,cityId)=>{
+            //console.log(cityId,1111)
+            this.setState({
+                cityId
+            })
+        })
+    }
     render() {
         const showCityList=this.state.showCityList.showCityList?this.state.showCityList.showCityList:[];
         return (
@@ -63,7 +75,7 @@ class Drawers extends React.Component {
                 }}
             >
                 <div>
-                    <Button  style={{ padding:"0 0 0", backgroundColor:"#fff",border:"none",color:"#232323",    boxShadow: "0 0 0 0"}}type="primary" onClick={this.showDrawer} >
+                    <Button  style={{ padding:"0 0 0", backgroundColor:"#fff",border:"none",color:"#232323",boxShadow: "0 0 0 0"}}type="primary" onClick={this.showDrawer} >
                         <span style={{color:"#efefef"}}>|</span>&ensp;<span style={{color:"#232323"}} id="city">全国</span><i className="iconfont icon-weizhi"></i>
                     </Button>
                 </div>
@@ -75,19 +87,19 @@ class Drawers extends React.Component {
                     getContainer={false}
                     style={{ position: 'absolute'}}
                 >
-                 <h3>城市</h3>
+                    <h3>城市</h3>
                     <ul>
                         <i></i>
+                        <li  id="reset"onClick={this.liOnclick.bind(this,0)} style={{color:"#ff6743",background:"#fff1e9"}}>全国</li>
                         {
                             showCityList.map((v,i)=>(
                                 <li key={v.city_id} onClick={this.liOnclick.bind(this,v.city_id)}>{v.name}</li>
                             ))
                         }
-
                     </ul>
                     <div className="drawer-bottom">
                         <button onClick={this.reset.bind(this)}>重置</button>
-                        <button onClick={this.determine.bind(this)}>确定</button>
+                        <button onClick={this.submit.bind(this)}>确定</button>
                     </div>
                 </Drawer>
             </div>
