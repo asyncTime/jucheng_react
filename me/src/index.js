@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd-mobile/dist/antd-mobile.css';
 import App from './App';
+import { DatePicker } from 'antd';
+import 'antd/dist/antd.css';
 import "./assets/css/M-css/Bus.css";
 import "./assets/zsl/style/common.css"
 import "./assets/zsl/style/integral.css"
