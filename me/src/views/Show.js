@@ -31,8 +31,8 @@ class Show extends Component {
                     <div className="lablesValues">
 
                         <div className="lablesValues-left">
-                            <img src="../img/AccountBalance/host.png"/>
-                            <img src="https://image.juooo.com/group1/M00/03/A8/rAoKNV1fNqOAKR7YAAB_-x8YGi8581.jpg"/>
+                            <img src="../img/AccountBalance/host.png" alt={'类别'}/>
+                            <img src="https://image.juooo.com/group1/M00/03/A8/rAoKNV1fNqOAKR7YAAB_-x8YGi8581.jpg" alt={'类别'}/>
                         </div>
 
                         <div className="lablesValues-right">
