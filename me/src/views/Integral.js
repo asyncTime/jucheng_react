@@ -55,7 +55,6 @@ class Integral extends React.Component{
     }
 }
 function mapToProps(state){
-    console.log(state)
     return {
         integralList:state.getIntegralList.integralList,
         totalRows:state.getIntegralList.totalRows
