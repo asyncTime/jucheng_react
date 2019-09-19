@@ -11,7 +11,8 @@ export default {
         return async (dispatch) => {
             // https://m.juooo.com/Myjuooo/ajaxintegral?p=1
             const {data} = await axios.get("/jo/integral");
-            dispatch(changeIntegralList(data));
+            const {list,totalRows} = data;
+            dispatch(changeIntegralList({list,totalRows}));
         }
     }
 }
