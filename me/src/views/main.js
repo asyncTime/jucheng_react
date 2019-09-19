@@ -49,7 +49,7 @@ import router from "../router/routerMe";
                      </a>
                      <NavLink  to={'/Me'} id={'a3'}>
                          <div>
-                             <p  style={{background:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
+                             <p  style={{backgroundImage:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
                              <span>我的</span>
                          </div>
                      </NavLink>
@@ -58,7 +58,7 @@ import router from "../router/routerMe";
          )
      }
      componentWillReceiveProps(nextProps, nextContext) {
-         if(this.props!=nextProps){
+         if(this.props!==nextProps){
              this.setState({
                  dataList:nextProps.navImageList
              })
@@ -76,36 +76,6 @@ import router from "../router/routerMe";
     //                 })
     //             }
 
-// <<<<<<< HEAD
-//                     <div id={'m-navImage'} onClick={this.changeClor.bind(this)}>
-//                                    <NavLink exact to={'/'} id={"a1"}>
-//                                         <p style={{backgroundImage:"url("+ (navImage[0]?navImage[0].pic:"")+")"}} ></p>
-//                                    </NavLink>
-//                                    <NavLink   to={'/Theater'}>
-//                                         <div>
-//                                            <p  className={'m-navImage1'} ref={'name'} style={{backgroundImage:"url("+ (navImage[1]?navImage[1].pic:"")+")"}}></p>
-//                                            <span>剧院</span>
-//                                         </div>
-//                                    </NavLink>
-//                                    <a href={"/wallet"}>
-//                                             <div>
-//                                                 <p  style={{backgroundImage:"url("+ (navImage[2]?navImage[2].pic:"")+")"}}>
-//                                                 </p>
-//                                                 <span>票夹</span>
-//                                             </div>
-//                                         </a>
-//                                    <NavLink  to={'/Me'} id={'a3'}>
-//                                        <div>
-//                                           <p  style={{backgroundImage:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
-//                                           <span>我的</span>
-//                                        </div>
-//                                    </NavLink>
-//                                 </div>
-//             </div>
-//         )
-//     }
-// =======
-// >>>>>>> 08b47462c288525ceee0d530df079c2ba1f2494d
     componentDidMount() {
         this.props.get_navImageList()
         this.changeClor()

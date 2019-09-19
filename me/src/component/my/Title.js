@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/lfx/css/my.css";
 import {
     withRouter
-}from "react-router-dom"
+}from "react-router-dom";
 class Title extends React.Component{
     constructor(props){
         super(props);
@@ -14,7 +14,7 @@ class Title extends React.Component{
                     <div className="x-my">
                         <div className="x-header">
                             <div className="x-pic">
-                                <i className="iconfont ju-icon-setting1">&#xe612;</i>
+                                <i className="iconfont icon-set"> </i>
                                 <div className="x-pic-main">
                                     <div className="x-pic-main-head">
                                         <div className="x-pic-main-head-pic">
@@ -39,9 +39,6 @@ class Title extends React.Component{
                                         </a>
 
                                         <a href=" " className="x-pic-main-label-item" onClick={this.Click.bind(this)}>
-                                        </a>
-                                        <a href="/#" className="x-pic-main-label-item">
-
                                             <p className="x-pic-main-label-item-num">0</p>
                                             <p className="x-pic-main-label-item-name">优惠券</p>
                                             <div className="separator"> </div>
