@@ -10,7 +10,7 @@ class TepySlideshow extends React.Component {
     }
 
     componentWillReceiveProps(nextProps, nextContext) {
-        if(this.props!=nextProps){
+        if(this.props!==nextProps){
             this.setState({
                 dataList:nextProps.list
             })
@@ -19,8 +19,7 @@ class TepySlideshow extends React.Component {
     }
 
     render() {
-        console.log(this.state.dataList.length)
-       // const bannerImg =this.props.ImagesList.slide_list?this.props.ImagesList.slide_list:[];
+        console.log(this.state.dataList)
         return (
                  <div className="swiper-container one">
                      <div className="swiper-wrapper">
@@ -28,7 +27,7 @@ class TepySlideshow extends React.Component {
                              this.state.dataList.map((v,i)=>(
                                 <div className="swiper-slide" key={i}>
                                     <a href={v.url}>
-                                        <img src={v.image_url} />
+                                        <img src={v.image_url} alt={'aaa'} />
                                     </a>
                                 </div>
                             ))

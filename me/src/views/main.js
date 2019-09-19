@@ -49,7 +49,7 @@ import router from "../router/routerMe";
                      </a>
                      <NavLink  to={'/Me'} id={'a3'}>
                          <div>
-                             <p  style={{background:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
+                             <p  style={{backgroundImage:"url("+ (navImage[3]?navImage[3].pic:"")+")"}}> </p>
                              <span>我的</span>
                          </div>
                      </NavLink>
@@ -58,26 +58,14 @@ import router from "../router/routerMe";
          )
      }
      componentWillReceiveProps(nextProps, nextContext) {
-         if(this.props!=nextProps){
+         if(this.props!==nextProps){
              this.setState({
                  dataList:nextProps.navImageList
              })
          }
      }
-    // render() {
-    //     const navImage=this.props.navImageList.bottom_list?this.props.navImageList.bottom_list:[];
-    //     return(
-    //         <div>
-    //             {
-    //                 router.map((v,i)=>{
-    //                       return(
-    //                          <Route {...v} key={i} ></Route>
-    //                       )
-    //                 })
-    //             }
-
     componentDidMount() {
-        this.props.get_navImageList()
+        this.props.get_navImageList();
         this.changeClor()
     }
     changeClor(){

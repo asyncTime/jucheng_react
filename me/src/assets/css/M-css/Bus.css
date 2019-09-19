@@ -353,6 +353,10 @@ li{
 #CycleOfsinging-2-3{
     text-align: center;
 }
+/**********尊享折扣**********************/
+#m-Discount{
+    padding-bottom: 0.6rem;
+}
 #Page-Vip{
     height: 0.8rem;
     background: #232323;
@@ -374,10 +378,300 @@ li{
 
 }
 #Discount{
-    height: 4.47rem;
-    padding: 0 0.32rem 0.32rem 0.32rem;
+    height: 4.4rem;
+    padding: 0 0 0.32rem 0;
+    background-color: #f5f5f5;
+}
+#Discount-TL{
+    height: 0.8rem;
+    font-size: 0.3rem;
+    line-height: 0.8rem;
+}
+#Discount-TL-1{
+    float: left;
+    width: 4.4rem;
+    padding-left:0.3rem ;
+}
+#Discount-TL-1 h3{
+    float: left;
+}
+#Discount-TL-2{
+    float: right;
+    width:2.2rem;
+    margin-left: 0.1rem;
+}
+#Discount-TL-2 h3{
+    float: left;
+}
+#Discount-TL-2 span{
+    float: right;
+}
+#Discount-TL-1 span{
+    float: right;
 }
 #Discount1{
     height: 3.5rem;
-    width: 4.6rem;
+    width: 4.8rem;
+    float: left;
 }
+#Discount2{
+    width: 2.2rem;
+    height:3.5rem;
+    float: right;
+}
+#Discount1-2{
+    width: 2.1rem;
+    height: 3.6rem;
+    float: left;
+    margin-left: 0.25rem;
+}
+#Discount1-3{
+    width: 2.1rem;
+    height: 3.6rem;
+    float: right;
+    margin-right: 0.2rem;
+}
+#Discount1-2 p{
+    width: 2.1rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+#Discount1-2 p span{
+    color: #ff6743;
+    font-size: 0.4rem;
+}
+#Discount1-3 p{
+    width: 2.1rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+ }
+#Discount1-3 div{
+    width: 2.1rem;
+    height: 3rem;
+}
+#Discount1-3 p span{
+    color: #ff6743;
+    font-size: 0.2rem;
+    text-align: center;
+}
+#Discount1-2 div{
+    width: 2.1rem;
+    height: 3rem;
+ }
+/***********类别会*组件***************/
+#Categories {
+
+}
+#Categories-Tilte{
+    height:0.5rem;
+}
+#Categories-Tilte h3{
+    font-size:0.4rem;
+    line-height: 0.5rem;
+    color: #232323;
+    float: left;
+    margin-left:0.32rem;
+}
+#Categories-Tilte span{
+    margin-right: 0.3rem;
+    float: right;
+    line-height: 0.5rem;
+    font-size: 0.4rem;
+}
+#Categories-1{
+    height: 3rem;
+    background: #6b4218;
+    padding: 0.3rem 0 0.3rem 0.3rem;
+    margin-top: 0.4rem;
+}
+#Categories-1-Img{
+     width: 2.2rem;
+    height: 3rem;
+    border-radius:0.2rem;
+    float: left;
+}
+#Categories-1-Img img{
+    width: 2.2rem;
+    height: 3rem;
+}
+#Categories-1-Size{
+    width:4.65rem;
+    height: 2.6rem;
+    padding-top:0.35rem;
+    float:left;
+    margin-left:0.3rem;
+}
+#Categories-1-SizeP{
+    height: 0.5rem;
+    color: #f6f6f6;
+    line-height: 0.5rem;
+}
+#Categories-1-Size h3{
+    width:4.3rem;
+    height: 0.8rem;
+    font-size:0.35rem;
+    margin-top: 0.3rem;
+    color: #f6f6f6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*//white-space: nowrap;*/
+}
+#Categories-1-SizeP2{
+    font-size:0.25rem;
+    color: #f6f6f6;
+    margin-top: 0.35rem;
+}
+#Categories-Image{
+    padding: 0.3rem 0 0 0.3rem;
+    height:4.1rem;
+}
+#Categories-Img{
+    height: 4.1rem;
+    width: 2.2rem;
+    border-right: 0.1rem solid #f6f6f6;
+}
+#Categories-Img img{
+    width: 2.2rem;
+    height: 3rem;
+    border-radius: 0.1rem;
+}
+#Categories-Image-H3{
+    width: 2.2rem;
+    font-size: 0.35rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#Categories-Img p{
+    margin-top: 0.1rem;
+    width: 2.2rem;
+    height:0.3rem;
+ }
+#Categories-Img p span{
+    color: #ff6743;
+    font-size: 0.2rem;
+}
+/************热门******************/
+#Hot{
+    height: 6.8rem;
+    margin-bottom: 0.4rem;
+    padding-left:0.3rem;
+    margin-top: 0.5rem;
+}
+#Hot-Tlite{
+    height:0.56rem;
+}
+#Hot-Tlite h3{
+    float: left;
+    font-size: 0.45rem;
+    line-height: 0.56rem;
+}
+#Hot-Tlite span{
+    float: right;
+    font-size: 0.4rem;
+    font-size: 0.4rem;
+    line-height: 0.56rem;
+}
+#Hot-body{
+    height: 5.9rem;
+    margin-top: 0.37rem;
+}
+#Hot-body-1{
+    width:4.5rem;
+    height: 5.1rem;
+    padding: 0.4rem 0.35rem;
+    border: 0.02rem solid #ebebeb;
+    border-radius:0.2rem;
+}
+#Hot-body-1-1{
+    width: 4.5rem;
+    height: 0.95rem;
+}
+#Hot-body-1-1Image{
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    background-size: 100%;
+}
+#Hot-body-1-1Size{
+    width: 2.5rem;
+    height: 1rem;
+    margin-left: 0.2rem;
+    float: left;
+}
+#Hot-body-1-1Size h3{
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.35rem;
+}
+#Hot-body-1-1Size p{
+    margin-top: 0.15rem;
+    font-size: 0.14rem;
+    line-height: 0.15rem;
+    float: left;
+}
+#Hot-body-1-1 span{
+    float: right;
+    font-size: 0.4rem;
+    line-height:1rem;
+}
+#Hot-body-1-2{
+    width: 4.5rem;
+    height: 0.7rem;
+}
+#Hot-body-1-2P{
+    font-size:0.3rem;
+    width: 4.5rem;
+    height:0.6rem;
+}
+#Hot-body-1-2P span{
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height:0.35rem;
+}
+#Hot-body-Xian{
+    width:4.5rem;
+    height: 0.05rem;
+    background: #cccccc;
+    border-radius:0.1rem;
+    position: relative;
+}
+#Hot-body-Xian span{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background:#cccccc;
+    border-radius: 0.2rem;
+}
+#Hot-body-Xian span:nth-child(1){
+    left: 25%;
+    bottom: -0.07rem;
+}
+#Hot-body-Xian span:nth-child(2){
+    left: 75%;
+    bottom: -0.07rem;
+}
+#Hot-body-1-3{
+    width: 4.5rem;
+    height: 3rem;
+    margin-top: 0.37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Hot-body-1-3 li{
+    width:2.2rem;
+    height: 3.1rem;
+}
+#Hot-body-1-3 li img{
+    width: 2.1rem;
+    height: 3rem;
+    border-radius: 0.1rem;
+}
+
+
+
+
+
+

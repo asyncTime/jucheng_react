@@ -3,7 +3,10 @@ import {
     get_navList,
     get_PriorityIn,
     get_HotShowImage,
-    get_CycleOfsinging
+    get_CycleOfsinging,
+    get_prior,
+    get_Categories,
+    get_theatre_list,
 } from "../../actionType/navImage"
 export  function navImageList(state=initState,{type,payload}) {
     state = JSON.parse(JSON.stringify(state));
@@ -36,5 +39,28 @@ export function CycleOfsinging(state=initState,{type,payload}) {
         localStorage.CycleOfsingingList=JSON.stringify(state.tour_show_list)
     }
     return state
-
+}
+export function PriorList(state=initState,{type,payload}) {
+    state = JSON.parse(JSON.stringify(state));
+    if(type===get_prior){
+        state.PriorList=payload;
+        localStorage.priorAllList=JSON.stringify(state.PriorList)
+    }
+    return state
+}
+export function Categories(state=initState,{type,payload}) {
+    state = JSON.parse(JSON.stringify(state));
+    if(type===get_Categories){
+        state.Categories=payload;
+        localStorage.CategoriesList=JSON.stringify(state.Categories)
+    }
+    return state
+}
+export function theatre(state=initState,{type,payload}){
+    state = JSON.parse(JSON.stringify(state));
+    if(type===get_theatre_list){
+        state.Categories=payload;
+        localStorage.theatre=JSON.stringify(state.Categories)
+    }
+    return state
 }

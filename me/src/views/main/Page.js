@@ -3,19 +3,22 @@ import {connect} from "react-redux"
 import {
     bindActionCreators
 } from 'redux';
-// import pubsub from "pubsub-js"
 import All_List from "../../store/actionCreact/navImage"
 import TepySlideshow from "../../component/Page/tepySlideshow"
 import TepySlideshow1 from "../../component/Page/tepySlideshow1";
 import TepySlideshow2 from "../../component/Page/tepySlideshow2";
-import TepySlideshow3 from "../../component/Page/tepySlideshow3"
+import TepySlideshow3 from "../../component/Page/tepySlideshow3";
+import TepySlideshow4 from "../../component/Page/teySlideshow4";
+import Categories from "../../component/Page/Categories";
  class Page extends React.Component{
     render() {
-        console.log(this.props.tour_show_list)
+
         const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
         const PriorityInList=this.props.PriorityIn?this.props.PriorityIn.priorList:[];
         let operation_list=this.props.navImageList.operation_list?this.props.navImageList.operation_list:[];
         let list=operation_list.splice(0,2);
+        const PriorListTwo=this.props.PriorList?this.props.PriorList.discountList:[];
+        const PriorListOne=this.props.PriorList?this.props.PriorList.priorList[0]:[];
         return(
             <div>
                 <TepySlideshow list={this.props.navImageList.slide_list}></TepySlideshow>
@@ -94,44 +97,83 @@ import TepySlideshow3 from "../../component/Page/tepySlideshow3"
                     <div id={'CycleOfsinging-2'}>
                         <TepySlideshow3 list={this.props.tour_show_list}></TepySlideshow3>
                     </div>
-
                 </div>
-                <div>
+                <div id={'m-Discount'}>
                     <div id={'Page-Vip'}>
                         <div id={'Page-Vip-1'}>
-                            <span className={'icon-shouye'}></span>
+                            <span className={'iconfont icon-shouye'}></span>
                             <span>VIP+会员尊享权益</span>
                         </div>
                         <div id={'Page-Vip-2'}>
                             <span>99元/年</span>
-                            <span className={'icon-next'}></span>
+                            <span className={'iconfont icon-next'}></span>
                         </div>
                     </div>
                     <div id={'Discount'}>
-                        <div id={'Discount1'}></div>
-                        <div id={'Discount2'}></div>
+                        <div id={'Discount-TL'}>
+                            <div id={'Discount-TL-1'}>
+                                <h3>专享折扣</h3>
+                                <span> ></span>
+                            </div>
+                            <div id={'Discount-TL-2'}>
+                                <h3>优先购票</h3>
+                                <span> ></span>
+                            </div>
+                        </div>
+                        <div id={'Discount1'}>
+                            {
+                                PriorListTwo.map((v,i)=>(
+                                    <div id={'Discount1-2'} key={i}>
+                                        <div>
+                                            <img src={v.pic} alt={"bbb"}/>
+                                        </div>
+                                        <p><span>{v.min_discount}</span>折</p>
+                                    </div>
+                                ))
+                            }
+
+                        </div>
+                        <div id={'Discount2'}>
+                            <div id={'Discount1-3'}>
+                                <div>
+                                    <img src={PriorListOne.pic}/>
+                                </div>
+                                <p><span>{PriorListOne.pre_time}</span>开始</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <Categories children={this.props.Categories?this.props.Categories[0]:[]} background={{backgroundColor:'rgba(0,0,0,.2)'}}></Categories>
+                <Categories children={this.props.Categories?this.props.Categories[1]:[]} background={{backgroundColor:' rgb(185, 175, 157)'}}></Categories>
+                <Categories children={this.props.Categories?this.props.Categories[2]:[]} background={{backgroundColor:'rgb(108, 27, 15)'}}></Categories>
+                <Categories children={this.props.Categories?this.props.Categories[3]:[]} background={{backgroundColor:'rgb(127, 170, 174)'}}></Categories>
+                <Categories children={this.props.Categories?this.props.Categories[4]:[]} background={{backgroundColor:'rgb(152, 93, 64)'}}></Categories>
+                <TepySlideshow4 {...this.props.theatre}></TepySlideshow4>
                 <div id={"lunhui"}></div>
             </div>
         )
     }
     componentDidMount() {
-        this.props.get_PriorityIn()
-        console.log(this.props,"page")
+        this.props.get_PriorityIn();
         this.props.get_PriorityIn();
         this.props.get_navImageList();
         this.props.get_HotShowImageList();
-        this.props.grt_CycleOfsingingList()
+        this.props.grt_CycleOfsingingList();
+        this.props.get_priorAll();
+        this.props.get_CategoriesAll();//类别会
+        this.props.get_theatre_listAll()//热门场会
     }
-
  }
 function mapStateToProps(state,props) {
+     console.log(state)
     return{
         navImageList:state.navImageList.navList,
         PriorityIn:state.PriorityIn.PriorityList,
         HotShow:state.HotShow.HotShow,
-        tour_show_list:state.CycleOfsinging.tour_show_list
+        tour_show_list:state.CycleOfsinging.tour_show_list,
+        PriorList:state.PriorList.PriorList,
+        Categories:state.Categories.Categories,
+        theatre:state.theatre.Categories
     }
 }
 function mapDispatchToProps(dispatch) {
