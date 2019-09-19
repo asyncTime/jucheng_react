@@ -7,7 +7,7 @@ import {
 import {
     bindActionCreators
 } from 'redux';
-import All_List from "../store/actionCreact/theater"
+import All_List from "../../store/actionCreact/theater"
 class Theaterlun extends React.Component {
 	
     render() {

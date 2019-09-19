@@ -10,7 +10,7 @@ import {
 } from 'redux';
 import All_List from "../../store/actionCreact/theater"
 
-import Theaterlun from "../../component/theaterlun"
+import Theaterlun from "../../component/LIU/theaterlun"
  class Theater extends React.Component{
 	 constructor(){
 		 super()
@@ -44,9 +44,9 @@ import Theaterlun from "../../component/theaterlun"
 				   <div className="theater-info1" onClick={this.Click.bind(this)}>
 				   
 					<a className="theater-pic-name-count" >
-						<div className="one"><img src= {v.pic}/></div>
-						 <div className="two">
-						 <div className="two1"> <p>{v.name}</p></div>
+						<div className="ann"><img src= {v.pic}/></div>
+						 <div className="bnn">
+						 <div className="bnn1"> <p>{v.name}</p></div>
 						 <div className="two2"><p>在线</p></div>
 						 </div>
 				   </a>

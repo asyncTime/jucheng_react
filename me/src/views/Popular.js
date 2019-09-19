@@ -1,6 +1,16 @@
 import React from "react"
 import "../assets/liu/css/Popular.css"
-export default class Theater extends React.Component{ 
+import {
+	connect,
+	Router,
+    Route
+} from "react-redux"
+import {
+    bindActionCreators
+} from 'redux';
+
+import All_List from "../store/actionCreact/theater"
+class Popular extends React.Component{ 
 	render(){
 		return(
 		<div className="hot-wrap">
@@ -18,33 +28,33 @@ export default class Theater extends React.Component{
 				<img src="img/rAoKmV1EHaCADnVGAAQ8koT_BDc272.png" />
 			</div>
 			<div className="category-container">
-				<ul>
-					<li className="li"><a>
+				<div>
+					<div className="li"><a>
 							<div className="top">
 								<img src="img/rAoKNV1EHdSAb3-5AAK6bR4HVj8338.png" />
 							</div>
 							<div className="bottom">演出</div>
 						</a>
-					</li>
-					<li className="li"><a>
+					</div>
+					<div className="li"><a>
 							<div className="top">
 								<img src="img/rAoKNV1EHdSAb3-5AAK6bR4HVj8338.png" />
 							</div>
 							<div className="bottom">演出</div>
-						</a></li>
-					<li className="li"><a>
+						</a></div>
+					<div className="li"><a>
 							<div className="top">
 								<img src="img/rAoKNV1EHdSAb3-5AAK6bR4HVj8338.png" />
 							</div>
 							<div className="bottom">演出</div>
-						</a></li>
-					<li className="li"><a>
+						</a></div>
+					<div className="li"><a>
 							<div className="top">
 								<img src="img/rAoKmV1EHaCADnVGAAQ8koT_BDc272.png" />
 							</div>
 							<div className="bottom">演出</div>
-						</a></li>
-				</ul>
+						</a></div>
+				</div>
 		
 			</div>
 			<div className="title3">
@@ -64,24 +74,29 @@ export default class Theater extends React.Component{
 				</div>
 				</a>
 		
-				<a>
-				<div className="img-box">
-					<img src="img/rAoKmV1EHaCADnVGAAQ8koT_BDc272.png"/>
-				</div>
-				<div className="detial-box">
-					<div className="title1">音乐剧世界交流中心睡大觉家具</div>
-					<div className="top"><div class="head1">2019.9.10</div></div>
-					<div className="top">刘天波</div>
-					<div className="head">六天</div>
-				</div>
-				</a>
 				
 				
-			     <div class="allshow"><a>热门演出></a></div>
+			     <div className="allshow"><a>热门演出></a></div>
 			</div>
 		    
 		
 		</div>
 		)
 	}
+	componentDidMount() {
+	    this.props.get_theaterList()
+	    // console.log(this.props)
+	}
 }
+
+function mapStateToProps(state,props){
+	
+	
+	 return{
+	    theaterList:state.theaterList.get_theaterList
+	}
+}
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators(All_List,dispatch)
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Popular)
