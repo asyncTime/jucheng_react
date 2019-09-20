@@ -15,10 +15,12 @@ import {
     showList,
     showCityList,
     cardSliderList,
-    cardVipRuleList
+    cardVipRuleList,
+    cardGroupList,
 } from "./z-show"
 import theaterList from "./theater"
 export default combineReducers({
+    cardGroupList,
     cardVipRuleList,
     cardSliderList,
     showCityList,

@@ -3,17 +3,23 @@ import "../assets/mlz/css/cardProduct.css"
 import Bables from "../component/mlz/bables-z"
 import Slider from "../component/mlz/swiper-z"
 import list from "../store/actionCreact/z-show"
+import Card from "../component/mlz/card-z"
+import help from "../common/help"
 import {
     bindActionCreators
-} from 'redux'
+} from 'redux';
 import {
     connect
 } from "react-redux"
 
  class CardProduct extends React.Component{
     render(){
+        const cardVipRuleList=this.props.cardVipRuleList.cardVipRuleList?this.props.cardVipRuleList.cardVipRuleList:[];
         const cardSliderList=this.props.cardSliderList.cardSliderList?this.props.cardSliderList.cardSliderList:[];
-        console.log(this.props,11111111)
+        const cardGroupList=this.props.cardGroupList.cardGroupList?this.props.cardGroupList.cardGroupList:[];
+        const once_card=cardGroupList.once_card?cardGroupList.once_card:[];
+        const cate_card=cardGroupList.cate_card?cardGroupList.cate_card:[];
+        const store_card=cardGroupList.store_card?cardGroupList.store_card:[];
         return(
             <div className="card">
                 <div className="title">
@@ -33,74 +39,78 @@ import {
                     </div>
 
                     <div className="vipPlusBottom">
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                                <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
-                        <div className="vipPlusTicket">
-                            <div className="iconfont icon-tongyong_guanyingquan"></div>
-                            <p >优选购票</p>
-                        </div>
+                        {
+                            cardVipRuleList.map((v,i)=>(
+                                <div className="vipPlusTicket" key={i}>
+                                    <div className={help[v.benefits_icon]}></div>
+                                    <p>{v.benefits_name}</p>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
-                <div className="space"></div>
-                <div className="valueCard">
-                    <div className="vipPlusTitle">
-                        <b>储值卡</b>
-                        <span>全国通用，购卡充值送100元</span>
-                    </div>
 
-                    <div className="valueCard-values">
-                        <img src="https://image.juooo.com/group1/M00/02/44/rAoKNVvFTxWAS5R5AADYaD4FCg4828.png" alt=""/>
-                            <div>
-                                <h2>橙PLUS卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
-                                <p>有效期：长期有效</p>
-                                <h3><span>￥999</span> <i>赠送VIP+</i></h3>
+                <div>
+
+                    <div >
+                        <div className="space">
+                        </div>
+                        <div className="valueCard">
+                            <div className="vipPlusTitle">
+                                <b>储值卡</b>
+                                <span>{cardGroupList.store_title}</span>
                             </div>
+                            <Card list={store_card}></Card>
+                        </div>
+                    </div>
+
+                    <div >
+                        <div className="space">
+                        </div>
+                        <div className="valueCard">
+                            <div className="vipPlusTitle">
+                                <b>品类·次卡</b>
+                            </div>
+                            <Card list={cate_card}></Card>
+                        </div>
+                    </div>
+
+                    <div >
+                        <div className="space">
+                        </div>
+                        <div className="valueCard">
+                            <div className="vipPlusTitle">
+                                <b>城市·次卡</b>
+                            </div>
+                            <Card list={once_card}></Card>
+                        </div>
                     </div>
 
                 </div>
+
+
+                <div className="cardBottom">
+                    <div>购买新卡</div><i>|</i>
+                    <div>绑定新卡</div><i>|</i>
+                    <div>我的卡包</div>
+                </div>
+
 
 
             </div>
         )
     }
     componentDidMount(){
-        this.props.getCardSliderList();
+        this.props.getCardGroupList();
         this.props.getCardVipRuleList();
+        this.props.getCardSliderList();
     }
 }
 function mapStateToProps(state,props) {
     return{
-        cardSliderList:state.cardSliderList
+        cardSliderList:state.cardSliderList,
+        cardVipRuleList:state.cardVipRuleList,
+        cardGroupList:state.cardGroupList
     }
 }
 function mapDispatchToProps(dispatch) {

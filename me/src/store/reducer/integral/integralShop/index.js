@@ -9,7 +9,6 @@ export  const getScoresCityList = function (state=initState,{type,payload}){
 }
 export const getAllScoresList = function (state=initState,{type,payload}){
     state = JSON.parse(JSON.stringify(state));
-    console.log(payload,8888888888)
     if(type === CHANGE_ALL_SCORE_LIST){
         state.AllScoresList = payload;
     }
