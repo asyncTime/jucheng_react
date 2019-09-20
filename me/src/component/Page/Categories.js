@@ -36,7 +36,7 @@ class Categories extends Component {
                                 </div>
                                 <div id={'Categories-Image'}>
                                     <div className="swiper-container four">
-                                        <div className="swiper-wrapper">
+                                        <div className="swiper-wrapper" id={'Categories-Image-Size'}>
                                             {
                                                 list.map((v, i) =>(
                                                         <div className="swiper-slide namespace" key={i} style={{marginLeft:'0.2rem'}}>
@@ -60,7 +60,10 @@ class Categories extends Component {
     }
     componentDidMount() {
         new Swiper('.four', {
-            slidesPerView: 'auto',
+                slidesPerView : "auto",
+                centeredSlides : false,
+            observer: true,
+            observeParents: true,
         });
     }
     componentWillReceiveProps(nextProps, nextContext) {

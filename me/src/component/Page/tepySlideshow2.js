@@ -3,18 +3,18 @@ import Swiper from "swiper"
 import 'swiper/dist/css/swiper.min.css'
 class TepySlideshow2 extends Component {
     state={
-        dataList:['1','2','3']
+        dataList:[]
     };
     componentWillReceiveProps(nextProps, nextContext) {
         if(this.props!==nextProps){
             this.setState({
-                dataList:nextProps.list
+                dataList:(nextProps.list?nextProps.list:[])
             })
         }
     }
     render() {
-        return (
-            <div className="swiper-container there">
+        return  (
+            <div className="swiper-container Mthere">
                 <div className="swiper-wrapper">
                             {
                                 this.state.dataList.map((v, i) =>(
@@ -29,10 +29,14 @@ class TepySlideshow2 extends Component {
                 </div>
              </div>
         );
+
     }
     componentDidMount(){
-        new Swiper('.there', {
-            slidesPerView: 'auto',
+        new Swiper('.Mthere', {
+            loop: true,
+            slidesPerView : "auto",
+            observer: true,
+            observeParents: true,
         });
     }
     }

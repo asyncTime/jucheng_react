@@ -17,14 +17,12 @@ class TepySlideshow extends React.Component {
         }
 
     }
-
     render() {
-        console.log(this.state.dataList)
         return (
-                 <div className="swiper-container one">
+                 <div className="swiper-container Mone">
                      <div className="swiper-wrapper">
                          {
-                             this.state.dataList.map((v,i)=>(
+                             (this.state.dataList?this.state.dataList:[]).map((v,i)=>(
                                 <div className="swiper-slide" key={i}>
                                     <a href={v.url}>
                                         <img src={v.image_url} alt={'aaa'} />
@@ -39,7 +37,7 @@ class TepySlideshow extends React.Component {
         )
     }
     componentDidMount() {
-            new Swiper('.one', {
+            new Swiper('.Mone', {
                 autoplay: true,
                 loop: true,
                 observer: true,

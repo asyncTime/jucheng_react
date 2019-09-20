@@ -5,43 +5,45 @@ import {
 import {
     connect
 } from "react-redux";
+import Bubble from "../component/zsl/Bubble"
 import integralCreator from "../store/actionCreact/integral"
 class Integral extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            sum:0
-        }
-    }
     render(){
-        console.log(this.props.integralList)
+        // console.log(this.props.integralList)
         return (
-            <div>
-                <header>
+            < div>
+                <div id="header">
                     <div className="left">
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
-                    <div className="center">我的积分</div>
-                    <div className="iconfont icon-sandian"></div>
-                </header>
-                <nav>
+                    <div className="center">我的积分{console.log(this.props)}</div>
+                    <Bubble {...this.props}></Bubble>
+                </div>
+                <div id="nav">
                     <div>
                         <div className="rule">
                             <span className="iconfont icon-yijian"></span>
                             积分原则
                         </div>
                         <div className="text">可用积分</div>
-                        <div className="num">10</div>
-                        <div className="shop-integral">
+                        <div className="num">{this.props.totalRows * 2}</div>
+                        <div className="shop-integral" onClick={()=>{
+                            this.props.history.push({
+                                pathname:"/integralShop",
+                                state:{
+                                    scoreNew:this.props.totalRows * 2
+                                }
+                            })
+                        }}>
                             <span className="iconfont icon-yemian-copy-copy"></span>
                             积分商城
                         </div>
                     </div>
-                </nav>
-                <section>
+                </div>
+                <div id="section">
                     <div className="little">积分明细</div>
-                </section>
-                <article>
+                </div>
+                <div id="article">
                     {
                         this.props.integralList.map((v,i) => (
                             <div className="item-integral" key={i} >
@@ -51,12 +53,18 @@ class Integral extends React.Component{
                             </div>
                         ))
                     }
-                </article>
+                </div>
             </div>
         )
     }
     componentDidMount(){
-        this.props.getIntegralList()
+        this.props.getIntegralList();
     }
 }
-export default connect(state=>({integralList:state.getIntegralList.integralList}),dispatch=>bindActionCreators(integralCreator,dispatch))(Integral)
+function mapToProps(state){
+    return {
+        integralList:state.getIntegralList.integralList,
+        totalRows:state.getIntegralList.totalRows
+    }
+}
+export default connect(mapToProps,dispatch=>bindActionCreators(integralCreator,dispatch))(Integral)

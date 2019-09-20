@@ -57,8 +57,8 @@ export default {
              if (localStorage.list) {
                  dispatch(dispatch(get_nav(JSON.parse(localStorage.list))))
              } else {
-                 const {data} = await axios.get("/ju//home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.5&referer=1");
-                 dispatch(dispatch(get_nav(data.data)))
+                 const data = await axios.get("/ju/home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.5&referer=2");
+                 dispatch(dispatch(get_nav(data.data.data)))
              }
          }
      },
@@ -68,8 +68,7 @@ export default {
                      dispatch(dispatch(get_PriorityInBuy(JSON.parse(localStorage.PriorityInList))))
                  } else {
                      const {data} = await axios.get("/ju/vip/index/getVipHomeSchedular?version=6.0.5&referer=2");
-
-                    console.log(data);
+                   console.log(data)
                      dispatch(dispatch(get_PriorityInBuy(data.data)))
                  }
              }
@@ -77,11 +76,9 @@ export default {
     get_HotShowImageList(){
          return async(dispatch)=>{
              if(localStorage.HotShowList){
-                 console.log("11");
                  dispatch(dispatch(get_HotShow(JSON.parse(localStorage.HotShowList))))
              }else{
                  const {data}=await axios.get("/ju/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=1")
-                console.log(data.data.hots_show_list)
                  dispatch(dispatch(get_HotShow(data.data.hots_show_list)))
              }
          }
@@ -112,7 +109,6 @@ export default {
                 dispatch(dispatch(get_CategoriesList(JSON.parse(localStorage.CategoriesList))))
             }else{
                 const {data}=await axios.get("/ju/home/index/getFloorShow?city_id=0&version=6.0.5&referer=2")
-                console.log(data.data)
                 dispatch(dispatch(get_CategoriesList(data.data)))
             }
         }
@@ -123,7 +119,6 @@ export default {
                  dispatch(dispatch(get_theatre(JSON.parse(localStorage.theatre))))
              }else{
                  const {data}=await axios.get("/ju/home/index/getHotTheatre?version=6.0.5&referer=2");
-                 console.log(data.data)
                  dispatch(dispatch(get_theatre(data.data)))
              }
          }

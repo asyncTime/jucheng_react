@@ -1,89 +1,119 @@
 html{
     font-size:26.7vw;
 }
-header{
+#zsl-header{
     display:flex;
     width:100%;
-    height:.38rem;
+    height:.76rem;
     border-bottom:1px solid #ccc;
     align-items: center;
-    padding:0 .15rem;
+    padding:0 .3rem;
     box-sizing:border-box;
-    font-size:.16rem;
+    font-size:.32rem;
     background:#e7e7e7;
 }
-header .center{
+#zsl-header .center{
     flex:1;
-    margin:1.23rem;
+    margin-left: 2.6rem;
 }
-header .icon-dayuhao{
-    font-size:.2rem;
+#zsl-header .am-navbar{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: #108ee9;
+    color: #e7e7e7;
+}
+#zsl-header .am-navbar-light {
+    background-color: #e7e7e7;
+    color: #000;
 }
 /*nav*/
-nav {
+#zsl-nav {
     width:100%;
-    height:.94rem;
-    border-bottom: .1rem #ccc solid;
+    height:1.16rem;
     box-sizing:border-box;
 }
-nav .inter-top .icon-jifen{
-    font-size:.17rem;
+#zsl-nav .inter-top .icon-jifen{
+    font-size:.34rem;
     color:orange;
 }
-nav .inter-top{
+#zsl-nav .inter-top{
     display:flex;
-    font-size:.17rem;
+    font-size:.34rem;
     align-items: center;
     justify-content: center;
-    height:.56rem;
+    height:1.16rem;
     position:relative;
     border-bottom: 1px solid #ccc;
 }
 
-nav .iten-detail{
-    font-size:.14rem;
+#zsl-nav .iten-detail{
+    font-size:.28rem;
     color:#b2b2b2;
     position:absolute;
-    right:.1rem;
-    top:.2rem;
+    right:.2rem;
+    top:.4rem;
 }
-nav .tab{
+#zsl-nav .tab{
     display:flex;
     align-items: center;
     justify-content: center;
     box-sizing:border-box;
 }
-nav .tab div{
+#zsl-nav .tab div{
     width:50%;
     display:flex;
     justify-content: center;
     align-items: center;
-padding-top:.05rem;}
+padding-top:.1rem;}
+
+.zsl-pull{
+    display: flex;
+    justify-content: space-around;
+    box-sizing:border-box;
+    border-bottom: .2rem solid #ccc;
+}
+.zsl-pull .am-accordion-header{
+    position: relative;
+    color: #000;
+    font-size: 17px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #fff;
+    box-sizing: content-box;
+    padding-left: 15px;
+    padding-right: 30px;
+    border-bottom: 1PX solid #ddd;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 /*section*/
-section .information{
+#zsl-section .information{
     display:flex;
     align-items: center;
-    font-size:.1rem;
-    padding:0 .08rem;
+    font-size:.2rem;
+    padding:0 .16rem;
     box-sizing:border-box;;
 }
-section .img{
-    width:.73rem;
-    height:.84rem;
+#zsl-section .img{
+    width:1.46rem;
+    height:1.68rem;
     background:url("../img/rAoKmV0_5YOAS232AACvfaS_Ar8438.jpg") center center no-repeat;
 }
-section .info{
-    width:1.98rem;
-    height:1.08rem;
+#zsl-section .info{
+    width:2.96rem;
+    height:2.16rem;
     flex:1;
-    padding-top:.09rem;
+    padding-top:.18rem;
     box-sizing:border-box;
-    padding-left:.08rem;
+    padding-left:.16rem;
 }
-section .info-title{
-    height:.27rem;
-    font-size:.15rem;
+#zsl-section .info-title{
+    height:.54rem;
+    font-size:.3rem;
 }
-section .info-detail{
-    padding-top:.1rem;
+#zsl-section .info-detail{
+    padding-top:.25rem;
 }

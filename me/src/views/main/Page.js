@@ -12,13 +12,14 @@ import TepySlideshow4 from "../../component/Page/teySlideshow4";
 import Categories from "../../component/Page/Categories";
  class Page extends React.Component{
     render() {
-
+        console.log(this.props.PriorityIn)
         const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
-        const PriorityInList=this.props.PriorityIn?this.props.PriorityIn.priorList:[];
+
         let operation_list=this.props.navImageList.operation_list?this.props.navImageList.operation_list:[];
-        let list=operation_list.splice(0,2);
+        const sum=operation_list.slice(0,2);
+        const num=operation_list.slice(0,3);
         const PriorListTwo=this.props.PriorList?this.props.PriorList.discountList:[];
-        const PriorListOne=this.props.PriorList?this.props.PriorList.priorList[0]:[];
+        const PriorListOne=this.props.PriorList?this.props.PriorList.watchList:[];
         return(
             <div>
                 <TepySlideshow list={this.props.navImageList.slide_list}></TepySlideshow>
@@ -46,12 +47,12 @@ import Categories from "../../component/Page/Categories";
                                 <span>99元/年></span>
                             </div>
                         </div>
-                        <TepySlideshow1 list={PriorityInList}></TepySlideshow1>
+                        <TepySlideshow1 list={this.props.PriorityIn?this.props.PriorityIn.discountList:[]}></TepySlideshow1>
                     </div>
                     <div id={'m-category3'}>
                         <ul id={"VipUi1"}>
                             {
-                                list.map((v,i)=>(
+                                sum.map((v,i)=>(
                                     <li key={i}>
                                         <a href={'/#'}>
                                             <div id={'VipUi1_Font'}>
@@ -66,7 +67,7 @@ import Categories from "../../component/Page/Categories";
                         </ul>
                         <ul id={"VipUi2"}>
                             {
-                                operation_list.map((v,i)=>(
+                               num.map((v,i)=>(
                                     <li key={i}>
                                         <h3>{v.name}</h3>
                                         <div dangerouslySetInnerHTML={{__html: v.describe}}></div>
@@ -95,7 +96,7 @@ import Categories from "../../component/Page/Categories";
                         <a> ></a>
                     </div>
                     <div id={'CycleOfsinging-2'}>
-                        <TepySlideshow3 list={this.props.tour_show_list}></TepySlideshow3>
+                        <TepySlideshow3 list={this.props.tour_show_list?this.props.tour_show_list:[]}></TepySlideshow3>
                     </div>
                 </div>
                 <div id={'m-Discount'}>
@@ -134,12 +135,17 @@ import Categories from "../../component/Page/Categories";
 
                         </div>
                         <div id={'Discount2'}>
-                            <div id={'Discount1-3'}>
-                                <div>
-                                    <img src={PriorListOne.pic}/>
-                                </div>
-                                <p><span>{PriorListOne.pre_time}</span>开始</p>
-                            </div>
+                            {
+                                PriorListOne.map((v,i)=>(
+                                    <div id={'Discount1-3'} key={i}>
+                                        <div>
+                                            <img src={v.pic}/>
+                                        </div>
+                                        <p><span>{v.date}</span>开始</p>
+                                    </div>
+                                ))
+                            }
+
                         </div>
                     </div>
                 </div>
@@ -165,7 +171,7 @@ import Categories from "../../component/Page/Categories";
     }
  }
 function mapStateToProps(state,props) {
-     console.log(state)
+     console.log(state.PriorityIn.PriorityList,)
     return{
         navImageList:state.navImageList.navList,
         PriorityIn:state.PriorityIn.PriorityList,

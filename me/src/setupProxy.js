@@ -14,7 +14,15 @@ module.exports = function (app) {
         pathRewrite: {
             "^/jo": ""
         }
-    }))
+    }));
+	
+	app.use("/liu",proxy({
+	    target:"https://api.juooo.com",
+	    changeOrigin: true,
+	    pathRewrite: {
+	        "^/liu": ""
+	    }
+	}));
     app.use("/meng",proxy({
         target:"https://m.juooo.com",
         changeOrigin: true,
