@@ -19,7 +19,7 @@ class Categories extends Component {
                             <div>
                                 <div id={'Categories-Tilte'}>
                                     <h3>{this.props.children.title}</h3>
-                                    <NavLink to={{pathname:'/show',state:{cat_id:this.props.children.cat_id}}}><span className={'iconfont icon-next'}> </span></NavLink>
+                                    <NavLink to={{pathname:'/show',state:{cat_id:this.props.children.cat_id}}}><span className={'iconfont icon-xiaoyuhao-copy'}> </span></NavLink>
                                 </div>
                                 <div id={'Categories-1'}  style={this.props.background}>
                                     <div id={'Categories-1-Img'}>

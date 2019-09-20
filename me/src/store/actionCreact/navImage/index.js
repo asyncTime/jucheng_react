@@ -75,7 +75,6 @@ export default {
                      dispatch(dispatch(get_PriorityInBuy(JSON.parse(localStorage.PriorityInList))))
                  } else {
                      const {data} = await axios.get("/ju/vip/index/getVipHomeSchedular?version=6.0.5&referer=2");
-                   console.log(data)
                      dispatch(dispatch(get_PriorityInBuy(data.data)))
                  }
              }
@@ -132,9 +131,7 @@ export default {
     },
     get_recommend(page=1){
          return async (dispatch)=>{
-             console.log(page)
                  const {data}=await axios.get(`/ju/home/index/getRecommendShow?cityAdd=&page=${page}&version=6.0.5&referer=2`);
-                console.log("444444444444")
                  dispatch(dispatch(get_recommend_List(data.data.recommend_show_list)))
              }
     }

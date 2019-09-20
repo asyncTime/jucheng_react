@@ -13,6 +13,11 @@ import Categories from "../../component/Page/Categories";
 import Recommend from "../../component/Page/Recommend"
 import Hearder from "../../component/Page/Hearder";
  class Page extends React.Component{
+     constructor(props){
+         super(props);
+         this.scrollTop = 0;
+         this.handleScroll = this.handleScroll.bind(this)
+     }
     render() {
         const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
         let operation_list=this.props.navImageList.operation_list?this.props.navImageList.operation_list:[];
@@ -84,7 +89,7 @@ import Hearder from "../../component/Page/Hearder";
                     <div id={'HotShow1'}>
                     <div id={'HotShow-Tilte'}>
                         <h3>热门演出</h3>
-                        <a href={'/#'}>></a>
+                        <a href={'/#'} className={'iconfont icon-xiaoyuhao-copy'}></a>
                     </div>
                     <div id={'HotShow-Image'}>
                         <TepySlideshow2 list={this.props.HotShow}></TepySlideshow2>
@@ -108,18 +113,18 @@ import Hearder from "../../component/Page/Hearder";
                         </div>
                         <div id={'Page-Vip-2'}>
                             <span>99元/年</span>
-                            <span className={'iconfont icon-next'}></span>
+                            <span className={'iconfont icon-xiaoyuhao-copy'}></span>
                         </div>
                     </div>
                     <div id={'Discount'}>
                         <div id={'Discount-TL'}>
                             <div id={'Discount-TL-1'}>
                                 <h3>专享折扣</h3>
-                                <span> ></span>
+                                <span className={'iconfont icon-xiaoyuhao-copy'}> </span>
                             </div>
                             <div id={'Discount-TL-2'}>
                                 <h3>优先购票</h3>
-                                <span> ></span>
+                                <span className={'iconfont icon-xiaoyuhao-copy'}> </span>
                             </div>
                         </div>
                         <div id={'Discount1'}>
@@ -156,14 +161,17 @@ import Hearder from "../../component/Page/Hearder";
                 <Categories children={this.props.Categories?this.props.Categories[3]:[]} background={{backgroundColor:'rgb(127, 170, 174)'}}></Categories>
                 <Categories children={this.props.Categories?this.props.Categories[4]:[]} background={{backgroundColor:'rgb(152, 93, 64)'}}></Categories>
                 <TepySlideshow4 {...this.props.theatre}></TepySlideshow4>
-                {/*<Recommend list={this.props.Recommend?this.props.Recommend:[]}></Recommend>*/}
-                <input type={'button'} value={'加载更多'} onClick={()=>{
-                    this.props.get_recommend(this.props.page)
-                }}/>
+                <Recommend list={this.props.Recommend?this.props.Recommend:[]}></Recommend>
                 <div id={"lunhui"}></div>
             </div>
         )
     }
+     componentWillMount(){
+         window.addEventListener('scroll', this.handleScroll)
+     }
+     componentWillUnmount(){
+         window.removeEventListener('scroll',this.handleScroll)
+     }
     componentDidMount() {
         this.props.get_PriorityIn();
         this.props.get_PriorityIn();
@@ -175,6 +183,11 @@ import Hearder from "../../component/Page/Hearder";
         this.props.get_theatre_listAll()//热门场会
         this.props.get_recommend()//为你推荐
     }
+     handleScroll(){
+         if(document.documentElement.scrollHeight-window.scrollY<1000){
+             this.props.get_recommend(this.props.page)
+         }
+     }
  }
 function mapStateToProps(state,props) {
     return{
