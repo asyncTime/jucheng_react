@@ -3,7 +3,6 @@ import Swiper from "swiper"
 import 'swiper/dist/css/swiper.min.css'
 class TepySlideshow1 extends Component {
     render() {
-        console.log(this.props)
         return (
             <div>
                 <div id={'m-category2-2'}>
@@ -44,9 +43,6 @@ class TepySlideshow1 extends Component {
             observer: true,
             observeParents: true,
         })
-    }
-    componentWillReceiveProps(nextProps, nextContext) {
-        console.log(nextProps)
     }
 }
 

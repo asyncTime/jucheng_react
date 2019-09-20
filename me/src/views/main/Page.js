@@ -10,11 +10,10 @@ import TepySlideshow2 from "../../component/Page/tepySlideshow2";
 import TepySlideshow3 from "../../component/Page/tepySlideshow3";
 import TepySlideshow4 from "../../component/Page/teySlideshow4";
 import Categories from "../../component/Page/Categories";
+import Recommend from "../../component/Page/Recommend"
  class Page extends React.Component{
     render() {
-        console.log(this.props.PriorityIn)
         const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
-
         let operation_list=this.props.navImageList.operation_list?this.props.navImageList.operation_list:[];
         const sum=operation_list.slice(0,2);
         const num=operation_list.slice(0,3);
@@ -155,6 +154,7 @@ import Categories from "../../component/Page/Categories";
                 <Categories children={this.props.Categories?this.props.Categories[3]:[]} background={{backgroundColor:'rgb(127, 170, 174)'}}></Categories>
                 <Categories children={this.props.Categories?this.props.Categories[4]:[]} background={{backgroundColor:'rgb(152, 93, 64)'}}></Categories>
                 <TepySlideshow4 {...this.props.theatre}></TepySlideshow4>
+                <Recommend list={this.props.Recommend?this.props.Recommend:[]}></Recommend>
                 <div id={"lunhui"}></div>
             </div>
         )
@@ -168,10 +168,10 @@ import Categories from "../../component/Page/Categories";
         this.props.get_priorAll();
         this.props.get_CategoriesAll();//类别会
         this.props.get_theatre_listAll()//热门场会
+        this.props.get_recommend()//为你推荐
     }
  }
 function mapStateToProps(state,props) {
-     console.log(state.PriorityIn.PriorityList,)
     return{
         navImageList:state.navImageList.navList,
         PriorityIn:state.PriorityIn.PriorityList,
@@ -179,7 +179,8 @@ function mapStateToProps(state,props) {
         tour_show_list:state.CycleOfsinging.tour_show_list,
         PriorList:state.PriorList.PriorList,
         Categories:state.Categories.Categories,
-        theatre:state.theatre.Categories
+        theatre:state.theatre.Categories,
+        Recommend:state.Recommend.Recommend
     }
 }
 function mapDispatchToProps(dispatch) {

@@ -677,7 +677,67 @@ li{
     width: auto;
     height: auto;
 }
-
+/**************为你推荐********************/
+#Recommend{
+    height: auto;
+    padding:0 0.3rem;
+}
+#Recommend-Tilte{
+    height: 0.5rem;
+    font-size:0.35rem;
+    color: #232323;
+    line-height: 0.5rem;
+    font-weight: 700;
+}
+#Recommend-body{
+    height: auto;
+    margin-top: 0.35rem;
+}
+#Recommend-body li{
+    height: 3rem;
+    margin-bottom: 0.6rem;
+}
+#Recommend-Image{
+    width: 2.2rem;
+    height: 3rem;
+    float: left;
+    background-size: 100%;
+}
+#Recommend-Size{
+    height: 3rem;
+    float: right;
+    width: 4.4rem;
+}
+#Recommend-Size p:nth-child(1){
+    height: 0.5rem;
+    font-size: 0.3rem;
+    color: #232323;
+    line-height: 0.5rem;
+}
+#Recommend-Size h3{
+    margin-top: 0.25rem;
+    height: 1rem;
+    font-size: 0.35rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#Recommend-Size p:nth-child(3){
+    height: 0.5rem;
+    font-size: 0.3rem;
+    color: #232323;
+    line-height: 0.5rem;
+    margin-top: 0.23rem;
+}
+#Recommend-Size p:nth-child(4){
+    height: 0.5rem;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    margin-top: 0.23rem;
+   color: #232323;
+}
+#Recommend-Font span{
+    color: #ff6743;
+}
 
 
 

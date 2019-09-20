@@ -7,6 +7,7 @@ import {
     get_prior,
     get_Categories,
     get_theatre_list,
+    get_recommend_show_list,
 } from "../../actionType/navImage"
 export  function navImageList(state=initState,{type,payload}) {
     state = JSON.parse(JSON.stringify(state));
@@ -63,4 +64,12 @@ export function theatre(state=initState,{type,payload}){
         localStorage.theatre=JSON.stringify(state.Categories)
     }
     return state
+}
+export function Recommend(state=initState,{type,payload}) {
+    state = JSON.parse(JSON.stringify(state));
+    if(type===get_recommend_show_list){
+        state.Recommend=payload
+    }
+    return state
+
 }

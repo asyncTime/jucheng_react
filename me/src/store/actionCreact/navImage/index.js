@@ -6,6 +6,7 @@ import {
     get_prior,//折扣
     get_Categories,//类别会
     get_theatre_list,//热门场馆
+    get_recommend_show_list,//w为你推荐
 } from "../../actionType/navImage";
 import axios from "axios"
 export function get_nav(payload) {
@@ -47,6 +48,12 @@ export function get_CategoriesList(payload) {
 export function get_theatre(payload){
     return{
         type:get_theatre_list,
+        payload
+    }
+}
+export function get_recommend_List(payload) {
+    return {
+        type:get_recommend_show_list,
         payload
     }
 }
@@ -122,6 +129,12 @@ export default {
                  dispatch(dispatch(get_theatre(data.data)))
              }
          }
+    },
+    get_recommend(){
+         return async (dispatch)=>{
+                 const {data}=await axios.get("/ju/home/index/getRecommendShow?cityAdd=&page=1&version=6.0.5&referer=2");
+                 dispatch(dispatch(get_recommend_List(data.data)))
+             }
     }
 
 }
