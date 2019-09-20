@@ -2,37 +2,23 @@ import { Carousel, WingBlank } from 'antd-mobile';
 import React from "react"
 class TepySlideshow3 extends React.Component {
     state = {
-        data: ['1', '2', '3'],
         imgHeight: 176,
     };
-    componentWillReceiveProps(nextProps, nextContext) {
 
-        if(this.props!==nextProps){
-            this.setState({
-                data:nextProps.list.slice(0,6)
-            })
-        }
-    }
-    componentDidMount() {
-        // setTimeout(() => {
-        //     this.setState({
-        //         data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
-        //     });
-        // }, 100);
-    }
     render() {
+        let list=this.props.list?this.props.list:[];
         return (
             <WingBlank>
                 <Carousel className="space-carousel"
                           frameOverflow="visible"
+                          style={{ touchAction:'none'}}
                           cellSpacing={20}
                           slideWidth={0.8}
                           autoplay
                           infinite={false}
-                          //beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-                          afterChange={index => this.setState({ slideIndex: index })}
+                          dots={false}
                 >
-                    {this.state.data.map((val, index) => (
+                    {list.map((val, index) => (
                         <div
                             key={val}
                             style={{
@@ -46,6 +32,7 @@ class TepySlideshow3 extends React.Component {
                             <img
                                 src={val.pic}
                                 alt={val.show_name}
+                                id={'TepySlideshow3-Image'}
                                 style={{verticalAlign: 'top' }}
                                 onLoad={() => {
                                     // fire window resize event to change height

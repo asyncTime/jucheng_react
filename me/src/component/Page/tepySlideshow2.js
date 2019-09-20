@@ -2,22 +2,19 @@ import React, {Component} from 'react';
 import Swiper from "swiper"
 import 'swiper/dist/css/swiper.min.css'
 class TepySlideshow2 extends Component {
-    constructor(){
-        super()
-    }
     state={
-        dataList:['1','2','3']
+        dataList:[]
     };
     componentWillReceiveProps(nextProps, nextContext) {
-        if(this.props!=nextProps){
+        if(this.props!==nextProps){
             this.setState({
-                dataList:nextProps.list
+                dataList:(nextProps.list?nextProps.list:[])
             })
         }
     }
     render() {
         return  (
-            <div className="swiper-container there">
+            <div className="swiper-container Mthere">
                 <div className="swiper-wrapper">
                             {
                                 this.state.dataList.map((v, i) =>(
@@ -29,15 +26,18 @@ class TepySlideshow2 extends Component {
                                     </div>
                                 ))
                             }
-                 </div>
+                </div>
              </div>
         );
 
     }
     componentDidMount(){
-        new Swiper('.there', {
+        new Swiper('.Mthere', {
+            loop: true,
+            slidesPerView : "auto",
+            observer: true,
+            observeParents: true,
         });
-        console.log("222")
     }
     }
 export default TepySlideshow2;

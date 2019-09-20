@@ -16,14 +16,12 @@ export default {
     getScoresCityList(){
        return async (dispatch) => {
            const {data} = await axios.post("/jo/getScoresCityList")
-           console.log(data,444444444)
            dispatch(changeScoresCityList(data))
        }
     },
     getAllScoresList() {
         return async (dispatch) => {
             const {data} = await axios.post("/jo/getAllScoresList");
-            console.log(data,55555555555)
             dispatch(changeAllScoresList(data))
         }
     }
