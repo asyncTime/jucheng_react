@@ -4,7 +4,7 @@ import {
 }from "react-router-dom"
 class Recommend extends Component {
     render() {
-        let AllList=this.props.list.recommend_show_list?this.props.list.recommend_show_list:[];
+        let AllList=this.props.list?this.props.list:[];
         return (
             <div id={'Recommend'}>
                 <div id={'Recommend-Tilte'}>

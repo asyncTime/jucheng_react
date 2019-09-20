@@ -11,6 +11,7 @@ import TepySlideshow3 from "../../component/Page/tepySlideshow3";
 import TepySlideshow4 from "../../component/Page/teySlideshow4";
 import Categories from "../../component/Page/Categories";
 import Recommend from "../../component/Page/Recommend"
+import Hearder from "../../component/Page/Hearder";
  class Page extends React.Component{
     render() {
         const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
@@ -21,6 +22,7 @@ import Recommend from "../../component/Page/Recommend"
         const PriorListOne=this.props.PriorList?this.props.PriorList.watchList:[];
         return(
             <div>
+                <Hearder Image={this.props.navImageList.top_icon?this.props.navImageList.top_icon:[]}></Hearder>
                 <TepySlideshow list={this.props.navImageList.slide_list}></TepySlideshow>
                 <div id={'m-category'}>
                     <div id={'m-category1'}>
@@ -154,7 +156,10 @@ import Recommend from "../../component/Page/Recommend"
                 <Categories children={this.props.Categories?this.props.Categories[3]:[]} background={{backgroundColor:'rgb(127, 170, 174)'}}></Categories>
                 <Categories children={this.props.Categories?this.props.Categories[4]:[]} background={{backgroundColor:'rgb(152, 93, 64)'}}></Categories>
                 <TepySlideshow4 {...this.props.theatre}></TepySlideshow4>
-                <Recommend list={this.props.Recommend?this.props.Recommend:[]}></Recommend>
+                {/*<Recommend list={this.props.Recommend?this.props.Recommend:[]}></Recommend>*/}
+                <input type={'button'} value={'加载更多'} onClick={()=>{
+                    this.props.get_recommend(this.props.page)
+                }}/>
                 <div id={"lunhui"}></div>
             </div>
         )
@@ -174,16 +179,17 @@ import Recommend from "../../component/Page/Recommend"
 function mapStateToProps(state,props) {
     return{
         navImageList:state.navImageList.navList,
-        PriorityIn:state.PriorityIn.PriorityList,
-        HotShow:state.HotShow.HotShow,
-        tour_show_list:state.CycleOfsinging.tour_show_list,
-        PriorList:state.PriorList.PriorList,
-        Categories:state.Categories.Categories,
-        theatre:state.theatre.Categories,
-        Recommend:state.Recommend.Recommend
+        PriorityIn:state.navImageList.PriorityList,
+        HotShow:state.navImageList.HotShow,
+        tour_show_list:state.navImageList.tour_show_list,
+        PriorList:state.navImageList.PriorList,
+        Categories:state.navImageList.Categories,
+        theatre:state.navImageList.theatre,
+        Recommend:state.Recommends.Recommend,
+        page:state.Recommends.page
     }
 }
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators(All_List,dispatch)
+    return bindActionCreators(All_List,dispatch,1)
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Page)

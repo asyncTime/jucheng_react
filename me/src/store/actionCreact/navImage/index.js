@@ -130,10 +130,12 @@ export default {
              }
          }
     },
-    get_recommend(){
+    get_recommend(page=1){
          return async (dispatch)=>{
-                 const {data}=await axios.get("/ju/home/index/getRecommendShow?cityAdd=&page=1&version=6.0.5&referer=2");
-                 dispatch(dispatch(get_recommend_List(data.data)))
+             console.log(page)
+                 const {data}=await axios.get(`/ju/home/index/getRecommendShow?cityAdd=&page=${page}&version=6.0.5&referer=2`);
+                console.log("444444444444")
+                 dispatch(dispatch(get_recommend_List(data.data.recommend_show_list)))
              }
     }
 

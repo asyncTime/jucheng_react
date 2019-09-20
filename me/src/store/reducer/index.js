@@ -4,13 +4,7 @@ import {
 
 import {
     navImageList,
-    PriorityIn,
-    HotShow,
-    CycleOfsinging,
-    PriorList,
-    Categories,
-    theatre,
-    Recommend
+    Recommends
 } from "./navImage"
 import getIntegralList from "./integral"
 import {getScoresCityList,getAllScoresList} from "./integral/integralShop"
@@ -27,15 +21,9 @@ export default combineReducers({
     cardSliderList,
     showCityList,
     showList,
-    Categories,
-    Recommend,
+    Recommends,
     showCategoryList,
     navImageList,
-    PriorityIn,
-    HotShow,
-    theatre,
-    CycleOfsinging,
-    PriorList,
     getIntegralList,
     getScoresCityList,
     getAllScoresList,
