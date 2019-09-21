@@ -64,20 +64,8 @@ import router from "../router/routerMe";
              })
          }
      }
-    // render() {
-    //     const navImage=this.props.navImageList.bottom_list?this.props.navImageList.bottom_list:[];
-    //     return(
-    //         <div>
-    //             {
-    //                 router.map((v,i)=>{
-    //                       return(
-    //                          <Route {...v} key={i} ></Route>
-    //                       )
-    //                 })
-    //             }
-
     componentDidMount() {
-        this.props.get_navImageList()
+        this.props.get_navImageList();
         this.changeClor()
     }
     changeClor(){

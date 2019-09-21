@@ -1,0 +1,113 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.set-warp{
+    width: 100%;
+    height: 100%;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+.set{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+
+.x-set-title{
+    backface-visibility: hidden;
+    margin: 0;
+    width: 100%;
+    height: 8rem;
+    font-size: 0.4rem;
+    color: #212121;
+    position: fixed;
+    left: 0;top: 0;
+    z-index: 1;
+}
+.x-set-content{
+    padding-top: 7.3rem;
+    background: #f6f6f6;
+    height: 100%;
+    width: 100%;
+}
+/*头部*/
+.x-title-one{
+    display: flex;
+    position: absolute;
+    left: 0;top: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #fdfdfd;
+}
+.x-left{
+    line-height: 5rem;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.x-left .x-icon{
+    vertical-align: text-top;
+    font-size: 4rem;
+    color: inherit;
+}
+.x-title-name{
+    display: flex;
+    overflow: hidden;
+    font-size: 3rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 10;
+    align-items: center;
+}
+
+/*内容部*/
+.x-title-warp{
+    margin-top:2.5rem;
+    width: 100%;
+    background-color: #fff;
+    font-size: 2.3rem;
+}
+.x-content-title{
+    display: flex;
+    height: 7rem;
+    margin: 0 3rem;
+    line-height:7rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+}
+.left b{
+    color: #CCCCCC;
+    font-size: 1.8rem;
+}
+.x-content-img{
+    width: 7rem;
+    height: 7rem;
+    background: #f5f5f5;
+    border-radius: 50%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.x-Right{
+    display: block;
+    line-height: 4.6rem;
+    height: 7rem;
+}
+.x-submit{
+    width: 90%;
+    height: 7rem;
+    background: #fff;
+    margin: 4rem auto;
+    text-align: center;
+    line-height: 7rem;
+    font-size: 2.6rem;
+    border-radius: 1rem;
+}
+

@@ -5,6 +5,61 @@ p,h3,ul,li{
 li{
     list-style: none;
 }
+#Hearders{
+    padding: 0.3rem;
+    height: 0.9rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#City{
+    width: 1.2rem;
+    height: 0.6rem;
+    background-color: rgba(0,0,0,.2);
+    float: left;
+    position: absolute;
+    top: 0.15rem;
+    border-radius: 0.3rem;
+    text-align: center;
+
+}
+#City span{
+    line-height: 0.6rem;
+    display: inline-block;
+    color: #f6f6f6;
+}
+#Search{
+    float: left;
+    width: 4.8rem;
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 0.15rem;
+    left: 1.7rem;
+    background-color: rgba(0,0,0,.2)
+}
+#Search-Page{
+    margin-left: 0.2rem;
+    line-height: 0.6rem;
+    top:0.07rem;
+    color: #f6f6f6;
+}
+#Search span:nth-child(2){
+    line-height: 0.6rem;
+    margin-left: 0.2rem;
+    font-size: 0.3rem;
+    color: #f6f6f6;
+}
+#Image{
+    float:right;
+    position: absolute;
+    top: 0.23rem;
+    right: 0.3rem;
+}
+#Image img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
 #m-navImage{
     width:100%;
     height: 1.3rem;
@@ -182,7 +237,7 @@ li{
 #m-category3{
     background-color: #f5f5f5;
     width: 100%;
-    padding: 0 0.1rem;
+    padding: 0.08rem 0.1rem;
 }
 #VipUi1{
     height: 1.8rem;
@@ -193,7 +248,7 @@ li{
     background:rgba(0,9,9,0);
 }
 #VipUi1 li{
-    width: 2.71rem;
+    width: 3.18rem;
     height:1.8rem;
     padding: 0 0.3rem;
     background: #fefefe;
@@ -236,7 +291,7 @@ li{
     margin-top: 0.1rem;
 }
 #VipUi2 li{
-    width: 2.2rem;
+    width: 2.08rem;
     height: 2.2rem;
     background: #fefefe;
     border-radius: 0.1rem;
@@ -255,7 +310,7 @@ li{
     background-size:0.9rem;
 }
 #lunhui{
-    height: 12rem;
+    height:2rem;
     width: 100%;
 }
 /********热门演出*******/
@@ -341,10 +396,14 @@ li{
 }
 #CycleOfsinging-2-1 img{
     width: 5rem;
-    height: 3rem;
+    height: 2rem;
  }
+#TepySlideshow3-Image{
+    height: 2.8rem;
+}
 #CycleOfsinging-2-2{
     text-align: center;
+    font-size: 0.4rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -352,6 +411,12 @@ li{
 }
 #CycleOfsinging-2-3{
     text-align: center;
+    font-size: 0.2rem;
+}
+.slider-list{margin-top: 0 !important;}
+/**********尊享折扣**********************/
+#m-Discount{
+    padding-bottom: 0.6rem;
 }
 #Page-Vip{
     height: 0.8rem;
@@ -374,10 +439,361 @@ li{
 
 }
 #Discount{
-    height: 4.47rem;
-    padding: 0 0.32rem 0.32rem 0.32rem;
+    height: 4.4rem;
+    padding: 0 0 0.32rem 0;
+    background-color: #f5f5f5;
+}
+#Discount-TL{
+    height: 0.8rem;
+    font-size: 0.3rem;
+    line-height: 0.8rem;
+}
+#Discount-TL-1{
+    float: left;
+    width: 4.4rem;
+    padding-left:0.3rem ;
+}
+#Discount-TL-1 h3{
+    float: left;
+}
+#Discount-TL-2{
+    float: right;
+    width:2.2rem;
+    margin-left: 0.1rem;
+}
+#Discount-TL-2 h3{
+    float: left;
+}
+#Discount-TL-2 span{
+    float: right;
+}
+#Discount-TL-1 span{
+    float: right;
 }
 #Discount1{
     height: 3.5rem;
-    width: 4.6rem;
+    width: 4.8rem;
+    float: left;
 }
+#Discount2{
+    width: 2.2rem;
+    height:3.5rem;
+    float: right;
+}
+#Discount1-2{
+    width: 2.1rem;
+    height: 3.6rem;
+    float: left;
+    margin-left: 0.25rem;
+}
+#Discount1-3{
+    width: 2.1rem;
+    height: 3.6rem;
+    float: right;
+    margin-right: 0.2rem;
+}
+#Discount1-2 p{
+    width: 2.1rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+#Discount1-2 p span{
+    color: #ff6743;
+    font-size: 0.4rem;
+}
+#Discount1-3 p{
+    width: 2.1rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+ }
+#Discount1-3 div{
+    width: 2.1rem;
+    height: 3rem;
+}
+#Discount1-3 p span{
+    color: #ff6743;
+    font-size: 0.2rem;
+    text-align: center;
+}
+#Discount1-2 div{
+    width: 2.1rem;
+    height: 3rem;
+ }
+/***********类别会*组件***************/
+#Categories {
+    padding-bottom: 0.5rem;
+}
+#Categories-Tilte{
+    height:0.5rem;
+}
+#Categories-Tilte h3{
+    font-size:0.4rem;
+    line-height: 0.5rem;
+    color: #232323;
+    float: left;
+    margin-left:0.32rem;
+}
+#Categories-Tilte span{
+    margin-right: 0.3rem;
+    float: right;
+    line-height: 0.5rem;
+    font-size: 0.4rem;
+}
+#Categories-1{
+    height: 3rem;
+    background: #6b4218;
+    /*padding: 0.3rem 0 0.3rem 0.3rem;*/
+    margin-top: 0.4rem;
+}
+#Categories-1-Img{
+     width: 2.2rem;
+    height: 3rem;
+    border-radius:0.2rem;
+    float: left;
+}
+#Categories-1-Img img{
+    width: 2.2rem;
+    height: 3rem;
+}
+#Categories-1-Size{
+    width:4.65rem;
+    height: 2.6rem;
+    padding-top:0.35rem;
+    float:left;
+    margin-left:0.3rem;
+}
+#Categories-1-SizeP{
+    height: 0.5rem;
+    color: #f6f6f6;
+    line-height: 0.5rem;
+}
+#Categories-1-Size h3{
+    width:4.3rem;
+    height: 0.8rem;
+    font-size:0.35rem;
+    margin-top: 0.3rem;
+    color: #f6f6f6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*//white-space: nowrap;*/
+}
+#Categories-1-SizeP2{
+    font-size:0.25rem;
+    color: #f6f6f6;
+    margin-top: 0.35rem;
+}
+#Categories-Image{
+    padding: 0.3rem 0 0 0.3rem;
+    height:4.1rem;
+}
+#Categories-Img{
+    height: 4.1rem;
+    width: 2.2rem;
+    border-right: 0.1rem solid #f6f6f6;
+}
+#Categories-Img img{
+    width: 2.2rem;
+    height: 3rem;
+    border-radius: 0.1rem;
+}
+#Categories-Image-H3{
+    width: 2.2rem;
+    font-size: 0.35rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#Categories-Img p{
+    margin-top: 0.1rem;
+    width: 2.2rem;
+    height:0.3rem;
+ }
+#Categories-Img p span{
+    color: #ff6743;
+    font-size: 0.2rem;
+}
+/************热门******************/
+#Hot{
+    height: 6.8rem;
+    margin-bottom: 0.4rem;
+    padding-left:0.3rem;
+    margin-top: 0.5rem;
+}
+#Hot-Tlite{
+    height:0.56rem;
+}
+#Hot-Tlite h3{
+    float: left;
+    font-size: 0.45rem;
+    line-height: 0.56rem;
+}
+#Hot-Tlite span{
+    float: right;
+    font-size: 0.4rem;
+    line-height: 0.56rem;
+}
+#Hot-body{
+    height: 5.9rem;
+    margin-top: 0.37rem;
+}
+#Hot-body-1{
+    width:5.3rem;
+    height: 5.8rem;
+    padding: 0.4rem 0.35rem;
+    border: 0.02rem solid #ebebeb;
+    border-radius:0.2rem;
+    margin-right: 0.3rem;
+}
+#Hot-body-1-1{
+    width: 4.9rem;
+    height: 0.95rem;
+
+}
+#Hot-body-1-1Image{
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    background-size: 100%;
+}
+#Hot-body-1-1Size{
+    width: 2.5rem;
+    height: 1rem;
+    margin-left: 0.2rem;
+    float: left;
+}
+#Hot-body-1-1Size h3{
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.35rem;
+}
+#Hot-body-1-1Size p{
+    margin-top: 0.15rem;
+    font-size: 0.14rem;
+    line-height: 0.15rem;
+    float: left;
+}
+#Hot-body-1-1 span{
+    float: right;
+    font-size: 0.4rem;
+    line-height:1rem;
+}
+#Hot-body-1-2{
+    width: 100%;
+    height: 0.7rem;
+}
+#Hot-body-1-2P{
+    font-size:0.3rem;
+    width: 100%;
+    height:0.6rem;
+    float: left;
+}
+#Hot-body-1-2P span:nth-child(1){
+    text-align: center;
+    /*display: inline-block;*/
+    width: 100%;
+    height:0.35rem;
+    display: block;
+    margin-top: 0.1rem;
+}
+#Hot-body-1-2P span:nth-child(2){
+    width: 100%;
+    height:0.05rem;
+    background: #cccccc;
+    border-radius:0.1rem;
+    position: relative;
+    display: inline-block;
+}
+#All-Image-Size{
+
+}
+#Image-Size{
+    float: left;
+    width: 2.15rem;
+    margin-right: 0.13rem;
+}
+#Hot-body-1-3{
+    width: 2.2rem;
+    height: 3rem;
+    margin-top: 0.37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Hot-body-1-3 li{
+    width:2.2rem;
+    height: 3.1rem;
+}
+#Hot-body-1-3 li img{
+    width: 2.1rem;
+    height: 3rem;
+    border-radius: 0.1rem;
+}
+.m-five{
+    width: auto;
+    height: auto;
+}
+/**************为你推荐********************/
+#Recommend{
+    height: auto;
+    padding:0 0.3rem;
+}
+#Recommend-Tilte{
+    height: 0.5rem;
+    font-size:0.35rem;
+    color: #232323;
+    line-height: 0.5rem;
+    font-weight: 700;
+}
+#Recommend-body{
+    height: auto;
+    margin-top: 0.35rem;
+}
+#Recommend-body li{
+    height: 3rem;
+    margin-bottom: 0.6rem;
+}
+#Recommend-Image{
+    width: 2.2rem;
+    height: 3rem;
+    float: left;
+    background-size: 100%;
+}
+#Recommend-Size{
+    height: 3rem;
+    float: right;
+    width: 4.4rem;
+}
+#Recommend-Size p:nth-child(1){
+    height: 0.5rem;
+    font-size: 0.3rem;
+    color: #232323;
+    line-height: 0.5rem;
+}
+#Recommend-Size h3{
+    margin-top: 0.25rem;
+    height: 1rem;
+    font-size: 0.35rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#Recommend-Size p:nth-child(3){
+    height: 0.5rem;
+    font-size: 0.3rem;
+    color: #232323;
+    line-height: 0.5rem;
+    margin-top: 0.23rem;
+}
+#Recommend-Size p:nth-child(4){
+    height: 0.5rem;
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+    margin-top: 0.23rem;
+   color: #232323;
+}
+#Recommend-Font span{
+    color: #ff6743;
+}
+
+
+
+

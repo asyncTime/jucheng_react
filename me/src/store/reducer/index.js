@@ -1,26 +1,38 @@
 import {
     combineReducers
 }from "redux"
-
 import {
     navImageList,
-    PriorityIn,
-    HotShow,
-    CycleOfsinging
+    Recommends,
+    M_Search
 } from "./navImage"
 import getIntegralList from "./integral"
 import {getScoresCityList,getAllScoresList} from "./integral/integralShop"
-import {showCategoryList,showList,showCityList} from "./z-show"
-import {theaterList,allShow }from "./theater"
+
+
+import {theaterList,allShow}from "./theater"
+
+
+import {
+    showCategoryList,
+    showList,
+    showCityList,
+    cardSliderList,
+    cardVipRuleList,
+    cardGroupList,
+} from "./z-show"
+
 
 export default combineReducers({
+    cardGroupList,
+    cardVipRuleList,
+    cardSliderList,
     showCityList,
     showList,
+    Recommends,
+    M_Search,
     showCategoryList,
     navImageList,
-    PriorityIn,
-    HotShow,
-    CycleOfsinging,
     getIntegralList,
     getScoresCityList,
     getAllScoresList,

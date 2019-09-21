@@ -17,14 +17,16 @@ export default {
        return async (dispatch) => {
 		  
            const {data} = await axios.post("/jo/getScoresCityList")
-          
+
            dispatch(changeScoresCityList(data))
        }
     },
     getAllScoresList() {
         return async (dispatch) => {
             const {data} = await axios.post("/jo/getAllScoresList");
-           
+
+            dispatch(changeAllScoresList(data))
+
         }
     }
 }

@@ -3,11 +3,7 @@ import { //type类型值
 	get_theaterList,
 	all_show
 } from "../../actionType/theater";
-export function theaterList(state = initState,{
-	type,
-	payload
-}) {
-	// console.log(initState)初始值
+export function theaterList(state=initState,{type,payload}){
 	state = JSON.parse(JSON.stringify(state));
 	if (type === get_theaterList) {
 		state.get_theaterList = payload;
@@ -15,6 +11,11 @@ export function theaterList(state = initState,{
 	}
 	return state
 }
+// export function theaterList(state = initState,{
+// 	type,
+// 	payload
+// }) {
+// 
 export function allShow(state = initState,{type,payload}){
 	state = JSON.parse(JSON.stringify(state));
 	if (type === all_show) {
