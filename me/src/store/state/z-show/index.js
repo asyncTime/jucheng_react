@@ -3,5 +3,6 @@ export default {
     showList:[],
     showCityList:[],
     cardSliderList:[],
-    cardVipRuleList:[]
+    cardVipRuleList:[],
+    cardGroupList:[],
 }

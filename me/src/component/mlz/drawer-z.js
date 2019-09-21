@@ -6,7 +6,8 @@ class Drawers extends React.Component {
     state = {
         visible: false,
         showCityList:[],
-        cityId:[]
+        cityId:[],
+        navId:[]
     };
     showDrawer = () => {
         this.setState({
@@ -27,7 +28,6 @@ class Drawers extends React.Component {
         }
     }
     liOnclick(id,e){
-        // console.log(id)
         let children=e.currentTarget.parentNode.children;
         for(let i=0;i<children.length;i++){
             children[i].style.color="";
@@ -35,7 +35,7 @@ class Drawers extends React.Component {
         }
         e.currentTarget.style.color="#ff6743"
         e.currentTarget.style.background="#fff1e9"
-        pubsub.publish("cityId",{cityId:id});
+        pubsub.publish("cityId",{cityId:id,navId:this.state.navId});
     }
     reset(){
         // this.liOnclick();
@@ -50,13 +50,14 @@ class Drawers extends React.Component {
         document.querySelector("#city").innerHTML="全国";
     }
     submit(){
+
         pubsub.publish("cityIds",{cityId:this.state.cityId});
         this.onClose()
         const showCityList=this.state.showCityList.showCityList?this.state.showCityList.showCityList:[];
         const cityId=this.state.cityId.cityId?this.state.cityId.cityId:"0";
         const cityName=showCityList.find((v)=>v.city_id==cityId);
-        const cityResultName=cityName?cityName:"全国"
-        document.querySelector("#city").innerHTML=cityResultName.name;
+        const cityResultName=cityName?cityName:"全国";
+        document.querySelector("#city").innerHTML=cityResultName.name?cityResultName.name:"全国";
     }
     componentWillMount(){
         pubsub.subscribe("cityId",(a,cityId)=>{
@@ -67,6 +68,7 @@ class Drawers extends React.Component {
         })
     }
     render() {
+        this.state.navId=this.props.navId
         const showCityList=this.state.showCityList.showCityList?this.state.showCityList.showCityList:[];
         return (
             <div
@@ -97,6 +99,9 @@ class Drawers extends React.Component {
                             ))
                         }
                     </ul>
+                    <div className="space">
+
+                    </div>
                     <div className="drawer-bottom">
                         <button onClick={this.reset.bind(this)}>重置</button>
                         <button onClick={this.submit.bind(this)}>确定</button>
@@ -108,4 +113,116 @@ class Drawers extends React.Component {
 }
 export default Drawers
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React from "react"
+import pubsub from "pubsub-js";
+import "../../assets/mlz/css/lables.css"
+import { Drawer, Button } from 'antd';
+
+class Drawers extends React.Component {
+    state = {
+        visible: false,
+        showCityList:[],
+        cityId:[]
+    };
+
+    showDrawer = () => {
+        this.setState({
+            visible: true,
+        });
+    };
+
+    onClose = () => {
+        this.setState({
+            visible: false,
+        });
+    };
+
+    showChildrenDrawer = () => {
+        this.setState({
+            childrenDrawer: true,
+        });
+    };
+
+    onChildrenDrawerClose = () => {
+        this.setState({
+            childrenDrawer: false,
+        });
+    };
+
+    render() {
+        return (
+            <div>
+                <Button type="primary" onClick={this.showDrawer}>
+                    Open drawer
+                </Button>
+                <Drawer
+                    title="Multi-level drawer"
+                    width={520}
+                    closable={false}
+                    onClose={this.onClose}
+                    visible={this.state.visible}
+                >
+                    <Drawer
+                        title="Two-level Drawer"
+                        width={320}
+                        closable={false}
+                        onClose={this.onChildrenDrawerClose}
+                        visible={this.state.childrenDrawer}
+                    >
+                        This is two-level drawer
+                    </Drawer>
+                    <div
+                        style={{
+                            position: 'absolute',
+                            bottom: 0,
+                            width: '100%',
+                            borderTop: '1px solid #e8e8e8',
+                            padding: '10px 16px',
+                            textAlign: 'right',
+                            left: 0,
+                            background: '#fff',
+                            borderRadius: '0 0 4px 4px',
+                        }}
+                    >
+                        <Button
+                            style={{
+                                marginRight: 8,
+                            }}
+                            onClick={this.onClose}
+                        >
+                            Cancel
+                        </Button>
+                        <Button onClick={this.onClose} type="primary">
+                            Submit
+                        </Button>
+                    </div>
+                </Drawer>
+            </div>
+        );
+    }
+}
+
+export default Drawers
+*/
 

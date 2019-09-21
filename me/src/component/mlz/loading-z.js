@@ -1,20 +1,12 @@
 import React from "react"
 import { Spin, Icon } from 'antd';
 class Loading extends React.Component{
-    constructor(){
-        super()
-        this.state = {
-            spinning:false
-        };
-    }
-    onClose = () => {
-        this.setState({
-            spinning: false,
-        });
-    };
     render(){
+        const antIcon = <Icon type="loading" style={{ fontSize: 28 ,color:"#ff6743"}} spin />
         return(
-            <Icon type="loading" style={{ fontSize: 24 }} spin />
+           <div>
+               <Spin indicator={antIcon} spinning={this.props.loading.spinning}/>
+           </div>
         )
     }
 }
