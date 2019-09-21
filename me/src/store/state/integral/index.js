@@ -1,3 +1,4 @@
 export default{
-    integralList:[]
+    integralList:[],
+    totalRows:0
 }

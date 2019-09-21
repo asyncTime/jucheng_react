@@ -9,6 +9,7 @@ import "./assets/css/M-css/Bus.css";
 import "./assets/zsl/style/integral.css"
 import "./assets/zsl/style/integral-shop.css"
 import "./assets/zsl/font/iconfont.css"
+import "./assets/liu/css/theater.css"
 import * as serviceWorker from './serviceWorker';
 import store from "./store"
 import {

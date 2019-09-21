@@ -1,0 +1,194 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select,section,header,footer,main{margin:0;padding:0;box-sizing:border-box;}
+
+
+em i{font-style:normal}
+
+img{border:0;vertical-align:middle}
+
+html,body {width:100%;height:100%;}
+
+
+.navbar{
+	position: fixed;
+	width:100%;
+	height:1.2rem;
+	text-align:center;
+    font-size:0.4rem;
+
+}
+.navbar1{
+	width: 20%;
+	height:1.2rem;
+	
+	float: left;
+}
+.navbar2{
+	width:60%;
+	height:1.2rem;
+	
+	float: left;
+}
+.navbar3{
+	width:20%;
+	height:1.2rem;
+	
+	float: left;
+}
+.yu{
+	width: 100%;
+	height: 1.2rem;
+}
+.contain{
+	width: 100%;
+	height: 5rem;
+	
+}
+.contain img{
+	width:100%;
+	height:100%;
+}
+.category-container{
+	width: 100%;
+	height: 2.5rem;
+    border: solid 2px #B0C4DE;
+	
+}
+
+
+
+.category-container .li{
+	margin-top: 0.2rem;
+	width: 25%;
+    float: left;
+	height: 2rem;
+	
+	text-align: center;
+}
+.li .top{
+	width: 80%;
+    font-size: 0.2rem;
+	height: 1.5rem;
+	
+	display: inline-block;
+}
+.li .top img{
+	width: 100%;
+	height: 100%;
+}
+.li .bottom{
+	font-size: 0.1rem;
+}
+.title3{
+	
+	width: 100%;
+	font-size:0.4rem;
+	font-weight: 100;
+	height: 0.7rem;
+}
+.title3 .font{
+	line-height:1rem;
+	width: 4rem;
+	height: 0.7rem;
+	margin-left:0.2rem;
+}
+.hot-wrap{
+	width: 100%;
+	height: 100%;
+}
+
+.show-wrap{
+	width: 100%;
+	height:100%;
+}
+.show-wrap a{
+	width: 90%;
+	margin-left: 0.2rem;
+    height: 4rem;
+	display: inline-block;
+	border-bottom: 2px lightsteelblue solid;
+}
+
+.img-box{
+	width:35%;
+	height:3.5rem;
+	float: left;
+	margin-top: 0.15rem;
+}
+.img-box img{
+	width: 100%;
+	height: 100%;
+}
+.detial-box{
+	width: 60%;
+	height:3rem;
+	float:right;
+	
+	margin-top: 0.6rem;
+}
+.head{
+	color: orange;
+	width:100%;
+	height:1rem;
+	font-size: 0.3rem;
+}
+
+
+.top{
+	width:100%;
+	height:0.7rem;
+	font-size: 0.3rem;
+}
+.title1{
+	width: 100%;
+	height:0.5rem;
+ 
+	font-size: 0.27rem;
+}
+
+
+.show-list{
+	border: solid 2px #B0C4DE;
+	
+	width: 90%;
+	height: 3.75rem;
+	margin: 0 auto;
+	border-bottom: 0.0125rem solid black;
+}
+.show-item{
+	width: 100%;
+	display: block;
+	height: 3rem;
+	background-color: #00FFFF;
+}
+.find{
+	width: 100%;
+	height: 2.5rem;
+	background-color: red;
+	
+	text-align: center;
+	font-family: Arial, "微软雅黑", sans-serif;
+}
+.find a{
+	text-decoration: none;
+    color: inherit;
+	font-size: 0.6rem;
+	line-height: 2.5rem;
+}
+
+.allshow{
+	width: 100%;
+	height: 2.75rem;
+	
+	
+	text-align: center;
+}
+.allshow a{
+	width: 3.5rem;
+	height: 1.5rem;
+	text-align:center;
+    line-height:1.5rem;
+	font-size: 0.5rem;
+	margin-top: 0.575rem;
+	text-decoration: none;
+	list-style: none;
+}

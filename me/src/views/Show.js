@@ -4,7 +4,7 @@ import list from "../store/actionCreact/z-show"
 import {
     bindActionCreators
 } from 'redux';
-import Bables from "../component/mlz/bables"
+import Bables from "../component/mlz/bables-z"
 import Drawer from "../component/mlz/drawer-z"
 import Loading from "../component/mlz/loading-z"
 import {
@@ -12,6 +12,16 @@ import {
 } from "react-redux"
 import pubsub from "pubsub-js";
 class Show extends Component {
+    constructor(props){
+        super(props)
+        this.state={
+            spinning:false,
+            cityId:0,
+            navId:0,
+            page:1
+        }
+    }
+
     navClick(id,e){
         //这个的主要功能是传递nav的id获取相应的数据
         let children=e.currentTarget.parentNode.children;
@@ -19,7 +29,10 @@ class Show extends Component {
             children[i].style.color="";
             children[i].style.borderBottom=""
         }
-        this.props.getShowList(id);
+        this.props.getShowList({id});
+        this.setState({
+            navId:id
+        });
         e.currentTarget.style.color="orange"
         e.currentTarget.style.borderBottom=".04rem solid orange"
     }
@@ -43,13 +56,12 @@ class Show extends Component {
                             ))
                         }
                     </ul>
-
                     <span>
-                            <Drawer showCityList={showCityList}></Drawer>
+                            <Drawer showCityList={showCityList} {...this.state}></Drawer>
                         </span>
                 </div>
                 <div className="loading">
-                    <Loading></Loading>
+                    <Loading loading={this.state}></Loading>
                 </div>
                 <div className="lablesValue">
                     {
@@ -71,17 +83,46 @@ class Show extends Component {
                         ))
                     }
                 </div>
+                <div onClick={this.pullLoading.bind(this)} style={{width:"100%",height:"1rem",background:"lightblue"}}>惦记我</div>
             </div>
         );
     }
+    pullLoading(){
+        this.props.getShowList({id:this.state.navId,cityId:this.state.cityId,page:++this.state.page});
+    }
+    // isLoding(){
+    //     setTimeout(()=>{
+    //         this.props.getShowList({id:0,cityId:0});
+    //         pubsub.subscribe("cityIds",(a,cityId,me)=>{
+    //             const city=cityId.cityId.cityId
+    //             this.props.getShowList({id:0,cityId:city});
+    //             me.setState({
+    //                 cityId:city
+    //             })
+    //             console.log(cityId)
+    //         })
+    //         this.props.getShowCategoryList()
+    //         this.props.getShowCityList();
+    //         this.setState({
+    //             spinning: false,
+    //         });
+    //     },500)
+    //
+    //
+    // }
     componentDidMount(){
-        this.props.getShowList(0,0);
-        pubsub.subscribe("cityIds",(a,cityId)=>{
-            const city=cityId.cityId.cityId
-            this.props.getShowList(0,city);
-        })
+        // this.isLoding()
         this.props.getShowCategoryList()
         this.props.getShowCityList();
+        this.props.getShowList({id:0,cityId:0});
+        pubsub.subscribe("cityIds",(Name,cityId)=>{
+            const navId=cityId.cityId.navId
+            const city=cityId.cityId.cityId
+            this.props.getShowList({id:navId,cityId:city});
+            this.setState({
+                cityId:city
+            });
+        })
     }
 }
 

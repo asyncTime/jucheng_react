@@ -5,26 +5,19 @@ import {
 import {
     connect
 } from "react-redux";
+import Bubble from "../component/zsl/Bubble"
 import integralCreator from "../store/actionCreact/integral"
 class Integral extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            sum:0,
-            temp:0
-        }
-    }
     render(){
         // console.log(this.props.integralList)
-        // let temp = 0;
         return (
             < div>
                 <div id="header">
                     <div className="left">
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
-                    <div className="center">我的积分</div>
-                    <div className="iconfont icon-sandian"></div>
+                    <div className="center">我的积分{console.log(this.props)}</div>
+                    <Bubble {...this.props}></Bubble>
                 </div>
                 <div id="nav">
                     <div>
@@ -33,8 +26,15 @@ class Integral extends React.Component{
                             积分原则
                         </div>
                         <div className="text">可用积分</div>
-                        <div className="num">{this.state.sum}</div>
-                        <div className="shop-integral">
+                        <div className="num">{this.props.totalRows * 2}</div>
+                        <div className="shop-integral" onClick={()=>{
+                            this.props.history.push({
+                                pathname:"/integralShop",
+                                state:{
+                                    scoreNew:this.props.totalRows * 2
+                                }
+                            })
+                        }}>
                             <span className="iconfont icon-yemian-copy-copy"></span>
                             积分商城
                         </div>
@@ -50,30 +50,21 @@ class Integral extends React.Component{
                                 <div className="name">{v.reason}</div>
                                 <div className="time">{v.createtime}</div>
                                 <span className="addNum" >{`+${v.scores}`}</span>
-                                <span style={{display:"none"}}>{this.state.temp += v.scores/1}</span>
                             </div>
                         ))
                     }
-                    {console.log(this.state.temp,33333333)}
                 </div>
             </div>
         )
     }
-   componentWillUpdate(){
-       console.log(44444444,this.state.temp)
-   
-   }
-    changeSum(){
-        this.setState({
-            sum:this.state.temp
-        })
-        console.log(this.state.sum,111111111)
-    }
-
     componentDidMount(){
-        this.props.getIntegralList()
-        //this.changeSum()
-        console.log(this.state.temp)
+        this.props.getIntegralList();
     }
 }
-export default connect(state=>({integralList:state.getIntegralList.integralList}),dispatch=>bindActionCreators(integralCreator,dispatch))(Integral)
+function mapToProps(state){
+    return {
+        integralList:state.getIntegralList.integralList,
+        totalRows:state.getIntegralList.totalRows
+    }
+}
+export default connect(mapToProps,dispatch=>bindActionCreators(integralCreator,dispatch))(Integral)
