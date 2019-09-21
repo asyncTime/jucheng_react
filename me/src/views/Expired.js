@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "../assets/lfx/css/coupon.css";
 import {
     withRouter
 }from "react-router-dom"
+
+
 class Expired extends React.Component{
     constructor(props) {
         super(props);
@@ -22,7 +24,6 @@ class Expired extends React.Component{
                             <div className="x-title-name">
                                 <span>已过期优惠券</span>
                             </div>
-
                         </div>
                     </div>
                     <div className="x-content" style={{paddingTop:".78rem"}}>

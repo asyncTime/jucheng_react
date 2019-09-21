@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "../assets/lfx/css/coupon.css"
-import {
+/*import {
     withRouter
-}from "react-router-dom"
+}from "react-router-dom"*/
 import Explain from "../component/my/Explain"
 import Tips from "../component/my/Tips"
+// import Help from "../component/my/Help";
 
 class Coupon extends React.Component{
     constructor(props){
         super(props);
     }
-
     Click(){
         this.props.history.push({pathname:"/Me"})
     }
@@ -44,7 +44,7 @@ class Coupon extends React.Component{
                                     <p><span>0</span>张未使用</p>
                                 </div>
                                 <div>
-                                    <Explain> </Explain>
+                                    <Explain></Explain>
                                 </div>
                             </div>
                         </div>
@@ -64,4 +64,5 @@ class Coupon extends React.Component{
         )
     }
 }
-export default withRouter(Coupon);
+// export default withRouter(Coupon);
+export default Coupon;

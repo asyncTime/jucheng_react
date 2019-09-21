@@ -3,7 +3,7 @@ import "../../assets/lfx/css/my.css";
 import {
     withRouter
 }from "react-router-dom";
-
+// import Help from "../../component/my/Help"
  class Me extends React.Component {
     constructor(props){
         super(props);
@@ -107,6 +107,7 @@ import {
                                             <i className="iconfont icon-help">
                                             </i>
                                             <p>客服帮助</p>
+                                            {/*<Help></Help>*/}
                                         </a>
                                     </li>
                                 </ul>
