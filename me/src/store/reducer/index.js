@@ -1,10 +1,10 @@
 import {
     combineReducers
 }from "redux"
-
 import {
     navImageList,
-    Recommends
+    Recommends,
+    M_Search
 } from "./navImage"
 import getIntegralList from "./integral"
 import {getScoresCityList,getAllScoresList} from "./integral/integralShop"
@@ -22,12 +22,12 @@ export default combineReducers({
     showCityList,
     showList,
     Recommends,
+    M_Search,
     showCategoryList,
     navImageList,
     getIntegralList,
     getScoresCityList,
     getAllScoresList,
 	theaterList
-
 })
 

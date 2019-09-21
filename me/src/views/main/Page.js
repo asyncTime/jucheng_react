@@ -203,6 +203,6 @@ function mapStateToProps(state,props) {
     }
 }
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators(All_List,dispatch,1)
+    return bindActionCreators(All_List,dispatch)
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Page)
