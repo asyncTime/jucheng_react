@@ -17,6 +17,12 @@ export  function navImageList(state=initState,{type,payload}) {
         state.navList=payload;
         localStorage.list=JSON.stringify(state.navList)
     }
+
+    return state
+}
+export function PriorityIn(state=initState,{type,payload}){
+    state = JSON.parse(JSON.stringify(state));
+
     if(type===get_PriorityIn){
         state.PriorityList=payload;
         localStorage.PriorityInList=JSON.stringify(state.PriorityList)
