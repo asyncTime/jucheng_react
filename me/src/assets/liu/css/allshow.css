@@ -1,0 +1,146 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select,section,header,footer,main{margin:0;padding:0;box-sizing:border-box;}
+body{font:12px "微软雅黑";background:#fff;}
+a {	text-decoration: none;}
+a:hover{text-decoration:underline}
+em i{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+p{word-wrap:break-word}
+.ind{text-indent:2em}
+.ind10{text-indent:10px;}
+.noborder{border:0;}
+.left{float:left;}
+.right{float:right;}
+.clearBoth{clear:both;}
+.font12{font-size:12px;}
+html,body {width:100%;height:100%;}
+#liutianbo{
+	width:100%;
+	height: 100%;
+}
+.header{
+	width:100%;
+	height:1.3rem;
+	background-color:white;	
+	position: fixed;
+	top:0;
+	left:0;
+}
+.dingqi{
+	width:100%;
+	height:1.3rem;
+}
+#haibo{
+	width:100%;
+	height:1.3rem;
+}
+#liubing{
+	width:100%;
+	height:1.3rem;
+}
+.search-top{
+	width: 100%;
+	height: 0.1rem;
+	
+}
+.search-nav{
+	line-height: 1rem;
+	width: 100%;
+	height: 1rem;
+	background-color:white;
+	font-size:0.3rem;
+	text-decoration: none;
+}
+.search-bottom{
+	width: 100%;
+	height:0.2rem;
+	background-color:gainsboro;
+}
+
+#liuchang{
+	
+	text-align: center;
+	width: 25%;
+	height:1rem;
+}	
+ .liuone{
+	display: inline-block;
+	height:1rem;
+	color:orange;	
+}
+
+#liuchang .liuone:hover{
+	color: #ff7919;
+	
+	border-bottom: orange solid 0.125rem;
+}
+#liuchang:hover{
+	color: #ff7919;
+	text-decoration: none;
+	
+    border-bottom: orange solid 0.025rem;
+}
+
+.search-nav a{
+	display: inline-block;
+    width:2.875rem;
+	height:1.5rem;
+	font-size: 0.5rem;
+	line-height:1.5rem ;
+}
+
+
+.show-wrap{
+	width: 100%;
+	height:100%;
+}
+.liua{
+	
+	width: 90%;
+	margin-left: 0.35rem;
+    height: 4.75rem;
+	display: inline-block;
+	border-bottom: 2px lightsteelblue solid;
+}
+
+.img-box{
+	width:30%;
+	height:3.5rem;
+	float: left;
+	margin-top: 0.5rem;
+}
+.img-box liuimg{
+	width: 100%;
+	height: 100%;
+}
+.detial-box{
+	width: 67%;
+	height:4rem;
+	float:right;
+	
+	margin-top: 0.5rem;
+}
+.head{
+	color: orange;
+	width:100%;
+	height:0.8rem;
+	font-size: 0.3rem;
+	line-height:0.8rem;
+}
+
+
+.top{
+	width:100%;
+	height:0.5rem;
+	font-size: 0.2rem;
+	line-height: 0.5rem;
+	color: #999988;
+}
+.title1{
+	width: 100%;
+	height:1.5rem;
+   
+	font-size: 0.27rem;
+	color: black;
+}
+

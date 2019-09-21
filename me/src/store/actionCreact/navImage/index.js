@@ -55,7 +55,7 @@ export default {
     get_HotShowImageList(){
          return async(dispatch)=>{
              if(localStorage.HotShowList){
-                 console.log("11");
+                
                  dispatch(dispatch(get_HotShow(JSON.parse(localStorage.HotShowList))))
              }else{
                  const {data}=await axios.get("/ju/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=1")

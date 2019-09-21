@@ -23,6 +23,13 @@ module.exports = function (app) {
 	        "^/liu": ""
 	    }
 	}));
+	app.use("/tian",proxy({
+	    target:"https://m.juooo.com",
+	    changeOrigin: true,
+	    pathRewrite: {
+	        "^/tian": ""
+	    }
+	}));
     app.use("/meng",proxy({
         target:"https://m.juooo.com",
         changeOrigin: true,

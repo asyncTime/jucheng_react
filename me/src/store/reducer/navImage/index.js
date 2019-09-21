@@ -13,7 +13,7 @@ export  function navImageList(state=initState,{type,payload}) {
     }
     return state
 }
-export function PriorityIn(state=initState,{type,payload}) {
+export function PriorityIn(state=initState,{type,payload}){
     state = JSON.parse(JSON.stringify(state));
     if(type===get_PriorityIn){
         state.PriorityList=payload;

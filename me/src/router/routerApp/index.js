@@ -13,6 +13,7 @@ import Integral from "../../views/Integral";
 import Popular from "../../views/Popular";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
+import allShow from "../../views/allshow"
 export default [
     {
         path:'/Longin',
@@ -66,6 +67,11 @@ export default [
 	component:Popular,
 	title:"演出"
 	},{
+	path:"/allShow",
+	component:allShow,
+	title:"suiyou"
+	},
+	{
         path: '/',
         component: Main,
         title: '',
