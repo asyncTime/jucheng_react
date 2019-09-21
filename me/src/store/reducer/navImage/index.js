@@ -9,9 +9,9 @@ import {
     get_theatre_list,
     get_recommend_show_list,
     get_SearchList,
+    get_Search_All
 } from "../../actionType/navImage"
 export  function navImageList(state=initState,{type,payload}) {
-    console.log(payload)
     state = JSON.parse(JSON.stringify(state));
     if(type===get_navList){
         state.navList=payload;
@@ -56,6 +56,9 @@ export function M_Search(state=initState,{type,payload}) {
     state = JSON.parse(JSON.stringify(state));
     if(type===get_SearchList){
         state.Search=payload
+    }
+    if(type===get_Search_All){
+        state.Search_ALL=payload
     }
     return state
 }

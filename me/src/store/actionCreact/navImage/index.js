@@ -9,49 +9,49 @@ import {
     get_recommend_show_list,//w为你推荐
 } from "../../actionType/navImage";
 import axios from "axios"
-export function get_nav(payload) {
+ function get_nav(payload) {
     return{
         type:get_navList,
         payload
     }
 }
-export function get_PriorityInBuy(payload) {
+function get_PriorityInBuy(payload) {
     return{
         type:get_PriorityIn,
         payload
     }
 }
-export function get_HotShow(payload) {
+ function get_HotShow(payload) {
     return{
         type:get_HotShowImage,
         payload
     }
 }
-export function grt_CycleOfsinging(payload) {
+ function grt_CycleOfsinging(payload) {
     return{
         type:get_CycleOfsinging,
         payload
     }
 }
-export function get_priorList(payload) {
+ function get_priorList(payload) {
     return{
         type:get_prior,
         payload
     }
 }
-export function get_CategoriesList(payload) {
+ function get_CategoriesList(payload) {
     return{
         type:get_Categories,
         payload
     }
 }
-export function get_theatre(payload){
+ function get_theatre(payload){
     return{
         type:get_theatre_list,
         payload
     }
 }
-export function get_recommend_List(payload) {
+ function get_recommend_List(payload) {
     return {
         type:get_recommend_show_list,
         payload
@@ -69,6 +69,7 @@ export default {
              }
          }
      },
+    //vip 转享折扣
     get_PriorityIn(){
              return async(dispatch)=>{
                  if (localStorage.PriorityInList) {
