@@ -60,7 +60,7 @@ class Set extends Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 
