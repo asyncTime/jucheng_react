@@ -96,6 +96,7 @@ import Skind from "../../component/Page/Skind";
          window.removeEventListener('scroll',this.handleScroll)
      }
         componentDidMount() {
+         console.log(this.props)
         this.props.get_PriorityIn();//优先购票
         this.props.get_navImageList();//获取图片轮播图，类别
         this.props.get_priorAll();//专享折扣
@@ -110,14 +111,13 @@ import Skind from "../../component/Page/Skind";
      }
  }
 function mapStateToProps(state,props) {
-     console.log(state)
     return{
         navImageList:state.navImageList.navList,
         PriorList:state.navImageList.PriorList,
         Categories:state.navImageList.Categories,
         theatre:state.navImageList.theatre,
-        Recommend:state.Recommends.Recommend,
-        page:state.Recommends.page
+        Recommend:state.navImageList.Recommend,
+        page:state.navImageList.page
     }
 }
 function mapDispatchToProps(dispatch) {

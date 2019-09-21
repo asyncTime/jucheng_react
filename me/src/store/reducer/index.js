@@ -3,7 +3,6 @@ import {
 }from "redux"
 import {
     navImageList,
-    Recommends,
     M_Search
 } from "./navImage"
 import getIntegralList from "./integral"
@@ -29,7 +28,6 @@ export default combineReducers({
     cardSliderList,
     showCityList,
     showList,
-    Recommends,
     M_Search,
     showCategoryList,
     navImageList,

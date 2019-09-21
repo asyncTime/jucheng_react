@@ -3,25 +3,27 @@ import {connect} from "react-redux"
 import {
     bindActionCreators
 } from 'redux';
+import {
+    NavLink
+}from "react-router-dom"
 import All_List from "../../store/actionCreact/navImage";
 import TepySlideshow1 from "./tepySlideshow1";
 class Skind extends Component {
     render() {
-        console.log(this.props)
         let operation_list=this.props.operation_list?this.props.operation_list:[];
         const sum=operation_list.slice(0,2);
-        const num=operation_list.slice(0,3);
+        const num=operation_list.slice(2,5);
         return (
             <div id={'m-category'}>
                 <div id={'m-category1'}>
                     {
                         (this.props.classify_list?this.props.classify_list:[]).map((v,i)=>(
-                            <div key={i} className={'m-category1'+i}>
-                                <a href={v.url}>
+                         <NavLink to={`/show?cid=${v.id}&caid=${v.category_id}`} key={i}>
+                             <div  className={'m-category1'+i}>
                                     <img src={v.pic} alt={"页面"} />
                                     <span>{v.name}</span>
-                                </a>
                             </div>
+                         </NavLink>
                         ))
                     }
 
@@ -42,15 +44,15 @@ class Skind extends Component {
                     <ul id={"VipUi1"}>
                         {
                             sum.map((v,i)=>(
-                                <li key={i}>
-                                    <a href={'/#'}>
-                                        <div id={'VipUi1_Font'}>
-                                            <h3>{v.name}</h3>
-                                            <div dangerouslySetInnerHTML={{__html: v.describe}}></div>
-                                        </div>
-                                        <div id={'VipUi1Image'} style={{backgroundImage:`url(${v.pic})`}}></div>
-                                    </a>
-                                </li>
+                                <NavLink to={'/'} key={i}>
+                                    <li>
+                                            <div id={'VipUi1_Font'}>
+                                                <h3>{v.name}</h3>
+                                                <div dangerouslySetInnerHTML={{__html: v.describe}}></div>
+                                            </div>
+                                            <div id={'VipUi1Image'} style={{backgroundImage:`url(${v.pic})`}}></div>
+                                    </li>
+                                </NavLink>
                             ))
                         }
                     </ul>
@@ -72,7 +74,6 @@ class Skind extends Component {
     }
 }
 function mapStateToProps(state,props) {
-    console.log(state.navImageList)
     return{
         PriorityIn:state.navImageList.PriorityList,
     }
