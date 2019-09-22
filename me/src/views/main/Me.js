@@ -3,7 +3,7 @@ import "../../assets/lfx/css/my.css";
 import {
     withRouter
 }from "react-router-dom";
-// import Help from "../../component/my/Help"
+// import Set from "../../component/my/Set"
  class Me extends React.Component {
     constructor(props){
         super(props);
@@ -15,7 +15,9 @@ import {
                     <div className="x-my">
                         <div className="x-header">
                             <div className="x-pic">
-                                <i className="iconfont icon-set"> </i>
+                                <i className="iconfont icon-set" onClick={()=>(
+                                    this.props.history.push({pathname:"/Set"})
+                                )}> </i>
                                 <div className="x-pic-main">
                                     <div className="x-pic-main-head">
                                         <div className="x-pic-main-head-pic">

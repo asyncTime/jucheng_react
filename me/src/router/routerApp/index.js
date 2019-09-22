@@ -5,6 +5,8 @@ import Main from "../../views/main"
 import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Wallet from "../../views/main/Wallet";
+
+import Set from "../../views/Set";
 import Coupon from "../../views/Coupon";
 import Expired from "../../views/Expired"
 import Integral from "../../views/Integral";
@@ -81,6 +83,16 @@ export default [
         title: "我的卡包"
     },
 	{
+        path:"/Popular",
+        component:Popular,
+        title:"演出"
+	},
+    {
+        path:"/Set",
+        component:Set,
+        title:"账户设置"
+    }
+    ,{
 	path:"/Popular",
 	component:Popular,
 	title:"演出"
