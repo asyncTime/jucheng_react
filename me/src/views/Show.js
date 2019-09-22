@@ -86,7 +86,6 @@ class Show extends Component {
                         ))
                     }
                 </div>
-                {console.log(showList.length,"length")}
                 <Loading loading={showList.length<25?false:true}></Loading>
             </div>
         );

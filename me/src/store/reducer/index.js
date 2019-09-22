@@ -19,10 +19,12 @@ import {
     cardSliderList,
     cardVipRuleList,
     cardGroupList,
+    scheduleInfoList
 } from "./z-show"
 
 
 export default combineReducers({
+    scheduleInfoList,
     cardGroupList,
     cardVipRuleList,
     cardSliderList,

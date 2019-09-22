@@ -5,7 +5,8 @@ import {
     CHANGE_SHOW_CITY_LIST,
     CHANGE_CARD_SLIDER_LIST,
     CHANGE_CARD_VIP_RULE_LIST,
-    CHANGE_CARD_GROUP_LIST
+    CHANGE_CARD_GROUP_LIST,
+    CHANGE_SCHEDULE_INFO_LIST
 } from "../../actionType/z-show"
 
 export function showCategoryList (state=initState,{type,payload}) {
@@ -29,8 +30,6 @@ export function showList(state=initState,{type,payload}) {
             }
         }
     }
-
-
     return state
 }
 export function showCityList(state=initState,{type,payload}) {
@@ -58,6 +57,13 @@ export function cardGroupList(state=initState,{type,payload}) {
     state=JSON.parse(JSON.stringify(state));
     if(type===CHANGE_CARD_GROUP_LIST){
         state.cardGroupList=payload
+    }
+    return state
+}
+export function scheduleInfoList(state=initState,{type,payload}) {
+    state=JSON.parse(JSON.stringify(state));
+    if(type===CHANGE_SCHEDULE_INFO_LIST){
+        state.scheduleInfoList=payload
     }
     return state
 }
