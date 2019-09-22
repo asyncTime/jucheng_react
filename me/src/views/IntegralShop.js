@@ -1,5 +1,6 @@
 import React from "react";
 import Pull from "../component/zsl/Pull";
+import MenuExample from "../component/zsl/MenuExample"
 import Bubble from "../component/zsl/Bubble"
 import {
     connect
@@ -18,8 +19,7 @@ class IntegralShop extends React.Component{
     }
     render (){
         const {scoresCityList,AllScoresList} = this.props;
-        console.log(this.props,"ddddddddd")
-        console.log(scoresCityList,AllScoresList,"vvvvv")
+        // console.log(scoresCityList,AllScoresList)
         return (
             <div>
                 <div id="zsl-header">
@@ -47,9 +47,10 @@ class IntegralShop extends React.Component{
                 </div>
                 <div className="zsl-pull">
                     {/*{console.log(this.props)}*/}
-                    <Pull {...[this.props.scoresCityList]} {...{city:"城市"}}></Pull>
-                    <Pull {...[this.props.AllScoresList]} {...{city:"积分"}}></Pull>
+                    {/*<Pull {...{scoresCityList:scoresCityList}} {...{AllScoresList:AllScoresList}} {...{city:"城市"}}></Pull>*/}
+                    {/*不要这样写<Pull {...{scoresCityList:scoresCityList}} {...{AllScoresList:AllScoresList}} {...{city:"积分"}}></Pull>*/}
                 </div>
+                <MenuExample scoresCityList={scoresCityList}></MenuExample>
                 <div id="zsl-section">
                     {
                         this.props.AllScoresList.map((v,i) => (

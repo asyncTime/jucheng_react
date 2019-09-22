@@ -1,3 +1,4 @@
+
 import Longin from "../../views/Longin"
 import DetailPage from "../../views/Detail page"
 import Search from "../../views/Search"
@@ -13,14 +14,14 @@ import Integral from "../../views/Integral";
 import Popular from "../../views/Popular";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
-
+import BuyName from "../../views/BuyName"
 import allShow from "../../views/allshow"
-
+import Address from "../../views/Address"
 import CardProduct from "../../views/CardProduct"
 
 import Show from "../../views/Show"
 import ShowDetal from "../../views/ShowDetal"
-
+import AddAddress from "../../component/zsl/AddAddress";
 export default [
     {
         path:'/Longin',
@@ -59,8 +60,8 @@ export default [
         title: "优惠券"
     },
     {
-      path:"/Expired",
-      component:Expired
+        path:"/Expired",
+        component:Expired
     },
     {
         path:"/CardProduct",
@@ -82,26 +83,40 @@ export default [
         component: CardBag,
         title: "我的卡包"
     },
-	{
+    {
+        path:"/buyName",
+        component:BuyName,
+        title:"实名购票人"
+    },
+    {
+        path:"/address",
+        component:Address,
+        title:"收货地址"
+    },
+    {
         path:"/Popular",
         component:Popular,
         title:"演出"
-	},
+    },
     {
         path:"/Set",
         component:Set,
         title:"账户设置"
     }
     ,{
-	path:"/Popular",
-	component:Popular,
-	title:"演出"
-	},{
-	path:"/allShow",
-	component:allShow,
-	title:"suiyou"
-	},
-	{
+        path:"/Popular",
+        component:Popular,
+        title:"演出"
+    },{
+        path:"/addaddress",
+        component:AddAddress,
+        title:"保存地址"
+    },{
+        path:"/allShow",
+        component:allShow,
+        title:"suiyou"
+    },
+    {
         path: '/',
         component: Main,
         title: '',

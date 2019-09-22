@@ -16,7 +16,7 @@ class Integral extends React.Component{
                     <div className="left">
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
-                    <div className="center">我的积分{console.log(this.props)}</div>
+                    <div className="center">我的积分</div>
                     <Bubble {...this.props}></Bubble>
                 </div>
                 <div id="nav">
