@@ -7,3 +7,4 @@ export const get_Categories="get_Categories";
 export const get_theatre_list="get_theatre_list";
 export const get_recommend_show_list="get_recommend_show_list";
 export const get_SearchList="get_SearchList";
+export const get_Search_All="get_Search_All";

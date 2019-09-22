@@ -14,7 +14,11 @@ import Integral from "../../views/Integral";
 import Popular from "../../views/Popular";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
+
+import allShow from "../../views/allshow"
+
 import CardProduct from "../../views/CardProduct"
+
 export default [
     {
         path:'/Longin',
@@ -78,6 +82,15 @@ export default [
         title:"账户设置"
     }
     ,{
+	path:"/Popular",
+	component:Popular,
+	title:"演出"
+	},{
+	path:"/allShow",
+	component:allShow,
+	title:"suiyou"
+	},
+	{
         path: '/',
         component: Main,
         title: '',

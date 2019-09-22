@@ -42,7 +42,7 @@ html,body {width:100%;height:100%;}
 }
 .theater-body{
 	width:90%;
-	height:6rem;
+	height:6.2rem;
 	background-color:white;
 	margin: 0 auto;
 	text-align: center;
@@ -52,7 +52,7 @@ html,body {width:100%;height:100%;}
 	margin: 0 auto;	
 	
 	width: 86%;
-	height:6rem;
+	height:6.2rem;
 	background-color: white
 }
 .theater-info-shows{
@@ -74,6 +74,11 @@ html,body {width:100%;height:100%;}
 .theater-info2{
 	width: 100%;
 	height:4.3rem;
+	
+}
+.lunboliu{
+	width: 100%;
+	height: 4.1rem;
 	
 }
 .theater-pic-name-count{
@@ -127,6 +132,7 @@ html,body {width:100%;height:100%;}
 }
 
 .theater-link{
+	display: inline-block;
 	line-height: 1.5rem;
 	font-size: 0.7rem;
 	width: 20%;
@@ -140,9 +146,9 @@ html,body {width:100%;height:100%;}
 	width: 100%;
 	height: 100%;
 }
-#bo{
+.boo{
 	float: left;
-     width: 40%;
+     width: 100%;
 	height: 4rem;
 	font-size:0.4rem;
 }
@@ -151,14 +157,19 @@ html,body {width:100%;height:100%;}
 	height: 1rem;
 	background-color: #0000FF;
 }
+.xia{
+	width:100%;
+	height: 3rem;
+	background-color: red;
+}
 .data{
 	width: 100%;
 	height:2.5rem;
 	background-color: #0000FF;
 }	
-#bo img{
-	width: 100%;
-	height:4rem ;
+.boo img{
+	width:100%;
+	height:100% ;
 }
 
   
