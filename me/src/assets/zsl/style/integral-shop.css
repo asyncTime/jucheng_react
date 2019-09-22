@@ -1,6 +1,15 @@
 html{
     font-size:26.7vw;
 }
+#myself{
+    display:flex;
+    justify-content: space-around;
+}
+.am-navbar-left, .am-navbar-title, .am-navbar-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 #zsl-header{
     display:flex;
     width:100%;
@@ -15,6 +24,7 @@ html{
 #zsl-header .center{
     flex:1;
     margin-left: 2.6rem;
+    font-size:.4rem;
 }
 #zsl-header .am-navbar{
     display: flex;
@@ -28,6 +38,10 @@ html{
     color: #000;
 }
 /*nav*/
+html:not([data-scale]) .am-accordion{
+    border-top: none;
+    margin: 0 36px;
+}
 #zsl-nav {
     width:100%;
     height:1.16rem;

@@ -1,79 +1,78 @@
 html{
     font-size:26.7vw;
-    background: #e7e7e7;
 }
-header{
+#BuyName-header{
     width:100%;
-    height:.36rem;
+    height:.72rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    font-size:.15rem;
+    font-size:.3rem;
     border-bottom:1px solid #ccc;
     background: #e7e7e7;
-    padding-left:.1rem;
+    padding-left:.2rem;
     box-sizing: border-box;
     background: #fff;
 }
-header .center{
+#BuyName-header .center{
     flex:1;
     box-sizing:border-box;
-    padding-left:1.35rem;
+    padding-left:2.7rem;
 }
-header .icon-dayuhao{
-    font-size: .2rem;
+#BuyName-header .icon-dayuhao{
+    font-size: .4rem;
 }
 /*nav*/
-nav {
+#BuyName-nav {
     width:100%;
-    height:.85rem;
+    height:1.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #fff;
 }
-nav input{
+#BuyName-nav input{
     display: block;
-    width:3.5rem;
-    height:.4rem;
-    font-size:.15rem;
-    padding: 0 .33rem;
+    width:7rem;
+    height:.8rem;
+    font-size:.3rem;
+    padding: 0 .66rem;
     border: none;
     box-sizing: border-box;
 }
-nav .tree{
+#BuyName-nav .tree{
     width:100%;
-    height:.01rem;
+    height:.02rem;
     background: #ccc;
 }
 /*section*/
-section{
+#BuyName-section{
     width:100%;
-    height:1.33rem;
+    height:2.66rem;
     display: flex;
     flex-direction: column;
 }
-section .alert{
-    font-size: .15rem;
+#BuyName-section .alert{
+    font-size: .3rem;
     color:red;
-    padding-left:.1rem;
+    padding-left:.2rem;
     box-sizing: border-box;
 }
-section .sec-bottom{
+#BuyName-section .sec-bottom{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: .15rem;
+    font-size: .3rem;
     flex-direction: column;
-    padding-top:.2rem;
+    padding-top:.4rem;
     box-sizing: border-box;
 }
-section .button{
-    width:2.08rem;
-    height:.3rem;
+#BuyName-section .button{
+    width:4.16rem;
+    height:.6rem;
     background: orangered;
     text-align: center;
-    line-height:.3rem;
-    margin-top:.16rem;
+    line-height:.6rem;
+    margin-top:.32rem;
 }
