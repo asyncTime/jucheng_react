@@ -4,9 +4,9 @@ import Search from "../../views/Search"
 import Main from "../../views/main"
 import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
-import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
 
+import Set from "../../views/Set";
 import Coupon from "../../views/Coupon";
 import Expired from "../../views/Expired"
 import Integral from "../../views/Integral";
@@ -20,6 +20,9 @@ import Theater from "../../views/main/Theater";
 import Me from "../../views/main/Me";
 import CardProduct from "../../views/CardProduct"
 import AddAddress from "../../component/zsl/AddAddress";
+import Show from "../../views/Show"
+import ShowDetal from "../../views/ShowDetal"
+
 export default [
     {
         path:'/Longin',
@@ -39,10 +42,8 @@ export default [
     },{
         path:'/Order from',
         component:OrderFrom,
-    },{
-        path:'/Show',
-        component:Show
-    },{
+    },
+    {
         path:'/Wallet',
         component:Wallet,
         title:'票夹'
@@ -65,7 +66,18 @@ export default [
     },
     {
         path:"/CardProduct",
-        component:CardProduct
+        component:CardProduct,
+
+    },
+    {
+        path:"/ShowDetal/:detalId",
+        component:ShowDetal,
+
+    },
+    {
+        path:'/Show/:id',
+        component:Show,
+
     },
     {
         path: "/cardBag",
@@ -88,6 +100,27 @@ export default [
         component:AddAddress,
         title:"保存地址"
     },{
+    },
+	{
+        path:"/Popular",
+        component:Popular,
+        title:"演出"
+	},
+    {
+        path:"/Set",
+        component:Set,
+        title:"账户设置"
+    }
+    ,{
+	path:"/Popular",
+	component:Popular,
+	title:"演出"
+	},{
+	path:"/allShow",
+	component:allShow,
+	title:"suiyou"
+	},
+	{
         path: '/',
         component: Main,
         title: '',

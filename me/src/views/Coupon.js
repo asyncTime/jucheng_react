@@ -5,7 +5,6 @@ import "../assets/lfx/css/coupon.css"
 }from "react-router-dom"*/
 import Explain from "../component/my/Explain"
 import Tips from "../component/my/Tips"
-// import Help from "../component/my/Help";
 
 class Coupon extends React.Component{
     constructor(props){

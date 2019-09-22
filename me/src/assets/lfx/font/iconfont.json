@@ -1,0 +1,100 @@
+{
+  "id": "1414849",
+  "name": "juooo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "810220",
+      "name": "箭头",
+      "font_class": "jiantou-copy",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "1130611",
+      "name": "门票 (2)",
+      "font_class": "menpiao2",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "1172720",
+      "name": "订单",
+      "font_class": "dingdan1",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "1703535",
+      "name": "通讯录",
+      "font_class": "tongxunlu",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "2127141",
+      "name": "设置",
+      "font_class": "set",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3764006",
+      "name": "电话",
+      "font_class": "weibiaoti-",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "3894654",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "4398157",
+      "name": "意见反馈",
+      "font_class": "yijianfankui",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "4905550",
+      "name": "卡包",
+      "font_class": "qiabao",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "6366905",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "6560947",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "8966922",
+      "name": "省略号2",
+      "font_class": "ellipsis2",
+      "unicode": "e701",
+      "unicode_decimal": 59137
+    },
+    {
+      "icon_id": "9982142",
+      "name": "订单",
+      "font_class": "dingdan2",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    }
+  ]
+}

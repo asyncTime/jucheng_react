@@ -56,7 +56,7 @@ export default {
         return async(dispatch)=>{
                 const {data} = await axios.get(`/ju/Show/Search/getShowList?category=${id}&city_id=${cityId}&page=${page}&keywords=&version=6.0.5&referer=2`);
                 const showList=data.data;
-                dispatch(getShowList(showList))
+                    dispatch(getShowList(showList))
             }
     },
     getShowCityList(){
@@ -81,6 +81,7 @@ export default {
         }
     },
     getCardGroupList(){
+
         return async (dispatch)=>{
             const {data} = await axios.get("/ju/Card/index/getCardGroupList?version=6.0.5&referer=2");
             const cardGroupList=data.data;

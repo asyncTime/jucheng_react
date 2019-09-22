@@ -12,12 +12,12 @@ import Categories from "../../component/Page/Categories";
 import Recommend from "../../component/Page/Recommend"
 import Hearder from "../../component/Page/Hearder";
 import Skind from "../../component/Page/Skind";
- class Page extends React.Component{
-     constructor(props){
-         super(props);
-         this.scrollTop = 0;
-         this.handleScroll = this.handleScroll.bind(this)
-     }
+class Page extends React.Component{
+    constructor(props){
+        super(props);
+        this.scrollTop = 0;
+        this.handleScroll = this.handleScroll.bind(this)
+    }
     render() {
         const PriorListTwo=this.props.PriorList?this.props.PriorList.discountList:[];
         const PriorListOne=this.props.PriorList?this.props.PriorList.watchList:[];
@@ -61,7 +61,6 @@ import Skind from "../../component/Page/Skind";
                                     </div>
                                 ))
                             }
-
                         </div>
                         <div id={'Discount2'}>
                             {
@@ -89,14 +88,14 @@ import Skind from "../../component/Page/Skind";
             </div>
         )
     }
-        componentWillMount(){
-         window.addEventListener('scroll', this.handleScroll)
-     }
-        componentWillUnmount(){
-         window.removeEventListener('scroll',this.handleScroll)
-     }
-        componentDidMount() {
-         console.log(this.props)
+    componentWillMount(){
+        window.addEventListener('scroll', this.handleScroll)
+    }
+    componentWillUnmount(){
+        window.removeEventListener('scroll',this.handleScroll)
+    }
+    componentDidMount() {
+        console.log(this.props)
         this.props.get_PriorityIn();//优先购票
         this.props.get_navImageList();//获取图片轮播图，类别
         this.props.get_priorAll();//专享折扣
@@ -104,12 +103,12 @@ import Skind from "../../component/Page/Skind";
         this.props.get_theatre_listAll()//热门场会
         this.props.get_recommend()//为你推荐
     }
-        handleScroll(){
-         if(document.documentElement.scrollHeight-window.scrollY<1000){
-             this.props.get_recommend(this.props.page)
-         }
-     }
- }
+    handleScroll(){
+        if(document.documentElement.scrollHeight-window.scrollY<1000){
+            this.props.get_recommend(this.props.page)
+        }
+    }
+}
 function mapStateToProps(state,props) {
     return{
         navImageList:state.navImageList.navList,

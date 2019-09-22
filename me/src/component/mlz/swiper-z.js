@@ -18,14 +18,14 @@ class Swiper extends React.Component {
         const cardSliderList=this.props.cardSliderList?this.props.cardSliderList:[];
         return (
             <WingBlank>
-                <Carousel
+                <Carousel id="productSwiperDiv"
                     autoplay={true}
                     infinite
                     // beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
                     // afterChange={index => console.log('slide to', index)}
                 >
                     {cardSliderList.map(v => (
-                        <a
+                        <a id="productSwiperImg"
                             key={v}
                             href={v.mb_href}
                             style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}

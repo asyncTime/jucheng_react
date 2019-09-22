@@ -18,7 +18,7 @@ class Skind extends Component {
                 <div id={'m-category1'}>
                     {
                         (this.props.classify_list?this.props.classify_list:[]).map((v,i)=>(
-                         <NavLink to={`/show?cid=${v.id}&caid=${v.category_id}`} key={i}>
+                         <NavLink to={`/show/${v.category_id}`} key={i}>
                              <div  className={'m-category1'+i}>
                                     <img src={v.pic} alt={"页面"} />
                                     <span>{v.name}</span>
@@ -26,8 +26,8 @@ class Skind extends Component {
                          </NavLink>
                         ))
                     }
-
                 </div>
+
                 <div id={'m-category2'}>
                     <div id={'m-category2-1'}>
                         <div id={'m-category2-1-Left'}>

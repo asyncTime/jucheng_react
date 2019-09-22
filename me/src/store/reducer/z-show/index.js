@@ -17,9 +17,20 @@ export function showCategoryList (state=initState,{type,payload}) {
 }
 export function showList(state=initState,{type,payload}) {
     state=JSON.parse(JSON.stringify(state));
-    if(type===CHANGE_SHOW_LIST){
-        state.showList=payload
+    if((type===CHANGE_SHOW_LIST)){
+        if(payload.page===1){
+            state.showList=payload.list
+        }else{
+            if(payload.list.length===0){
+                const arr=[1]
+                state.showList=[...state.showList , ...(payload.list),...arr]
+            }else {
+                state.showList=[...state.showList , ...(payload.list)];
+            }
+        }
     }
+
+
     return state
 }
 export function showCityList(state=initState,{type,payload}) {

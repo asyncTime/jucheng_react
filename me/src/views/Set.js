@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "../assets/lfx/css/set.css"
 
-class Set extends Component {
+export default class Set extends React.Component {
     render() {
         return (
             <div className="set-warp">
@@ -9,7 +9,7 @@ class Set extends Component {
                     <div className="x-set-title">
                         <div className="x-title-one">
                             <div className="x-left">
-                                <i className="iconfont x-icon">&#xe667;</i>
+                                <i className="iconfont x-icon" >&#xe667;</i>
                             </div>
                             <div className="x-title-name">
                                 <span>账户设置</span>
@@ -22,7 +22,7 @@ class Set extends Component {
                             <div className="x-content-title">
                                 <span className="left">头像</span>
                                 <div className="x-content-img">
-                                    <img src={require("../assets/lfx/imgs/x_2.png")} alt="">
+                                    <img src={require("../assets/lfx/imgs/x_2.png")} alt=""/>
                                 </div>
                             </div>
                             <div className="x-content-title">
@@ -63,5 +63,3 @@ class Set extends Component {
         )
     }
 }
-
-export default Set;
