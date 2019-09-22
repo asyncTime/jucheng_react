@@ -46,6 +46,7 @@ export function Recommends(state=initState,{type,payload}) {
     if(type===get_recommend_show_list){
         state.Recommend=[...payload,...state.Recommend]
         state.page++
+        console.log(state.page)
     }
     return state
 

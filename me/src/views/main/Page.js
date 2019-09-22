@@ -3,6 +3,9 @@ import {connect} from "react-redux"
 import {
     bindActionCreators
 } from 'redux';
+import {
+    NavLink
+}from "react-router-dom"
 import All_List from "../../store/actionCreact/navImage"
 import TepySlideshow from "../../component/Page/tepySlideshow"
 import TepySlideshow1 from "../../component/Page/tepySlideshow1";
@@ -16,7 +19,7 @@ import Hearder from "../../component/Page/Hearder";
      constructor(props){
          super(props);
          this.scrollTop = 0;
-         this.handleScroll = this.handleScroll.bind(this)
+        this.handleScroll = this.handleScroll.bind(this)
      }
     render() {
         const classify_list=this.props.navImageList.classify_list?this.props.navImageList.classify_list:[];
@@ -33,12 +36,13 @@ import Hearder from "../../component/Page/Hearder";
                     <div id={'m-category1'}>
                         {
                             classify_list.map((v,i)=>(
-                                <div key={i} className={'m-category1'+i}>
-                                    <a href={v.url}>
+                               <NavLink to={`/show/${v.category_id}`} key={i}>
+                                   <div  className={'m-category1'+i}>
                                         <img src={v.pic} alt={"页面"} />
                                         <span>{v.name}</span>
-                                    </a>
+
                                 </div>
+                               </NavLink>
                             ))
                         }
 
@@ -59,15 +63,15 @@ import Hearder from "../../component/Page/Hearder";
                         <ul id={"VipUi1"}>
                             {
                                 sum.map((v,i)=>(
-                                    <li key={i}>
-                                        <a href={'/#'}>
+                                   <NavLink key={i} to={'/CardProduct'}>
+                                       <li >
                                             <div id={'VipUi1_Font'}>
                                                 <h3>{v.name}</h3>
                                                 <div dangerouslySetInnerHTML={{__html: v.describe}}></div>
                                             </div>
                                             <div id={'VipUi1Image'} style={{backgroundImage:`url(${v.pic})`}}></div>
-                                        </a>
                                     </li>
+                                   </NavLink>
                                 ))
                             }
                         </ul>
@@ -182,6 +186,7 @@ import Hearder from "../../component/Page/Hearder";
         this.props.get_CategoriesAll();//类别会
         this.props.get_theatre_listAll()//热门场会
         this.props.get_recommend()//为你推荐
+        console.log("222__________")
     }
      handleScroll(){
          if(document.documentElement.scrollHeight-window.scrollY<1000){
@@ -190,6 +195,7 @@ import Hearder from "../../component/Page/Hearder";
      }
  }
 function mapStateToProps(state,props) {
+    console.log(state)
     return{
         navImageList:state.navImageList.navList,
         PriorityIn:state.navImageList.PriorityList,
