@@ -189,6 +189,7 @@
 #productSwiperImg{
     border-radius: .1rem !important;
     margin-top: .35rem !important;
+    margin-left: .3rem;
 }
 .swiper .slider-frame{
     margin-top: .9rem !important;
