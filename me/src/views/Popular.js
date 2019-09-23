@@ -7,6 +7,9 @@ import "../assets/liu/css/Popular.css"
 			this.props.history.push({pathname:"/allShow"})
 						
 	}
+	Dclick(){
+		this.props.history.go(-1)
+	}
 	render(){
 		 let theaterList = this.props.theaterList;
 		 
@@ -15,7 +18,7 @@ import "../assets/liu/css/Popular.css"
 		 // }else{
 			//   let item = this.props.location.item
 		 // }
-		  let item = this.props.location.item
+		  let item = this.props.location.state.item
 		  console.log(this.props)
 		  console.log(item)
 		  //item = item||[]
@@ -23,8 +26,8 @@ import "../assets/liu/css/Popular.css"
      return(
 		   <div className="hot-wrap">
 				<div className="navbar">
-					<div className="navbar1">
-					</div> <div className="navbar2">{item.name}</div>
+					<div className="navbar1 iconfont icon-jiantou-zuo" onClick={this.Dclick.bind(this)}></div> 
+					<div className="navbar2">{item.name}</div>
 					<div className="navbar3">...</div>
 				</div>
 			    <div className="yu">
@@ -89,7 +92,7 @@ import "../assets/liu/css/Popular.css"
 						</a>
 			))
 		  }
-		  <div className="allshow" onClick={this.Click.bind(this)}><a>热门演出></a></div>
+		  <div className="allshow" onClick={this.Click.bind(this)}><a>热门演出</a></div>
 		  </div>
     </div>
 

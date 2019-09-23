@@ -45,7 +45,8 @@ class Show extends Component {
         const showCityList=this.props.showCityList.showCityList.city_list?this.props.showCityList.showCityList.city_list:[];
         return (
             <div  className="lables">
-                <div className="title">
+                <div className="title222">
+				
                     <div className="liushowType">
                        <ul>
                            <li onClick={this.navClick.bind(this,0)}>全部</li>
@@ -58,7 +59,7 @@ class Show extends Component {
                       
                    </div>
                 </div>
-                
+                <div className="liuti"></div>
                 <div className="loading">
                 </div>
                 <div className="lablesValue">

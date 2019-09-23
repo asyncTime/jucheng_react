@@ -6,8 +6,8 @@
 body{
     overflow-x:hidden
 }
-.title{
-    height:.95rem;
+.title222{
+    height:1rem;
     width: 100%;
     background-color: #fff;
     font-size: .35rem;
@@ -21,7 +21,13 @@ body{
     left: 0;
     top: 0;
     padding: 0rem 0.3rem 0 .3rem;
+	
+	
     box-sizing: border-box;
+}
+.liuti{
+	height: 1.2rem;
+	width: 100%;
 }
 .liushowType{
     width: 100%;

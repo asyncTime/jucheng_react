@@ -22,7 +22,7 @@ import 'swiper/dist/css/swiper.min.css'
 		 //if(localStorage.){
 			// this.props.history.push({pathname:"/Popular",item:n})
 		 //}else{
-			 this.props.history.push({pathname:"/Popular",item:n})	
+			 this.props.history.push({pathname:"/Popular",state:{item:n}})	
 		 //}
 			  			
 	 }
