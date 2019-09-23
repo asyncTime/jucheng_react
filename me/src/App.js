@@ -15,6 +15,7 @@ class App extends React.Component{
                   router.map((v,i)=>{
                       return(
                           <Route   key={v.path} {...v}></Route>
+						  
                       )
                   })
                 }

@@ -6,18 +6,14 @@ import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Show from "../../views/Show"
 import Wallet from "../../views/main/Wallet";
-
 import Coupon from "../../views/Coupon";
 import Expired from "../../views/Expired"
 import Integral from "../../views/Integral";
 import Popular from "../../views/Popular";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
-
-import allShow from "../../views/allshow"
-
+import allShow from "../../views/allshow";
 import CardProduct from "../../views/CardProduct"
-
 export default [
     {
         path:'/Longin',
