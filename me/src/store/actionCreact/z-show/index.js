@@ -4,7 +4,8 @@ import {
     CHANGE_SHOW_CITY_LIST,
     CHANGE_CARD_SLIDER_LIST,
     CHANGE_CARD_VIP_RULE_LIST,
-    CHANGE_CARD_GROUP_LIST
+    CHANGE_CARD_GROUP_LIST,
+    CHANGE_SCHEDULE_INFO_LIST
 } from "../../actionType/z-show"
 
 import axios from "axios"
@@ -44,6 +45,13 @@ export function getCardGroupList(payload) {
         payload
     }
 }
+
+export function getScheduleInfo(payload) {
+    return{
+        type:CHANGE_SCHEDULE_INFO_LIST,
+        payload
+    }
+}
 export default {
     getShowCategoryList() {
         return async(dispatch)=>{
@@ -56,7 +64,7 @@ export default {
         return async(dispatch)=>{
                 const {data} = await axios.get(`/ju/Show/Search/getShowList?category=${id}&city_id=${cityId}&page=${page}&keywords=&version=6.0.5&referer=2`);
                 const showList=data.data;
-                dispatch(getShowList(showList))
+                    dispatch(getShowList(showList))
             }
     },
     getShowCityList(){
@@ -81,13 +89,18 @@ export default {
         }
     },
     getCardGroupList(){
+
         return async (dispatch)=>{
             const {data} = await axios.get("/ju/Card/index/getCardGroupList?version=6.0.5&referer=2");
             const cardGroupList=data.data;
             dispatch(getCardGroupList(cardGroupList))
         }
     },
-
-
-
+    getScheduleInfo(schedular_id){
+        return async (dispatch)=>{
+            const {data} = await axios.get(`/ju/Schedule/Schedule/getScheduleInfo?schedular_id=${schedular_id}&version=6.0.5&referer=2`);
+            const scheduleInfo=data.data;
+            dispatch(getScheduleInfo(scheduleInfo))
+        }
+    }
 }

@@ -1,9 +1,10 @@
 import React from "react"
 import "../../assets/lfx/css/my.css";
 import {
-    withRouter
+    withRouter,
+    NavLink
 }from "react-router-dom";
-// import Help from "../../component/my/Help"
+// import Set from "../../component/my/Set"
  class Me extends React.Component {
     constructor(props){
         super(props);
@@ -15,7 +16,9 @@ import {
                     <div className="x-my">
                         <div className="x-header">
                             <div className="x-pic">
-                                <i className="iconfont icon-set"> </i>
+                                <i className="iconfont icon-set" onClick={()=>(
+                                    this.props.history.push({pathname:"/Set"})
+                                )}> </i>
                                 <div className="x-pic-main">
                                     <div className="x-pic-main-head">
                                         <div className="x-pic-main-head-pic">
@@ -33,11 +36,13 @@ import {
                                             <p className="x-pic-main-label-item-name">账户余额</p>
                                             <div className="separator"> </div>
                                         </a>
-                                        <a href="/#" className="x-pic-main-label-item">
-                                            <p className="x-pic-main-label-item-num">0</p>
-                                            <p className="x-pic-main-label-item-name">积分</p>
-                                            <div className="separator"> </div>
-                                        </a>
+                                        <div className="x-pic-main-label-item">
+                                            <NavLink to={"/Integral"}>
+                                                <p className="x-pic-main-label-item-num">0</p>
+                                                <p className="x-pic-main-label-item-name">积分</p>
+                                                <div className="separator"> </div>
+                                            </NavLink>
+                                        </div>
 
                                         <a href=" " className="x-pic-main-label-item" onClick={this.Click.bind(this)}>
                                             <p className="x-pic-main-label-item-num">0</p>
@@ -71,29 +76,35 @@ import {
                                         </a>
                                     </li>
                                     <li className="x-setting-list-item">
-                                        <a href="/#" className="x-setting-list-link">
-                                            <i className="iconfont icon-cardpackage">
-                                            </i>
-                                            <p>我的卡包</p>
-                                        </a>
+                                        <div className="x-setting-list-link">
+                                            <NavLink to={"/cardbag"}>
+                                                <i className="iconfont icon-cardpackage">
+                                                </i>
+                                                <p>我的卡包</p>
+                                            </NavLink>
+                                        </div>
                                     </li>
                                     <li className="x-setting-list-item">
                                     </li>
                                 </ul>
                                 <ul className="x-setting-list">
                                     <li className="x-setting-list-item">
-                                        <a href="/#" className="x-setting-list-link">
-                                            <i className="iconfont icon-people">
-                                            </i>
-                                            <p>实名购票人</p>
-                                        </a>
+                                        <div className="x-setting-list-link">
+                                            <NavLink to={"/buyName"}>
+                                                <i className="iconfont icon-people">
+                                                </i>
+                                                <p>实名购票人</p>
+                                            </NavLink>
+                                        </div>
                                     </li>
                                     <li className="x-setting-list-item">
-                                        <a href="/#" className="x-setting-list-link">
-                                            <i className="iconfont icon-address">
-                                            </i>
-                                            <p>收货地址</p>
-                                        </a>
+                                        <div className="x-setting-list-link">
+                                            <NavLink to={"/address"}>
+                                                <i className="iconfont icon-address">
+                                                </i>
+                                                <p>收货地址</p>
+                                            </NavLink>
+                                        </div>
                                     </li>
                                     <li className="x-setting-list-item">
                                         <a href="/#" className="x-setting-list-link">

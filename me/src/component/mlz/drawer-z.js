@@ -51,7 +51,7 @@ class Drawers extends React.Component {
     }
     submit(){
 
-        pubsub.publish("cityIds",{cityId:this.state.cityId});
+        pubsub.publishSync("cityIds",{cityId:this.state.cityId});
         this.onClose()
         const showCityList=this.state.showCityList.showCityList?this.state.showCityList.showCityList:[];
         const cityId=this.state.cityId.cityId?this.state.cityId.cityId:"0";

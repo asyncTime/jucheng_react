@@ -1,13 +1,22 @@
 import { Carousel, WingBlank } from 'antd-mobile';
 import React from "react"
+import {connect} from "react-redux"
+import {
+    bindActionCreators
+} from 'redux';
+import All_List from "../../store/actionCreact/navImage";
 class TepySlideshow3 extends React.Component {
     state = {
         imgHeight: 176,
     };
-
     render() {
-        let list=this.props.list?this.props.list:[];
         return (
+            <div id={'CycleOfsinging'}>
+                <div id={'CycleOfsinging-1'}>
+                    <h3>轮回演唱</h3>
+                    <a> ></a>
+                </div>
+                <div id={'CycleOfsinging-2'}>
             <WingBlank>
                 <Carousel className="space-carousel"
                           frameOverflow="visible"
@@ -18,7 +27,8 @@ class TepySlideshow3 extends React.Component {
                           infinite={false}
                           dots={false}
                 >
-                    {list.map((val, index) => (
+                    {
+                        (this.props.tour_show_list?this.props.tour_show_list:[]).map((val, index) => (
                         <div
                             key={val}
                             style={{
@@ -46,8 +56,20 @@ class TepySlideshow3 extends React.Component {
                     ))}
                 </Carousel>
             </WingBlank>
+                </div>
+            </div>
         );
     }
+    componentDidMount() {
+        this.props.grt_CycleOfsingingList();//轮回演唱
+    }
 }
-
-export default TepySlideshow3
+function mapStateToProps(state,props) {
+    return{
+        tour_show_list:state.navImageList.tour_show_list,
+    }
+}
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators(All_List,dispatch)
+}
+export default connect(mapStateToProps,mapDispatchToProps)(TepySlideshow3)

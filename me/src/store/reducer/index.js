@@ -3,7 +3,6 @@ import {
 }from "redux"
 import {
     navImageList,
-    Recommends,
     M_Search
 } from "./navImage"
 import getIntegralList from "./integral"
@@ -24,16 +23,17 @@ import {
     cardSliderList,
     cardVipRuleList,
     cardGroupList,
+    scheduleInfoList
 } from "./z-show"
 
 
 export default combineReducers({
+    scheduleInfoList,
     cardGroupList,
     cardVipRuleList,
     cardSliderList,
     showCityList,
     showList,
-    Recommends,
     M_Search,
     showCategoryList,
     navImageList,

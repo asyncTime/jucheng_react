@@ -77,7 +77,7 @@ import "../assets/liu/css/Popular.css"
 	     {
 			item.showList.map((v,i)=>(
 						<a key={v.id}>
-						<div className="img-box">
+						<div className="img-boxliu">
 							<img src={v.pic}/>
 						</div>
 						<div className="detial-box">

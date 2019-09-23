@@ -4,8 +4,8 @@ class Loading extends React.Component{
     render(){
         const antIcon = <Icon type="loading" style={{ fontSize: 28 ,color:"#ff6743"}} spin />
         return(
-           <div>
-               <Spin indicator={antIcon} spinning={this.props.loading.spinning}/>
+           <div style={{width:"100%",textAlign:"center"}}>
+               <Spin indicator={antIcon} spinning={this.props.loading}/>
            </div>
         )
     }

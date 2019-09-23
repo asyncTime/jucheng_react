@@ -1,5 +1,8 @@
 import { Popover, NavBar } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
+import {
+    withRouter
+} from "react-router-dom"
 import React from "react"
 const Item = Popover.Item;
     
@@ -32,9 +35,8 @@ class Bables extends React.Component {
                              overlayStyle={{ color: 'currentColor' }}
                              visible={this.state.visible}
                              overlay={[
-                                 (<Item key="4" value="scan"  data-seed="logId"> <i  className="iconfont icon-xiaofangzi1" style={{paddingRight:"13px"}}></i>主页</Item>),
-                                 (<Item key="5" value="special"  style={{ whiteSpace: 'nowrap' }}><i className="iconfont icon-weibiaoti-" style={{paddingRight:"13px"}}></i>我的聚橙</Item>),
-
+                                 (<div onClick={()=>{this.props.history.push("/")}}><Item id="mainPage"  key="4" value="scan"  data-seed="logId"> <i  className="iconfont icon-xiaofangzi1" style={{paddingRight:"13px"}}></i>主页</Item></div>),
+                                 (<div onClick={()=>{this.props.history.push("/Me")}}><Item id="myJuooo" key="5" value="special"  style={{ whiteSpace: 'nowrap' }}><i className="iconfont icon-weibiaoti-" style={{paddingRight:"13px"}}></i>我的聚橙</Item></div>),
                              ]}
                              align={{
                                  overflow: { adjustY: 0, adjustX: 0 },
@@ -51,8 +53,7 @@ class Bables extends React.Component {
                             alignItems: 'center',
                         }}
                         >
-
-                            <i  id="bables" className="iconfont icon-sangedian"></i>
+                          <i id="bables" className="iconfont icon-sangedian"></i>
                         </div>
                     </Popover>
                 }
@@ -61,4 +62,4 @@ class Bables extends React.Component {
         </div>);
     }
 }
-export default Bables;
+export default withRouter(Bables) ;

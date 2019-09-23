@@ -110,19 +110,19 @@ html,body {width:100%;height:100%;}
 	border-bottom: 2px lightsteelblue solid;
 }
 
-.img-box{
-	width:45%;
-	height:2.5rem;
+.img-boxliu{
+	width:35%;
+	height:3.3rem;
 	float: left;
 	margin-top: 0.08rem;
 }
-.img-box img{
+.img-boxliu img{
 	width: 100%;
 	height: 100%;
 }
 .detial-box{
-	width:55%;
-	height:3rem;
+	width:60%;
+	height:3.3rem;
 	float:right;
 	
 	margin-top: 0.1rem;
@@ -176,12 +176,9 @@ html,body {width:100%;height:100%;}
 	font-size: 0.6rem;
 	line-height: 2.5rem;
 }
-
 .allshow{
 	width: 100%;
 	height: 2.75rem;
-	
-	
 	text-align: center;
 }
 .allshow a{

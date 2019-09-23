@@ -28,7 +28,6 @@ class TepySlideshow1 extends Component {
                         </div>
                         <div className='swiper-pagination'></div>
                     </div>
-
                 </div>
             </div>
         );

@@ -18,7 +18,7 @@ html,body{
     backface-visibility: hidden;
     margin: 0;
     width: 100%;
-    height: 8rem;
+    height: 2.2rem;
     font-size: 0.4rem;
     color: #212121;
     position: fixed;
@@ -26,7 +26,7 @@ html,body{
     z-index: 1;
 }
 .x-set-content{
-    padding-top: 7.3rem;
+    padding-top: 1rem;
     background: #f6f6f6;
     height: 100%;
     width: 100%;
@@ -44,7 +44,7 @@ html,body{
     background: #fdfdfd;
 }
 .x-left{
-    line-height: 5rem;
+    line-height: .8rem;
     height: 100%;
     text-align: center;
     vertical-align: middle;
@@ -58,7 +58,7 @@ html,body{
 .x-title-name{
     display: flex;
     overflow: hidden;
-    font-size: 3rem;
+    font-size: .3rem;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -68,26 +68,26 @@ html,body{
 
 /*内容部*/
 .x-title-warp{
-    margin-top:2.5rem;
+    margin-top:.25rem;
     width: 100%;
     background-color: #fff;
-    font-size: 2.3rem;
+    font-size: .3rem;
 }
 .x-content-title{
     display: flex;
-    height: 7rem;
-    margin: 0 3rem;
-    line-height:7rem;
+    height: 1rem;
+    margin: 0 .3rem;
+    line-height:1rem;
     justify-content: space-between;
     border-bottom: 1px solid #d8d8d8;
 }
 .left b{
     color: #CCCCCC;
-    font-size: 1.8rem;
+    font-size: .2rem;
 }
 .x-content-img{
-    width: 7rem;
-    height: 7rem;
+    width: .85rem;
+    height: .85rem;
     background: #f5f5f5;
     border-radius: 50%;
 }
@@ -97,17 +97,17 @@ img{
 }
 .x-Right{
     display: block;
-    line-height: 4.6rem;
-    height: 7rem;
+    line-height: 1rem;
+    height: .7rem;
 }
 .x-submit{
     width: 90%;
-    height: 7rem;
+    height: .7rem;
     background: #fff;
-    margin: 4rem auto;
+    margin: .4rem auto;
     text-align: center;
-    line-height: 7rem;
-    font-size: 2.6rem;
+    line-height: .7rem;
+    font-size: .4rem;
     border-radius: 1rem;
 }
 

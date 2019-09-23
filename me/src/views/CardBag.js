@@ -1,9 +1,13 @@
 import React from "react";
+import {
+    NavLink
+} from "react-router-dom"
+import ActionSheet from "../component/zsl/ActionSheet";
 class CardBag extends React.Component{
     render(){
         return (
             <div>
-                <header>
+                <div id="zsl-header">
                     <div className="left">
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
@@ -11,20 +15,23 @@ class CardBag extends React.Component{
                     <div className="right">
                         <span className="iconfont icon-sandian"></span>
                     </div>
-                </header>
-                <section>
+                </div>
+                <div id="zsl-section-cardBag">
                     <div className="img">
-                        <img src="../img/rAoKNVyumKiAfP1qAAACYTizNOw440.png" alt="暂无信用卡"/>
+                        <img src={require("../assets/zsl/img/rAoKNVyumKiAfP1qAAACYTizNOw440.png")} alt="暂无信用卡"/>
                         暂无信用卡
                     </div>
-                </section>
-                <footer>
-                    <div className="buynewcard">购买新卡</div>
+                </div>
+                <div id="zsl-footer">
+                    <div className="buynewcard">
+                        <NavLink to={"/CardProduct"}>购买新卡</NavLink>
+                    </div>
                     <div className="tree"></div>
-                    <div className="bind-newcard">绑定新卡</div>
+                    {/*<div className="bind-newcard">绑定新卡</div>*/}
+                    <ActionSheet></ActionSheet>
                     <div className="tree"></div>
                     <div className="my-newcard">我的卡包</div>
-                </footer>
+                </div>
             </div>
         )
     }
