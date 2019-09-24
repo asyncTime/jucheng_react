@@ -23,7 +23,7 @@ import {
         return(
             <div className="card">
                 <div className="title">
-                    <i className="iconfont icon-xiangzuojiantou"></i>
+                    <i className="iconfont icon-xiangzuojiantou" onClick={()=>{this.props.history.go(-1)}}></i>
                     <div>购买新卡</div>
                     <Bables></Bables>
                 </div>

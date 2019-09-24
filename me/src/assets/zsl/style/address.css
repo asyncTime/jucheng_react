@@ -1,58 +1,58 @@
 html{
     font-size:26.7rem;
 }
-header{
+#Address-header{
     width:100%;
-    height:.38rem;
+    height:.76rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding:0 .1rem;
-    font-size: .2rem;
-    border-bottom: .01rem solid #ccc;
+    padding:0 .2rem;
+    font-size: .4rem;
+    border-bottom: .02rem solid #ccc;
 }
-header .icon-sandian{
-    font-size: .2rem;
+#Address-header .icon-sandian{
+    font-size: .4rem;
 }
-header .icon-dayuhao{
-    font-size: .2rem;
+#Address-header .icon-dayuhao{
+    font-size: .4rem;
 }
 /*nav*/
-nav{
+#Address-nav{
     width:100%;
-    height:.95rem;
-    margin-top:.98rem;
+    height:1.9rem;
+    margin-top:1.96rem;
 }
-nav .location{
+#Address-nav .location{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 .location img{
-    width:1.2rem;
-    height:.86rem;
+    width:2.4rem;
+    height:1.72rem;
 }
 .location .location-txt{
     color:#ccc;
-    font-size: .12rem;
+    font-size: .24rem;
 }
 /*section*/
-section{
+#Address-section{
     width:100%;
-    height:.55rem;
+    height:1.1rem;
     position: absolute;
     left: 0;
     bottom:0;
 }
 .button {
     width:100%;
-    height:.38rem;
+    height:.76rem;
     background: orangered;
-    font-size:.2rem;
+    font-size:.4rem;
     text-align: center;
-    line-height: .38rem;
+    line-height: .76rem;
     color:#fff;
-    border-radius: .15rem;
+    border-radius: .3rem;
 }

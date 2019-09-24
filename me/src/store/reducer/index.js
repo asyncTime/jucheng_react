@@ -9,7 +9,11 @@ import getIntegralList from "./integral"
 import {getScoresCityList,getAllScoresList} from "./integral/integralShop"
 
 
-import {theaterList,allShow}from "./theater"
+import {theaterList,
+        allShow,
+	    listShowliu
+		
+}from "./theater"
 
 import {navList} from "./Vip";
 
@@ -21,10 +25,12 @@ import {
     cardSliderList,
     cardVipRuleList,
     cardGroupList,
+    scheduleInfoList
 } from "./z-show"
 
 
 export default combineReducers({
+    scheduleInfoList,
     cardGroupList,
     cardVipRuleList,
     cardSliderList,
@@ -38,8 +44,10 @@ export default combineReducers({
     getAllScoresList,
 	theaterList,
 	allShow,
-    navList
-
+    navList,
+	listShowliu,
+	
+	// allShow
 
 })
 

@@ -15,8 +15,6 @@ export default class Theaterlun extends React.Component {
 		   console.log(showList)
       return (
 	      <div>
-				{
-			showList.map((v,i)=>(
 			  <div className="swiper-container">
 			  		<div className="swiper-wrapper">
 			  			<div className="swiper-slide">
@@ -27,19 +25,10 @@ export default class Theaterlun extends React.Component {
 			  			<div className="swiper-slide">Slide 6</div>
 			  			<div className="swiper-slide">Slide 6</div>
 			  			<div className="swiper-slide">Slide 6</div>
-			  		</div>
+			  		 </div>
 			  	
-			  	
-			  </div>
-			
-			))	
-				
-						
-					
-						
-						
-				}
-		   </div>		
+			  	</div>
+		 </div>
               )
     }
      componentDidMount(){
