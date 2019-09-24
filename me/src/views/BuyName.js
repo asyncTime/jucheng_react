@@ -5,7 +5,11 @@ class BuyName extends React.Component{
         return (
             <div>
                 <div id="BuyName-header">
-                    <div className="left">
+                    <div className="left" onClick={()=>{
+                        this.props.history.push({
+                            pathname:"/Me"
+                        })
+                    }}>
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">实名认证</div>

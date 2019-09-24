@@ -5,7 +5,7 @@ const Item = Popover.Item;
 const myImg = src => <img src={`https://gw.alipayobjects.com/zos/rmsportal/${src}.svg`} className="am-icon am-icon-xs" alt="" />;
 class Bubble extends React.Component {
     state = {
-        visible: true,
+        visible: false,
         selected: '',
     };
     onSelect = (opt) => {

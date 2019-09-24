@@ -2,13 +2,17 @@ import React from "react";
 import {
     NavLink
 } from "react-router-dom"
-import ActionSheet from "../component/zsl/ActionSheet";
+import Talk from "../component/zsl/ActionSheet";
 class CardBag extends React.Component{
     render(){
         return (
             <div>
                 <div id="zsl-header">
-                    <div className="left">
+                    <div className="left" onClick={()=>{
+                        this.props.history.push({
+                            pathname:"/Me"
+                        })
+                    }}>
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">我的卡包</div>
@@ -28,7 +32,7 @@ class CardBag extends React.Component{
                     </div>
                     <div className="tree"></div>
                     {/*<div className="bind-newcard">绑定新卡</div>*/}
-                    <ActionSheet></ActionSheet>
+                    <Talk></Talk>
                     <div className="tree"></div>
                     <div className="my-newcard">我的卡包</div>
                 </div>

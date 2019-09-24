@@ -9,13 +9,13 @@ module.exports = function (app) {
         }
     }));
     app.use("/jo",proxy({
-        target:"http://127.0.0.1",
+        target:"http://47.96.135.158",
         changeOrigin: true,
         pathRewrite: {
             "^/jo": ""
         }
     }));
-	
+    // 47.96.135.158
 	app.use("/liu",proxy({
 	    target:"https://api.juooo.com",
 	    changeOrigin: true,

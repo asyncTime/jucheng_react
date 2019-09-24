@@ -23,7 +23,11 @@ class IntegralShop extends React.Component{
         return (
             <div>
                 <div id="zsl-header">
-                    <div className="left">
+                    <div className="left" onClick={()=>{
+                        this.props.history.push({
+                            pathname:"/Integral"
+                        })
+                    }}>
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">积分商城</div>

@@ -9,11 +9,14 @@ import Bubble from "../component/zsl/Bubble"
 import integralCreator from "../store/actionCreact/integral"
 class Integral extends React.Component{
     render(){
-        // console.log(this.props.integralList)
         return (
             < div>
                 <div id="header">
-                    <div className="left">
+                    <div className="left" onClick={()=>{
+                        this.props.history.push({
+                            pathname:"/Me"
+                        })
+                    }}>
                         <span className="iconfont icon-dayuhao"></span>
                     </div>
                     <div className="center">我的积分</div>

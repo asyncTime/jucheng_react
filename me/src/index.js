@@ -16,6 +16,7 @@ import "./assets/zsl/style/address.css"
 import "./assets/zsl/style/integral.css"
 import "./assets/zsl/style/integral-shop.css"
 import "./assets/zsl/style/add-address.css"
+import "./assets/zsl/style/ActionSheet.css"
 import "./assets/zsl/font/iconfont.css"
 import "./assets/liu/css/theater.css"
 import * as serviceWorker from './serviceWorker';
