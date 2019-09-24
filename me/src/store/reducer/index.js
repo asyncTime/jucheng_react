@@ -11,8 +11,10 @@ import {getScoresCityList,getAllScoresList} from "./integral/integralShop"
 
 import {theaterList,allShow}from "./theater"
 
+import {navList} from "./Vip";
 
 import {
+
     showCategoryList,
     showList,
     showCityList,
@@ -35,8 +37,9 @@ export default combineReducers({
     getScoresCityList,
     getAllScoresList,
 	theaterList,
-	allShow
-	
+	allShow,
+    navList
+
 
 })
 

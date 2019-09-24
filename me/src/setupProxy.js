@@ -36,5 +36,12 @@ module.exports = function (app) {
         pathRewrite: {
             "^/meng": ""
         }
+    }));
+    app.use("/x",proxy({
+        target:"https://api.juooo.com",
+        changeOrigin: true,
+        pathRewrite: {
+            "^/x": ""
+        }
     }))
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import "../assets/lfx/css/set.css"
-
+import Bables from "../component/mlz/bables-z"
 export default class Set extends React.Component {
     render() {
         return (
@@ -9,10 +9,13 @@ export default class Set extends React.Component {
                     <div className="x-set-title">
                         <div className="x-title-one">
                             <div className="x-left">
-                                <i className="iconfont x-icon" >&#xe667;</i>
+                                <i className="iconfont x-icon2" >&#xe667;</i>
                             </div>
-                            <div className="x-title-name">
+                            <div className="x-title-name2">
                                 <span>账户设置</span>
+                            </div>
+                            <div className="x-ricon">
+                                <Bables></Bables>
                             </div>
 
                         </div>
