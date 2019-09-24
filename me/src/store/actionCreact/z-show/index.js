@@ -4,7 +4,8 @@ import {
     CHANGE_SHOW_CITY_LIST,
     CHANGE_CARD_SLIDER_LIST,
     CHANGE_CARD_VIP_RULE_LIST,
-    CHANGE_CARD_GROUP_LIST
+    CHANGE_CARD_GROUP_LIST,
+    CHANGE_SCHEDULE_INFO_LIST
 } from "../../actionType/z-show"
 
 import axios from "axios"
@@ -41,6 +42,13 @@ export function getCardVipRuleList(payload) {
 export function getCardGroupList(payload) {
     return{
         type:CHANGE_CARD_GROUP_LIST,
+        payload
+    }
+}
+
+export function getScheduleInfo(payload) {
+    return{
+        type:CHANGE_SCHEDULE_INFO_LIST,
         payload
     }
 }
@@ -88,7 +96,11 @@ export default {
             dispatch(getCardGroupList(cardGroupList))
         }
     },
-
-
-
+    getScheduleInfo(schedular_id){
+        return async (dispatch)=>{
+            const {data} = await axios.get(`/ju/Schedule/Schedule/getScheduleInfo?schedular_id=${schedular_id}&version=6.0.5&referer=2`);
+            const scheduleInfo=data.data;
+            dispatch(getScheduleInfo(scheduleInfo))
+        }
+    }
 }

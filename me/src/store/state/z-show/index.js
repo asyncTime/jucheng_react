@@ -5,4 +5,5 @@ export default {
     cardSliderList:[],
     cardVipRuleList:[],
     cardGroupList:[],
+    scheduleInfoList:[],
 }

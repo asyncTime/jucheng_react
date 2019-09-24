@@ -6,22 +6,23 @@ import Main from "../../views/main"
 import Vip from "../../views/Vip"
 import OrderFrom from "../../views/Order form"
 import Wallet from "../../views/main/Wallet";
-
 import Set from "../../views/Set";
+
 import Coupon from "../../views/Coupon";
 import Expired from "../../views/Expired"
 import Integral from "../../views/Integral";
 import Popular from "../../views/Popular";
 import IntegralShop from "../../views/IntegralShop";
 import CardBag from "../../views/CardBag";
-import BuyName from "../../views/BuyName"
-import allShow from "../../views/allshow"
-import Address from "../../views/Address"
-import CardProduct from "../../views/CardProduct"
 
+import allShow from "../../views/allshow";
+import CardProduct from "../../views/CardProduct"
+import BuyName from "../../views/BuyName"
+import Address from "../../views/Address"
 import Show from "../../views/Show"
 import ShowDetal from "../../views/ShowDetal"
 import AddAddress from "../../component/zsl/AddAddress";
+
 export default [
     {
         path:'/Longin',

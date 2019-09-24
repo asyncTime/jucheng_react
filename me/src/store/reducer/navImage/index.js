@@ -11,6 +11,10 @@ import {
     get_SearchList,
     get_Search_All
 } from "../../actionType/navImage"
+
+
+    // console.log(payload)
+
 export function navImageList(state=initState,{type,payload}){
     state = JSON.parse(JSON.stringify(state));
     if(type===get_navList){
@@ -34,6 +38,11 @@ export function navImageList(state=initState,{type,payload}){
     if(type===get_theatre_list){
         state.theatre=payload;
     }
+
+    return state
+}
+export function Recommends(state=initState,{type,payload}){
+    state = JSON.parse(JSON.stringify(state));
     if(type===get_recommend_show_list){
         state.Recommend=[...payload,...state.Recommend]
         state.page++
@@ -41,7 +50,7 @@ export function navImageList(state=initState,{type,payload}){
     }
     return state
 }
-export function M_Search(state=initState,{type,payload}) {
+export function M_Search(state=initState,{type,payload}){
     state = JSON.parse(JSON.stringify(state));
     if(type===get_SearchList){
         state.Search=payload

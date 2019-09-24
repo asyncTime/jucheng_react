@@ -50,28 +50,31 @@ html,body{
     vertical-align: middle;
 }
 
-.x-left .x-icon{
+.x-left .x-icon2{
     vertical-align: text-top;
-    font-size: 4rem;
+    font-size: .38rem;
     color: inherit;
 }
-.x-title-name{
+.x-title-name2{
     display: flex;
     overflow: hidden;
-    font-size: .3rem;
+    font-size: .34rem;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     flex-shrink: 10;
     align-items: center;
 }
-
+.x-ricon{
+    margin-right: .4rem;
+}
 /*内容部*/
 .x-title-warp{
-    margin-top:.25rem;
+    margin-top:.16rem;
     width: 100%;
     background-color: #fff;
-    font-size: .3rem;
+    font-size: .28rem;
+    color: #313131;
 }
 .x-content-title{
     display: flex;
@@ -82,14 +85,13 @@ html,body{
     border-bottom: 1px solid #d8d8d8;
 }
 .left b{
-    color: #CCCCCC;
+    color: #CCC;
     font-size: .2rem;
+    font-weight: normal;
 }
 .x-content-img{
     width: .85rem;
     height: .85rem;
-    background: #f5f5f5;
-    border-radius: 50%;
 }
 img{
     width: 100%;
@@ -99,6 +101,7 @@ img{
     display: block;
     line-height: 1rem;
     height: .7rem;
+    color: #ccc;
 }
 .x-submit{
     width: 90%;
@@ -107,7 +110,7 @@ img{
     margin: .4rem auto;
     text-align: center;
     line-height: .7rem;
-    font-size: .4rem;
-    border-radius: 1rem;
+    font-size: .3rem;
+    border-radius: .15rem;
 }
 

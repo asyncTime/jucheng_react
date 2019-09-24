@@ -30,11 +30,25 @@ module.exports = function (app) {
 	        "^/tian": ""
 	    }
 	}));
+	app.use("/bo",proxy({
+	    target:"https://m.juooo.com",
+	    changeOrigin: true,
+	    pathRewrite: {
+	        "^/bo":""
+	    }
+	}));
     app.use("/meng",proxy({
         target:"https://m.juooo.com",
         changeOrigin: true,
         pathRewrite: {
             "^/meng": ""
+        }
+    }));
+    app.use("/x",proxy({
+        target:"https://api.juooo.com",
+        changeOrigin: true,
+        pathRewrite: {
+            "^/x": ""
         }
     }))
 };

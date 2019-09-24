@@ -61,6 +61,8 @@ import {
                                 <img className="x-vip-pic" src={require("../../assets/lfx/imgs/x_3.png")} alt=""/>
                             </a>
                             <div className="x-setting">
+
+
                                 <ul className="x-setting-list">
                                     <li className="x-setting-list-item">
                                         <a href="/#" className="x-setting-list-link">
@@ -119,7 +121,6 @@ import {
                                             <i className="iconfont icon-help">
                                             </i>
                                             <p>客服帮助</p>
-                                            {/*<Help></Help>*/}
                                         </a>
                                     </li>
                                 </ul>
