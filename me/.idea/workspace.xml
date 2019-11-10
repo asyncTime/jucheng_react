@@ -3,50 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="1cbd1ea9-eec7-481a-a832-c6abb9e1ec46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/zsl/style/address.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/zsl/style/address.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/zsl/style/bindcard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/zsl/style/bindcard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/zsl/ActionSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/zsl/ActionSheet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/zsl/AddAddress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/zsl/AddAddress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/zsl/Bubble.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/zsl/Bubble.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Address.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BuyName.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BuyName.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/CardBag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/CardBag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Integral.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Integral.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/IntegralShop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/IntegralShop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/Me.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/Me.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/src/pubsub.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-bug-9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-clearSubscriptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-hierarchical-addressing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-issue-54.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-publish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-subscribe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-subscribeOnce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-symbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/_pubsub-js@1.7.0@pubsub-js/test/test-unsubscribe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/src/pubsub.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-bug-9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-clearSubscriptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-hierarchical-addressing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-issue-54.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-publish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-subscribe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-subscribeOnce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-symbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/pubsub-js/test/test-unsubscribe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setupProxy.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/component/zsl/UpLocation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,137 +63,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/views/Order form.js" />
-        <option value="$PROJECT_DIR$/src/assets/css/M-css/Bus.css" />
-        <option value="$PROJECT_DIR$/src/component/tepySlideshow.js" />
-        <option value="$PROJECT_DIR$/src/router/routerMe/index.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/views/main.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/assets/zsl/style/integral-shop.css" />
-        <option value="$PROJECT_DIR$/src/config-overrides.js" />
-        <option value="$PROJECT_DIR$/src/component/zsl/pull.js" />
-        <option value="$PROJECT_DIR$/src/log/zsl" />
-        <option value="$PROJECT_DIR$/src/component/zsl/Pull.js" />
-        <option value="$PROJECT_DIR$/src/views/CarBag.js" />
-        <option value="$PROJECT_DIR$/src/assets/zsl/style/integral.css" />
-        <option value="$PROJECT_DIR$/src/store/actionType/navImage/index.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/S-many.js" />
-        <option value="$PROJECT_DIR$/src/component/mSearch/HowSouCuo.js" />
-        <option value="$PROJECT_DIR$/src/component/mSearch/S-many.js" />
-        <option value="$PROJECT_DIR$/src/views/Search.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/tepySlideshow2.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/tepySlideshow3.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/Vip.js" />
-        <option value="$PROJECT_DIR$/src/store/reducer/index.js" />
-        <option value="$PROJECT_DIR$/src/store/reducer/navImage/index.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/tepySlideshow.js" />
-        <option value="$PROJECT_DIR$/src/assets/mlz/css/cardProduct.css" />
-        <option value="$PROJECT_DIR$/src/component/mlz/swiper-z.js" />
-        <option value="$PROJECT_DIR$/src/store/actionCreact/navImage/index.js" />
-        <option value="$PROJECT_DIR$/src/store/actionCreact/navImage/SearchList.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/Skind.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/tepySlideshow1.js" />
-        <option value="$PROJECT_DIR$/src/views/main/Page.js" />
-        <option value="$PROJECT_DIR$/src/component/Page/Categories.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/component/zsl/MenuExample.js" />
-        <option value="$PROJECT_DIR$/src/router/routerApp/index.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/component/zsl/Bubble.js" />
-        <option value="$PROJECT_DIR$/src/views/IntegralShop.js" />
-        <option value="$PROJECT_DIR$/src/views/Integral.js" />
-        <option value="$PROJECT_DIR$/src/views/main/Me.js" />
-        <option value="$PROJECT_DIR$/src/views/CardBag.js" />
-        <option value="$PROJECT_DIR$/src/views/BuyName.js" />
-        <option value="$PROJECT_DIR$/src/assets/zsl/style/ActionSheet.css" />
-        <option value="$PROJECT_DIR$/src/assets/zsl/style/bindcard.css" />
-        <option value="$PROJECT_DIR$/src/component/zsl/ActionSheet.js" />
-        <option value="$PROJECT_DIR$/src/setupProxy.js" />
-        <option value="$PROJECT_DIR$/src/assets/zsl/style/address.css" />
-        <option value="$PROJECT_DIR$/src/component/zsl/AddAddress.js" />
-        <option value="$PROJECT_DIR$/src/views/Address.js" />
-        <option value="$PROJECT_DIR$/src/component/zsl/UpLocation.js" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
-  </component>
+  <component name="ProjectId" id="1TPNI9JCp0LtvY37lQoBxDtPZuk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="zsl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-              <item name="routerMe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="me" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/1antUse/myapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -211,15 +83,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\1911jo\MyTwelve\me\src\component\zsl" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\1911jo\MyTwelve\me" />
       <recent name="E:\MyWrite2\Myproject\MyTwelve\me\src\component\mSearch" />
       <recent name="D:\1911\MyTwelve\me\src\assets\zsl\font" />
       <recent name="D:\1911\MyTwelve\me\src\views" />
       <recent name="E:\MyWrite2\Myproject\MyTwelve\me\src\store\actionType\navImage" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\1911jo\MyTwelve\me\src\component\zsl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -272,39 +144,28 @@
       <workItem from="1569251277021" duration="3954000" />
       <workItem from="1569283936838" duration="1024000" />
       <workItem from="1569295062434" duration="2787000" />
-      <workItem from="1569314523962" duration="17681000" />
+      <workItem from="1569314523962" duration="18132000" />
+      <workItem from="1569503916308" duration="606000" />
+      <workItem from="1569555543656" duration="143000" />
+      <workItem from="1569555959640" duration="601000" />
+      <workItem from="1569594315996" duration="639000" />
+      <workItem from="1573357689981" duration="1166000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124304000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5688525" visible="true" weight="0.2061012" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.43114755" side_tool="true" weight="0.2061012" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32902032" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3704918" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33770493" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -321,7 +182,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/store/reducer/navImage/index.js</url>
-          <line>30</line>
+          <line>34</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -351,469 +212,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/component/mSearch/HowSouCuo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducer/z-show/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
-          <folding>
-            <element signature="e#494#2272#0" />
-            <element signature="e#1034#2050#0" />
-            <element signature="n#!!block;n#componentDidMount#0;n#Search#0" />
-            <element signature="n#!!block;n#changeInput#0;n#Search#0" />
-            <element signature="e#2483#2609#0" />
-            <element signature="n#!!block;n#changgeStype#0;n#Search#0" />
-            <element signature="n#!!block;n#changeValue#0;n#Search#0" />
-            <element signature="n#!!block;n#clearInput#0;n#Search#0" />
-            <element signature="n#!!block;n#mapStateToProps#0" />
-            <element signature="n#!!block;n#mapDispatchToProps#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/mSearch/S-many.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#295#1263#0" />
-            <element signature="e#417#1191#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actionType/navImage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Page/Vip.js" />
-    <entry file="file://$PROJECT_DIR$/src/store/reducer/navImage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!block;n#PriorityIn#0" />
-            <element signature="n#!!block;n#M_Search#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#458#715#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actionCreact/navImage/SearchList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#get_Search#0" />
-            <element signature="n#!!block;n#get_Search_Alls#0" />
-            <element signature="e#322#850#0" />
-            <element signature="e#349#551#0" />
-            <element signature="e#576#848#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actionCreact/navImage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!block;n#get_nav#0" />
-            <element signature="n#!!block;n#get_PriorityInBuy#0" />
-            <element signature="n#!!block;n#get_HotShow#0" />
-            <element signature="n#!!block;n#grt_CycleOfsinging#0" />
-            <element signature="n#!!block;n#get_priorList#0" />
-            <element signature="n#!!block;n#get_CategoriesList#0" />
-            <element signature="n#!!block;n#get_theatre#0" />
-            <element signature="n#!!block;n#get_recommend_List#0" />
-            <element signature="e#1113#3327#0" />
-            <element signature="e#1162#1420#0" />
-            <element signature="e#1594#1901#0" />
-            <element signature="e#1882#2156#0" />
-            <element signature="e#2163#2426#0" />
-            <element signature="e#2437#2667#0" />
-            <element signature="e#3370#3644#0" />
-            <element signature="e#2941#3171#0" />
-            <element signature="e#4198#4471#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/mlz/swiper-z.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/mlz/css/cardProduct.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="193" lean-forward="true" selection-start-line="193" selection-end-line="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project documentation">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/main/Page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <element signature="n#!!block;n#render#0;n#Page#0" />
-            <element signature="n#!!block;n#componentWillMount#0;n#Page#0" />
-            <element signature="n#!!block;n#componentWillUnmount#0;n#Page#0" />
-            <element signature="n#!!block;n#handleScroll#0;n#Page#0" />
-            <element signature="n#!!block;n#mapDispatchToProps#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Page/Categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#272#306#0" />
-            <element signature="n#!!block;n#render#0;n#Categories#0" />
-            <element signature="n#!!block;n#componentDidMount#0;n#Categories#0" />
-            <element signature="n#!!block;n#componentWillReceiveProps#0;n#Categories#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Page/tepySlideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#TepySlideshow#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Page/tepySlideshow1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#483#1405#0" />
-            <element signature="e#748#1362#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Page/tepySlideshow2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!block;n#mapDispatchToProps#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Page/Skind.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#mapStateToProps#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/Page/tepySlideshow3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <element signature="n#!!block;n#render#0;n#TepySlideshow3#0" />
-            <element signature="n#!!block;n#componentDidMount#0;n#TepySlideshow3#0" />
-            <element signature="n#!!block;n#mapStateToProps#0" />
-            <element signature="n#!!block;n#mapDispatchToProps#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Vip.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/my/Help.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/my/Tips.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducer/theater/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/allshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding>
-            <element signature="e#1#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/routerApp/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-          <folding>
-            <element signature="e#1#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/zsl/html/buyname.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/zsl/style/buynewcard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3142" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-overrides.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/IntegralShop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/zsl/Bubble.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-767">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/BuyName.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/routerMe/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/main/Me.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Integral.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/zsl/ActionSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="63" column="74" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/CardBag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/zsl/style/bindcard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/zsl/html/bindcard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/zsl/style/ActionSheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="345" column="16" selection-start-line="345" selection-start-column="16" selection-end-line="345" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/zsl/font/demo_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/zsl/AddAddress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Address.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/zsl/style/address.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/zsl/MenuExample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="92" column="27" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/zsl/CarouselNew.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/setupProxy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/zsl/UpLocation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
